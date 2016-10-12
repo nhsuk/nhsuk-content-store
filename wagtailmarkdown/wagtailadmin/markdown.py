@@ -6,7 +6,6 @@ from django.conf import settings
 from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.forms import Media, widgets
 from django.utils.module_loading import import_string
-
 from wagtail.utils.widgets import WidgetWithScript
 
 from wagtailmarkdown.edit_handlers import MarkdownFieldPanel

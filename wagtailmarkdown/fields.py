@@ -1,8 +1,7 @@
 from django import forms
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible, force_text
+from django.utils.encoding import force_text, python_2_unicode_compatible
 from django.utils.functional import cached_property
-
 from wagtail.wagtailcore.blocks.field_block import FieldBlock
 
 
