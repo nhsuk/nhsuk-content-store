@@ -5,8 +5,10 @@ from django.utils.translation import ugettext_lazy
 from wagtail.wagtailadmin.edit_handlers import (
     FieldPanel, MultiFieldPanel, StreamFieldPanel
 )
+from wagtail.wagtailcore.blocks import ListBlock
 from wagtail.wagtailcore.fields import StreamField
 from wagtail.wagtailcore.models import Page
+from wagtail.wagtailimages.blocks import ImageChooserBlock
 
 from wagtailmarkdown.fields import MarkdownBlock
 
@@ -18,6 +20,7 @@ class Components(object):
         'markdown': MarkdownBlock,
         'calloutInfo': MarkdownBlock,
         'calloutAlert': MarkdownBlock,
+        'figureList': lambda **kwargs: ListBlock(ImageChooserBlock(), **kwargs)
     }
 
     @classmethod
@@ -54,6 +57,11 @@ class SimplePage(Page):
     )
 
     # CONTENT BLOCKS
+    before = StreamField([
+        Components.get('markdown'),
+        Components.get('figureList'),
+    ], null=True, blank=True)
+
     local_header = StreamField([
         Components.get('markdown')
     ], null=True, blank=True)
@@ -75,6 +83,7 @@ class SimplePage(Page):
             FieldPanel('sidebar_order'),
         ]),
         StreamFieldPanel('local_header'),
+        StreamFieldPanel('before'),
         StreamFieldPanel('main'),
         StreamFieldPanel('sidebar')
     ]
@@ -93,5 +102,6 @@ class SimplePage(Page):
 
     # API
     api_fields = [
-        'sidebar_order', 'non_emergency_callout', 'choices_origin', 'local_header', 'main', 'sidebar'
+        'sidebar_order', 'non_emergency_callout', 'choices_origin',
+        'local_header', 'before', 'main', 'sidebar'
     ]
