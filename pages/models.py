@@ -5,12 +5,13 @@ from django.utils.translation import ugettext_lazy
 from wagtail.wagtailadmin.edit_handlers import (
     FieldPanel, MultiFieldPanel, StreamFieldPanel
 )
-from wagtail.wagtailcore.blocks import ListBlock
 from wagtail.wagtailcore.fields import StreamField
 from wagtail.wagtailcore.models import Page
-from wagtail.wagtailimages.blocks import ImageChooserBlock
 
+from images.blocks import ImageChooserBlock
 from wagtailmarkdown.fields import MarkdownBlock
+
+from .blocks import ListBlock, StreamBlock
 
 LABEL_RE = re.compile("([a-z])([A-Z])")
 
@@ -19,6 +20,7 @@ class Components(object):
     TYPES = {
         'markdown': MarkdownBlock,
         'calloutInfo': MarkdownBlock,
+        'calloutWarning': MarkdownBlock,
         'calloutAlert': MarkdownBlock,
         'figureList': lambda **kwargs: ListBlock(ImageChooserBlock(), **kwargs)
     }
@@ -57,24 +59,33 @@ class SimplePage(Page):
     )
 
     # CONTENT BLOCKS
-    before = StreamField([
-        Components.get('markdown'),
-        Components.get('figureList'),
-    ], null=True, blank=True)
+    before = StreamField(
+        StreamBlock([
+            Components.get('markdown'),
+            Components.get('figureList'),
+        ]), null=True, blank=True
+    )
 
-    local_header = StreamField([
-        Components.get('markdown')
-    ], null=True, blank=True)
+    local_header = StreamField(
+        StreamBlock([
+            Components.get('markdown')
+        ]), null=True, blank=True
+    )
 
-    main = StreamField([
-        Components.get('markdown'),
-        Components.get('calloutInfo'),
-    ], null=True, blank=True)
+    main = StreamField(
+        StreamBlock([
+            Components.get('markdown'),
+            Components.get('calloutInfo'),
+            Components.get('calloutWarning'),
+        ]), null=True, blank=True
+    )
 
-    sidebar = StreamField([
-        Components.get('markdown'),
-        Components.get('calloutAlert'),
-    ], null=True, blank=True)
+    sidebar = StreamField(
+        StreamBlock([
+            Components.get('markdown'),
+            Components.get('calloutAlert'),
+        ]), null=True, blank=True
+    )
 
     # PANELS
     content_panels = [

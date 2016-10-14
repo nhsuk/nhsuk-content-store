@@ -4,10 +4,13 @@ from wagtail.api.v2.router import WagtailAPIRouter
 from wagtail.wagtailimages.api.v2.endpoints import \
     ImagesAPIEndpoint as WagtailImagesAPIEndpoint
 
+from .serializers import PageSerializer
+
 api_router = WagtailAPIRouter('wagtailapi')
 
 
 class PagesAPIEndpoint(WagtailPagesAPIEndpoint):
+    base_serializer_class = PageSerializer
     renderer_classes = [CamelCaseJSONRenderer]
 
 
