@@ -11,3 +11,5 @@ class DisableMigrations(object):
 
 
 MIGRATION_MODULES = DisableMigrations()
+
+TEST_RUNNER = 'core.testing.runner.CustomTestSuiteRunner'
