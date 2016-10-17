@@ -21,7 +21,7 @@ class ImageChooserBlockTestCase(TestCase):
 
         self.image = get_image_model().objects.create(
             title="Test image",
-            file=get_test_image_file(),
+            file=get_test_image_file()
         )
 
     def get_mocked_router(self, expected_data):

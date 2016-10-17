@@ -7,6 +7,7 @@ from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 
 from api.router import api_router
+from images.views import ServeView
 
 urlpatterns = [
     url(r'^django-admin/', include(admin.site.urls)),
@@ -14,6 +15,10 @@ urlpatterns = [
 
     url(r'^api/', include(api_router.urls)),
 
+    url(
+        r'^images/(?P<signature>[^/]*)/(?P<image_id>\d*)/(?P<filter_spec>[^/]*)/\d*/(?P<slug>[^/]*)$',
+        ServeView.as_view(), name='images_serve'
+    ),
     url(r'', include(wagtail_urls)),
 ]
 
