@@ -1,7 +1,7 @@
 import imghdr
 
-from django.utils.text import slugify
 from django.db import models
+from django.utils.text import slugify
 from wagtail.wagtailimages.models import Image as WagtailImage
 
 
@@ -9,10 +9,6 @@ class Image(WagtailImage):
     caption = models.CharField(
         max_length=255, blank=True,
         help_text='Optional. It will be displayed below the image.'
-    )
-    alt = models.CharField(
-        max_length=255, blank=True,
-        help_text='Optional. Alternate text for an image, if the image cannot be displayed.'
     )
     slug = models.SlugField(
         allow_unicode=True,
@@ -25,7 +21,6 @@ class Image(WagtailImage):
         'file',
         'collection',
         'caption',
-        'alt',
         'tags',
         'focal_point_x',
         'focal_point_y',
@@ -34,7 +29,7 @@ class Image(WagtailImage):
     )
 
     api_fields = [
-        'title', 'caption', 'alt', 'slug', 'version', 'width', 'height'
+        'title', 'caption', 'slug', 'version', 'width', 'height'
     ]
 
     def save(self, *args, **kwargs):
