@@ -7,10 +7,9 @@ RUN sed -i "s/httpredir.debian.org/`curl -s -D - http://httpredir.debian.org/dem
     apt-get update && apt-get install -yq \
         postgresql-client
 
-ADD requirements.txt .
-RUN pip install -r requirements.txt
-
 ADD ./ .
+
+RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
