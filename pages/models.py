@@ -31,7 +31,7 @@ class Components(object):
         return (_type, cls.TYPES[_type](label=label))
 
 
-class SimplePage(Page):
+class EditorialPage(Page):
     SIDEBAR_ORDER_LAST = 'last'
     SIDEBAR_ORDER_FIRST = 'first'
     SIDEBAR_ORDER_CHOICES = (
