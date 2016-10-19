@@ -31,7 +31,15 @@ class Components(object):
         return (_type, cls.TYPES[_type](label=label))
 
 
-class EditorialPage(Page):
+class ChildrenSiblingsMixin(object):
+    def children(self):
+        return self.get_children().live()
+
+    def siblings(self):
+        return self.get_siblings().live()
+
+
+class EditorialPage(ChildrenSiblingsMixin, Page):
     SIDEBAR_ORDER_LAST = 'last'
     SIDEBAR_ORDER_FIRST = 'first'
     SIDEBAR_ORDER_CHOICES = (
@@ -111,8 +119,45 @@ class EditorialPage(Page):
         ], ugettext_lazy('Common page configuration')),
     ]
 
+    @property
+    def guide(self):
+        parent = self.get_parent().specific
+        return getattr(parent, 'guide', False)
+
     # API
     api_fields = [
         'sidebar_order', 'non_emergency_callout', 'choices_origin',
-        'local_header', 'before', 'main', 'sidebar'
+        'local_header', 'before', 'main', 'sidebar', 'guide'
+    ]
+    api_meta_fields = [
+        'children', 'siblings'
+    ]
+
+
+class FolderPage(ChildrenSiblingsMixin, Page):
+    guide = models.BooleanField(
+        default=False,
+        help_text='If ticked, all its sub-pages will be part of this guide'
+    )
+
+    # PANELS
+    content_panels = [
+        MultiFieldPanel([
+            FieldPanel('title'),
+            FieldPanel('guide'),
+        ]),
+    ]
+
+    promote_panels = [
+        MultiFieldPanel([
+            FieldPanel('slug'),
+        ], ugettext_lazy('Common page configuration')),
+    ]
+
+    # API
+    api_fields = [
+        'guide'
+    ]
+    api_meta_fields = [
+        'children', 'siblings'
     ]
