@@ -41,7 +41,7 @@ class ImageSlugTestCase(BaseImageTestCase):
 
     def test_very_long_title(self):
         image = get_image_model().objects.create(
-            title="a" * 500,
+            title="a" * 255,
             file=get_test_image_file()
         )
 

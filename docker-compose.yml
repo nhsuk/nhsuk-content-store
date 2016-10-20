@@ -1,33 +1,27 @@
 version: '2'
 
 services:
-  postgres:
+  db:
     image: postgres:9.5.4
     restart: always
-    volumes:
-      - postgres-db-volume:/var/lib/postgresql/data/pgdata
     environment:
-      POSTGRES_USER: wagtail
-      POSTGRES_PASSWORD: wagtail
-      POSTGRES_DB: wagtail
+      POSTGRES_USER: nhsuk
+      POSTGRES_PASSWORD: nhsuk
+      POSTGRES_DB: nhsuk
       PGDATA: /var/lib/postgresql/data/pgdata
 
-  wagtail:
+  content-store:
     build: .
     depends_on:
-      - postgres
+      - db
     links:
-      - postgres
+      - db
     ports:
       - "8000:8000"
     restart: always
     volumes:
       - ".:/usr/src/app"
     environment:
-      DB_HOST: postgres
-      DB_USER: wagtail
-      DB_PASSWORD: wagtail
-
-volumes:
-  postgres-db-volume:
-    driver: local
+      DB_HOST: db
+      DB_USER: nhsuk
+      DB_PASSWORD: nhsuk

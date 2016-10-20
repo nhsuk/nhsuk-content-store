@@ -1,0 +1,21 @@
+import sys
+
+from .dev import *
+
+# if you want to use sqllite in dev mode, uncomment these lines
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
+
+# if you want to use sqllite for running the unit tests, uncomment these lines
+#if sys.argv[1:2] == ['test']:
+#    DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.sqlite3',
+#            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#        }
+#    }
