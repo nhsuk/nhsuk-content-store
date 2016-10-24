@@ -1,9 +1,11 @@
+from unittest import mock
+
 from django.test import TestCase
 from wagtail.wagtailcore.blocks.field_block import CharBlock
 from wagtail.wagtailcore.blocks.stream_block import StreamValue
 from wagtail.wagtailcore.blocks.struct_block import StructValue
 
-from pages.blocks import ListBlock, StreamBlock, StructBlock
+from pages.blocks import ListBlock, StaticBlock, StreamBlock, StructBlock
 
 
 class TestCharBlock(CharBlock):
@@ -16,7 +18,7 @@ class TestCharBlock(CharBlock):
 
 
 class StreamBlockTestCase(TestCase):
-    def test_empty_list(self):
+    def test_api_representation_with_empty_list(self):
         block = StreamBlock([
             ('test', TestCharBlock())
         ])
@@ -27,7 +29,7 @@ class StreamBlockTestCase(TestCase):
         )
         self.assertEqual(representation, [])
 
-    def test_None_gets_skipped(self):
+    def test_api_representation_None_value_gets_skipped(self):
         block = StreamBlock([
             ('test', TestCharBlock(expected=None))
         ])
@@ -41,7 +43,7 @@ class StreamBlockTestCase(TestCase):
             []
         )
 
-    def test_value(self):
+    def test_api_representation_with_value(self):
         expected = 'representation value'
 
         block = StreamBlock([
@@ -59,7 +61,7 @@ class StreamBlockTestCase(TestCase):
 
 
 class ListBlockTestCase(TestCase):
-    def test_empty_list(self):
+    def test_api_representation_with_empty_list(self):
         block = ListBlock(
             TestCharBlock()
         )
@@ -67,7 +69,7 @@ class ListBlockTestCase(TestCase):
         representation = block.to_api_representation([], context={})
         self.assertEqual(representation, [])
 
-    def test_None_gets_skipped(self):
+    def test_api_representation_None_value_gets_skipped(self):
         block = ListBlock(
             TestCharBlock(expected=None)
         )
@@ -75,7 +77,7 @@ class ListBlockTestCase(TestCase):
         representation = block.to_api_representation([None], context={})
         self.assertEqual(representation, [])
 
-    def test_value(self):
+    def test_api_representation_with_value(self):
         expected = 'representation value'
 
         block = ListBlock(
@@ -87,7 +89,7 @@ class ListBlockTestCase(TestCase):
 
 
 class StructBlockTestCase(TestCase):
-    def test_empty_list(self):
+    def test_api_representation_with_empty_list(self):
         block = StructBlock([
             ('test', TestCharBlock())
         ])
@@ -98,7 +100,7 @@ class StructBlockTestCase(TestCase):
         )
         self.assertEqual(representation, {})
 
-    def test_value(self):
+    def test_api_representation_with_value(self):
         expected = 'representation value'
 
         block = StructBlock([
@@ -110,3 +112,27 @@ class StructBlockTestCase(TestCase):
             context={}
         )
         self.assertEqual(representation, {'test': expected})
+
+
+class StaticBlockTestCase(TestCase):
+    def setUp(self):
+        super(StaticBlockTestCase, self).setUp()
+
+        self.value = 'some value'
+        self.block = StaticBlock(self.value)
+
+    def test_render_form_returns_static_value(self):
+        self.assertEqual(
+            self.block.render_form(
+                mock.MagicMock(), prefix=mock.MagicMock(), errors=mock.MagicMock()
+            ),
+            self.value
+        )
+
+    def test_value_from_datadict_returns_static_value(self):
+        self.assertEqual(
+            self.block.value_from_datadict(
+                mock.MagicMock(), mock.MagicMock(), mock.MagicMock()
+            ),
+            self.value
+        )

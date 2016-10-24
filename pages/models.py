@@ -1,5 +1,3 @@
-import re
-
 from django.db import models
 from django.utils.translation import ugettext_lazy
 from wagtail.wagtailadmin.edit_handlers import (
@@ -8,27 +6,8 @@ from wagtail.wagtailadmin.edit_handlers import (
 from wagtail.wagtailcore.fields import StreamField
 from wagtail.wagtailcore.models import Page
 
-from images.blocks import ImageChooserBlock
-from wagtailmarkdown.fields import MarkdownBlock
-
-from .blocks import ListBlock, StreamBlock
-
-LABEL_RE = re.compile("([a-z])([A-Z])")
-
-
-class Components(object):
-    TYPES = {
-        'markdown': MarkdownBlock,
-        'calloutInfo': MarkdownBlock,
-        'calloutWarning': MarkdownBlock,
-        'calloutAlert': MarkdownBlock,
-        'figureList': lambda **kwargs: ListBlock(ImageChooserBlock(), **kwargs)
-    }
-
-    @classmethod
-    def get(cls, _type):
-        label = LABEL_RE.sub("\g<1> \g<2>", _type).lower()
-        return (_type, cls.TYPES[_type](label=label))
+from .blocks import StreamBlock
+from .page_elements import Components
 
 
 class ChildrenSiblingsMixin(object):
@@ -76,7 +55,8 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
 
     local_header = StreamField(
         StreamBlock([
-            Components.get('markdown')
+            Components.get('markdown'),
+            Components.get('sectionNav'),
         ]), null=True, blank=True
     )
 
@@ -85,6 +65,7 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
             Components.get('markdown'),
             Components.get('calloutInfo'),
             Components.get('calloutWarning'),
+            Components.get('sectionList'),
         ]), null=True, blank=True
     )
 
