@@ -150,3 +150,6 @@ WAGTAIL_SITE_NAME = "nhsuk"
 BASE_URL = 'http://example.com'
 
 WAGTAILIMAGES_IMAGE_MODEL = 'images.Image'
+
+FRONTEND_BASE_URL = os.environ.get('FRONTEND_BASE_URL', '')  # base url to the frontend app
+FRONTEND_PREVIEW_URL = os.environ.get('FRONTEND_PREVIEW_URL', '')  # frontend url that renders the preview data

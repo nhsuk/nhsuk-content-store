@@ -1,13 +1,40 @@
+from django.conf import settings
 from django.db import models
+from django.http import HttpResponse
+from django.shortcuts import redirect
 from django.utils.translation import ugettext_lazy
 from wagtail.wagtailadmin.edit_handlers import (
     FieldPanel, MultiFieldPanel, StreamFieldPanel
 )
 from wagtail.wagtailcore.fields import StreamField
-from wagtail.wagtailcore.models import Page
+from wagtail.wagtailcore.models import Page as WagtailPage
 
 from .blocks import StreamBlock
 from .page_elements import Components
+from .preview import PreviewHandler
+
+
+class Page(WagtailPage):
+    def serve(self, request, *args, **kwargs):
+        """
+        Redirects to the live frontend version of this page.
+        """
+        if not settings.FRONTEND_BASE_URL:
+            return HttpResponse('Please set FRONTEND_BASE_URL in your settings.py')
+
+        site_id, root_path, root_url = self.get_url_parts()
+        return redirect('{}{}'.format(settings.FRONTEND_BASE_URL, root_url))
+
+    def serve_preview(self, request, mode_name):
+        """
+        Renders the preview version of this page (that is, the unsaved version)
+        by returning the related HTML to be injected in the page.
+        """
+        preview_handler = PreviewHandler()
+        return HttpResponse(preview_handler.get_html_preview(request, self))
+
+    class Meta:
+        proxy = True
 
 
 class ChildrenSiblingsMixin(object):

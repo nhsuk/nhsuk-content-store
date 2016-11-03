@@ -16,7 +16,7 @@ class SimpleMDEArea(WidgetWithScript, widgets.Textarea):
         return MarkdownFieldPanel
 
     def render_js_init(self, id_, name, value):
-        return "new SimpleMDE({ element: document.getElementById(%s) });" % json.dumps(id_)
+        return "new SimpleMDE({ element: document.getElementById(%s), forceSync: true });" % json.dumps(id_)
 
     @property
     def media(self):

@@ -1,3 +1,4 @@
 -r base.txt
 
 isort==4.2.5
+responses==0.5.1
