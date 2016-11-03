@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/badges/github.com/nhsuk/nhsuk-content-store.svg)](https://gemnasium.com/github.com/nhsuk/nhsuk-content-store)
+
 # NHS.UK Content Store
 
 Content Store for NHS.UK
