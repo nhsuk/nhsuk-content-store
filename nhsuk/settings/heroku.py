@@ -8,7 +8,7 @@ from .base import *  # noqa
 DEBUG = False
 
 
-DATABASES['default'] = dj_database_url.config()
+DATABASES['default'] = dj_database_url.config()  # noqa
 
 ALLOWED_HOSTS = ['.herokuapp.com', 'localhost']
 
@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 IMAGE_SIGNATURE_KEY = os.environ.get('IMAGE_SIGNATURE_KEY', '')
 
 # STATIC FILES / CSS, JS
-MIDDLEWARE += [
+MIDDLEWARE += [  # noqa
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
