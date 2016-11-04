@@ -119,3 +119,16 @@ Content Store for NHS.UK
   ```
   isort -rc .
   ```
+
+
+## Heroku
+
+The app is ready to be deployed to Heroku for testing purposes, Heroku shouldn't be used prod with this setup.
+
+By default, the assets are stored/retrieved from Heroku whilst the uploaded images are stored/retrieved from Azure Storage.
+
+Heroku specific files:
+
+* `requirements.txt`: which includes `requirements/heroku.txt`
+* `nhsuk/settings/heroku.py`: heroku settings file
+* `nhsuk/heroku_wsgi.py`: heroku wsgi file
