@@ -13,7 +13,7 @@ class TestCharBlock(CharBlock):
         self.expected = kwargs.pop('expected', None)
         super(TestCharBlock, self).__init__(*args, **kwargs)
 
-    def to_api_representation(self, value, context={}):
+    def to_api_representation(self, value, context=None):
         return self.expected
 
 
