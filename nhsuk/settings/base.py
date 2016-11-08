@@ -27,6 +27,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 INSTALLED_APPS = [
     'core',
+    'api',
     'home',
     'search',
     'pages',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
 
     'modelcluster',
     'taggit',
+    'oauth2_provider',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -140,6 +142,11 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+# API
+
+OAUTH2_PROVIDER = {
+    'SCOPES': {'read': 'Read scope'}
+}
 
 # Wagtail settings
 

@@ -1,12 +1,11 @@
 from django.contrib.contenttypes.models import ContentType
-from django.core.urlresolvers import reverse
-from django.test import TestCase
-from wagtail.wagtailcore.models import Page, Site
 
 from pages.models import EditorialPage, FolderPage
 
+from .base import ContentAPIBaseTestCase
 
-class BaseTestCase(TestCase):
+
+class HierarchyBaseTestCase(ContentAPIBaseTestCase):
     def setUp(self):
         """
         Creating the following pages:
@@ -15,16 +14,7 @@ class BaseTestCase(TestCase):
                 <page2> (live)
                 <page3> (not live)
         """
-        root = Page.objects.create(
-            title="Root",
-            slug='root',
-            content_type=ContentType.objects.get_for_model(Page),
-            path='0001',
-            depth=1,
-            numchild=1,
-            url_path='/',
-        )
-        Site.objects.create(hostname='localhost', root_page=root, is_default_site=True)
+        super(HierarchyBaseTestCase, self).setUp()
 
         # create guide folder
         self.folder = FolderPage.objects.create(
@@ -71,11 +61,12 @@ class BaseTestCase(TestCase):
         self.live_pages = [self.page1, self.page2]
         self.all_pages = [self.page1, self.page2, self.page3]
 
-    def get_response(self, page_id, **params):
-        return self.client.get(reverse('wagtailapi:pages:detail', args=(page_id, )), params)
 
+class ChildrenTestCase(HierarchyBaseTestCase):
+    """
+    Tests related to the `children` meta field of the Content JSON API Response.
+    """
 
-class ChildrenTestCase(BaseTestCase):
     def test_folder(self):
         """
         Tests that the API response of the folder page is:
@@ -93,7 +84,7 @@ class ChildrenTestCase(BaseTestCase):
             }
         }
         """
-        response = self.get_response(self.folder.id)
+        response = self.get_content_api_response(self.folder.id)
         json_data = response.json()
 
         children_data = json_data['meta']['children']
@@ -117,13 +108,17 @@ class ChildrenTestCase(BaseTestCase):
 
         self.page2.delete()
 
-        response = self.get_response(self.folder.id)
+        response = self.get_content_api_response(self.folder.id)
         json_data = response.json()
 
         self.assertEqual(json_data['meta']['children'], [])
 
 
-class SiblingsTestCase(BaseTestCase):
+class SiblingsTestCase(HierarchyBaseTestCase):
+    """
+    Tests related to the `siblings` meta field of the Content JSON API Response.
+    """
+
     def test_with_siblings(self):
         """
         Tests that the API response of a page with siblings is:
@@ -142,7 +137,7 @@ class SiblingsTestCase(BaseTestCase):
         }
         """
         for page in self.live_pages:
-            response = self.get_response(page.id)
+            response = self.get_content_api_response(page.id)
             json_data = response.json()
 
             self.assertEqual(
@@ -162,7 +157,7 @@ class SiblingsTestCase(BaseTestCase):
             }
         }
         """
-        response = self.get_response(self.folder.id)
+        response = self.get_content_api_response(self.folder.id)
         json_data = response.json()
 
         self.assertEqual(
@@ -171,7 +166,11 @@ class SiblingsTestCase(BaseTestCase):
         )
 
 
-class GuideTestCase(BaseTestCase):
+class GuideTestCase(HierarchyBaseTestCase):
+    """
+    Tests related to the `guide` field of the Content JSON API Response.
+    """
+
     def test_guide_folder(self):
         """
         Tests that if <folder>.guide == True
@@ -182,7 +181,7 @@ class GuideTestCase(BaseTestCase):
         self.folder.save()
 
         for page in self.live_pages + [self.folder]:
-            response = self.get_response(page.id)
+            response = self.get_content_api_response(page.id)
             json_data = response.json()
 
             self.assertTrue(json_data['guide'])
@@ -197,7 +196,7 @@ class GuideTestCase(BaseTestCase):
         self.folder.save()
 
         for page in self.live_pages + [self.folder]:
-            response = self.get_response(page.id)
+            response = self.get_content_api_response(page.id)
             json_data = response.json()
 
             self.assertFalse(json_data['guide'])
