@@ -7,6 +7,9 @@ python:
   - 3.5
 install:
   - pip install -r requirements/dev.txt
+  - pip install coveralls
 script:
-  - ./manage.py test
+  - coverage run manage.py test
   - flake8 .
+after_success:
+  - coveralls
