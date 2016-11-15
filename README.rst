@@ -117,6 +117,7 @@ Heroku specific files:
 -  ``requirements.txt``: which includes ``requirements/heroku.txt``
 -  ``nhsuk/settings/heroku.py``: heroku settings file
 -  ``nhsuk/heroku_wsgi.py``: heroku wsgi file
+-  ``bin/post_compile``: heroku post deploy file that runs the django migrate command automatically after each deploy
 
 .. _docker: https://www.docker.com
 .. _`http://127.0.0.1:8000/admin/`:
