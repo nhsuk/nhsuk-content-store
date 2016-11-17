@@ -4,4 +4,4 @@ from pages.models import Page
 
 
 class HomePage(Page):
-    pass
+    default_slug = 'home'

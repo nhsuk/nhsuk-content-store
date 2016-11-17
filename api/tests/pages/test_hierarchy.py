@@ -84,7 +84,7 @@ class ChildrenTestCase(HierarchyBaseTestCase):
             }
         }
         """
-        response = self.get_content_api_response(self.folder.id)
+        response = self.get_content_api_response(page_id=self.folder.id)
         json_data = response.json()
 
         children_data = json_data['meta']['children']
@@ -108,7 +108,7 @@ class ChildrenTestCase(HierarchyBaseTestCase):
 
         self.page2.delete()
 
-        response = self.get_content_api_response(self.folder.id)
+        response = self.get_content_api_response(page_id=self.folder.id)
         json_data = response.json()
 
         self.assertEqual(json_data['meta']['children'], [])
@@ -157,7 +157,7 @@ class SiblingsTestCase(HierarchyBaseTestCase):
             }
         }
         """
-        response = self.get_content_api_response(self.folder.id)
+        response = self.get_content_api_response(page_id=self.folder.id)
         json_data = response.json()
 
         self.assertEqual(

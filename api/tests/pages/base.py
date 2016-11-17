@@ -64,14 +64,19 @@ class ContentAPIBaseTestCase(TestCase):
             'HTTP_AUTHORIZATION': 'Bearer ' + token,
         }
 
-    def get_content_api_response(self, page_id, auth_headers=None):
+    def get_content_api_response(self, page_id=None, page_path=None, auth_headers=None):
         """
-        Can be used to request the page with id == `page_id` with the
-        given `auth_headers` or the default one not specified.
+        Can be used to request the page with id == `page_id` or with path == `page_path` using the
+        given `auth_headers` or the default one if not specified.
         """
         if auth_headers is None:
             auth_headers = self.get_auth_header(
                 self.nhsuk_frontend_token.token
             )
-        url = reverse('wagtailapi:pages:detail', args=(page_id, ))
+
+        if page_id:
+            url = reverse('wagtailapi:pages:detail', args=(page_id, ))
+        elif page_path:
+            url = reverse('wagtailapi:pages:detail_by_path', args=(page_path, ))
+
         return self.client.get(url, **auth_headers)

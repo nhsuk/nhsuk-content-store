@@ -45,11 +45,15 @@ Example of response::
       ]
   }
 
-Get live page by id
-###################
+.. _get_page_by_id:
+
+Get a live page by id
+#####################
 ::
 
   /api/pages/<id>/
+
+  e.g. /api/pages/1/
 
 Returns the details of the page with given id split into ``meta`` fields and page fields.
 
@@ -60,9 +64,33 @@ Example of response::
       "meta": {
           ...
       },
+
       "title": "...",
       ...
-      <other fields>
+  }
+
+Get a live page by path
+#######################
+
+::
+
+  /api/pages/with-path/<path>/
+
+  e.g. /api/pages/with-path/conditions/hernia/
+
+Returns the details of the page with given path split into ``meta`` fields and page fields.
+
+The response is exactly the same as the one returned by :ref:`get_page_by_id`.
+
+Example of response::
+
+  {
+      "id": 5,
+      "meta": {
+          ...
+      },
+
+      "title": "...",
       ...
   }
 
