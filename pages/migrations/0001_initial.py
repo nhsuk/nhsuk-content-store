@@ -3,10 +3,9 @@
 from __future__ import unicode_literals
 
 import django.db.models.deletion
+import wagtail.wagtailcore.blocks
 import wagtail.wagtailcore.fields
 from django.db import migrations, models
-
-import wagtailmarkdown.fields
 
 
 class Migration(migrations.Migration):
@@ -25,9 +24,9 @@ class Migration(migrations.Migration):
                 ('sidebar_order', models.CharField(choices=[('last', 'Last'), ('first', 'First')], default='last', max_length=50)),
                 ('non_emergency_callout', models.BooleanField(default=True, help_text='Shows/hides the call 111 section', verbose_name='Non-emergency callout')),
                 ('choices_origin', models.CharField(blank=True, help_text='Optional. Related Choices page (e.g. conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx)', max_length=255)),
-                ('local_header', wagtail.wagtailcore.fields.StreamField((('markdown', wagtailmarkdown.fields.MarkdownBlock(label='markdown')),), blank=True, null=True)),
-                ('main', wagtail.wagtailcore.fields.StreamField((('markdown', wagtailmarkdown.fields.MarkdownBlock(label='markdown')), ('calloutInfo', wagtailmarkdown.fields.MarkdownBlock(label='callout info'))), blank=True, null=True)),
-                ('sidebar', wagtail.wagtailcore.fields.StreamField((('markdown', wagtailmarkdown.fields.MarkdownBlock(label='markdown')), ('calloutAlert', wagtailmarkdown.fields.MarkdownBlock(label='callout alert'))), blank=True, null=True)),
+                ('local_header', wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')),), blank=True, null=True)),
+                ('main', wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('calloutInfo', wagtail.wagtailcore.blocks.RichTextBlock(label='callout info'))), blank=True, null=True)),
+                ('sidebar', wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('calloutAlert', wagtail.wagtailcore.blocks.RichTextBlock(label='callout alert'))), blank=True, null=True)),
             ],
             options={
                 'abstract': False,

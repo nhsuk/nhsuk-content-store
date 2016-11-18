@@ -1,10 +1,9 @@
 import re
 from functools import partial
 
-from wagtail.wagtailcore.blocks import CharBlock
+from wagtail.wagtailcore.blocks import CharBlock, RichTextBlock
 
 from images.blocks import ImageChooserBlock
-from wagtailmarkdown.fields import MarkdownBlock
 
 from .blocks import ListBlock, StaticBlock, StreamBlock, StructBlock
 
@@ -28,10 +27,10 @@ def section_list(**kwargs):
 
 class Components(object):
     TYPES = {
-        'markdown': MarkdownBlock,
-        'calloutInfo': MarkdownBlock,
-        'calloutWarning': MarkdownBlock,
-        'calloutAlert': MarkdownBlock,
+        'markdown': RichTextBlock,
+        'calloutInfo': RichTextBlock,
+        'calloutWarning': RichTextBlock,
+        'calloutAlert': RichTextBlock,
         'image': ImageChooserBlock,
         'figureList': partial(ListBlock, ImageChooserBlock()),
         'sectionList': section_list,
