@@ -28,9 +28,6 @@ def section_list(**kwargs):
 class Components(object):
     TYPES = {
         'markdown': RichTextBlock,
-        'calloutInfo': RichTextBlock,
-        'calloutWarning': RichTextBlock,
-        'calloutAlert': RichTextBlock,
         'image': ImageChooserBlock,
         'figureList': partial(ListBlock, ImageChooserBlock()),
         'sectionList': section_list,

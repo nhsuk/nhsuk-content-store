@@ -90,8 +90,6 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     main = StreamField(
         StreamBlock([
             Components.get('markdown'),
-            Components.get('calloutInfo'),
-            Components.get('calloutWarning'),
             Components.get('sectionList'),
         ]), null=True, blank=True
     )
@@ -99,7 +97,6 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     sidebar = StreamField(
         StreamBlock([
             Components.get('markdown'),
-            Components.get('calloutAlert'),
         ]), null=True, blank=True
     )
 
