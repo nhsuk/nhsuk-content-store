@@ -66,8 +66,8 @@ class ContentAPIBaseTestCase(TestCase):
 
     def get_content_api_response(self, page_id=None, page_path=None, auth_headers=None):
         """
-        Can be used to request the page with id == `page_id` or with path == `page_path` using the
-        given `auth_headers` or the default one if not specified.
+        Can be used to request the page with id == `page_id` or with path == `page_path`.
+        It uses the given `auth_headers` to authenticate or the default one if not specified.
         """
         if auth_headers is None:
             auth_headers = self.get_auth_header(
@@ -78,5 +78,21 @@ class ContentAPIBaseTestCase(TestCase):
             url = reverse('wagtailapi:pages:detail', args=(page_id, ))
         elif page_path:
             url = reverse('wagtailapi:pages:detail_by_path', args=(page_path, ))
+
+        return self.client.get(url, **auth_headers)
+
+    def get_preview_content_api_response(self, page_id, revision_id=None, auth_headers=None):
+        """
+        Can be used to request the page with id == `page_id` and optionally revision == `revision_id`.
+        It uses the given `auth_headers` to authenticate or the default one if not specified.
+        """
+        if auth_headers is None:
+            auth_headers = self.get_auth_header(
+                self.nhsuk_frontend_token.token
+            )
+
+        url = reverse('wagtailapi:preview-pages:detail', args=(page_id, ))
+        if revision_id:
+            url = '{}?revision-id={}'.format(url, revision_id)
 
         return self.client.get(url, **auth_headers)

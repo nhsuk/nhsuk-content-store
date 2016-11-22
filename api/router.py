@@ -3,6 +3,7 @@ from djangorestframework_camel_case.render import CamelCaseJSONRenderer
 from oauth2_provider.ext.rest_framework import (
     OAuth2Authentication, TokenHasScope
 )
+from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from wagtail.api.v2.endpoints import PagesAPIEndpoint as WagtailPagesAPIEndpoint
 from wagtail.api.v2.router import WagtailAPIRouter
@@ -16,13 +17,19 @@ from .serializers import PageSerializer
 api_router = WagtailAPIRouter('wagtailapi')
 
 
-class PagesAPIEndpoint(WagtailPagesAPIEndpoint):
+class BasePagesAPIEndpoint(WagtailPagesAPIEndpoint):
     authentication_classes = [OAuth2Authentication]
     permission_classes = [TokenHasScope]
     required_scopes = ['read']
 
     base_serializer_class = PageSerializer
     renderer_classes = [CamelCaseJSONRenderer]
+
+
+class PagesAPIEndpoint(BasePagesAPIEndpoint):
+    """
+    Gets live content.
+    """
 
     def detail_view_by_path(self, request, path):
         """
@@ -48,9 +55,49 @@ class PagesAPIEndpoint(WagtailPagesAPIEndpoint):
         return url_patterns
 
 
+class PreviewPagesAPIEndpoint(BasePagesAPIEndpoint):
+    """
+    Same as Pages API Endpoint but returns page content related to a revision.
+    """
+
+    def get_queryset(self):
+        return self.model.objects.all().order_by('id')
+
+    def get_object(self):
+        """
+        Returns the page with id == the one passed in for a particular revision.
+
+        The revision can be selected by using the query param `revision-id` which defaults to the latest one.
+        """
+        obj = super(PreviewPagesAPIEndpoint, self).get_object()
+
+        revision_id = self.request.query_params.get('revision-id')
+        if revision_id:
+            revision = get_object_or_404(obj.revisions, id=revision_id)
+        else:
+            revision = obj.revisions.order_by('-created_at').first()
+
+        # in case of no revisions, return the object (edge case)
+        if not revision:
+            return obj
+
+        base = revision.as_page_object()
+        return base.specific
+
+    @classmethod
+    def get_urlpatterns(cls):
+        """
+        Only get page by id allowed.
+        """
+        return [
+            url(r'^(?P<pk>\d+)/$', cls.as_view({'get': 'detail_view'}), name='detail'),
+        ]
+
+
 class ImagesAPIEndpoint(WagtailImagesAPIEndpoint):
     renderer_classes = [CamelCaseJSONRenderer]
 
 
 api_router.register_endpoint('pages', PagesAPIEndpoint)
+api_router.register_endpoint('preview-pages', PreviewPagesAPIEndpoint)
 api_router.register_endpoint('images', ImagesAPIEndpoint)
