@@ -1,3 +1,5 @@
+.. _content-preview-api:
+
 Content Preview API
 -------------------
 

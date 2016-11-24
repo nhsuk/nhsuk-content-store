@@ -3,15 +3,15 @@ from __future__ import absolute_import, unicode_literals
 from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
-from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 
 from api.router import api_router
 from images.views import ServeView
+from nhs_wagtailadmin import urls as nhs_wagtailadmin_urls
 
 urlpatterns = [
     url(r'^django-admin/', include(admin.site.urls)),
-    url(r'^admin/', include(wagtailadmin_urls)),
+    url(r'^admin/', include(nhs_wagtailadmin_urls)),
 
     url(r'^api/', include(api_router.urls)),
 

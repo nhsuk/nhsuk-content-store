@@ -14,6 +14,15 @@ This is meant to be shared with the frontend client so that it can generate imag
 
 For more info, see :ref:`Images <images>`.
 
+PREVIEW_SIGNATURE_KEY
+-------------------
+
+Secret key used to generate the signatures for previewing content.
+
+This is meant to be shared with the frontend client so that it can verify them.
+
+For more info, see :ref:`preview-logic`.
+
 FRONTEND_BASE_URL
 -----------------
 
@@ -26,4 +35,6 @@ FRONTEND_PREVIEW_URL
 
 Path to the frontend url that will render the preview content.
 
-E.g. ``https://example.com/preview``
+E.g. ``'https://example.com/preview/{signature}/{page_id}/{revision_id}'``
+
+The *signature*, *page_id* and *revision_id* vars will be replaced by the actual values dynamically.

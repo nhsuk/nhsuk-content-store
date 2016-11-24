@@ -19,3 +19,6 @@ from .dev import *
 #            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #        }
 #    }
+
+FRONTEND_BASE_URL = 'http://localhost:3000'
+FRONTEND_PREVIEW_URL = 'http://localhost:3000/preview/{signature}/{page_id}/{revision_id}'

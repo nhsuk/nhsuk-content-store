@@ -13,4 +13,5 @@ Contents:
 
    install
    references
+   preview
    settings

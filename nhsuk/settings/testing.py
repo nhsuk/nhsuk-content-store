@@ -13,3 +13,4 @@ class DisableMigrations(object):
 MIGRATION_MODULES = DisableMigrations()
 
 TEST_RUNNER = 'core.testing.runner.CustomTestSuiteRunner'
+FRONTEND_PREVIEW_URL = 'http://example.com/preview/{signature}/{page_id}/{revision_id}'

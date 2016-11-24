@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'pages',
     'images',
     'wagtailmarkdown',
+    'nhs_wagtailadmin',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
@@ -164,5 +165,13 @@ WAGTAILADMIN_RICH_TEXT_EDITORS = {
     },
 }
 
-FRONTEND_BASE_URL = os.environ.get('FRONTEND_BASE_URL', '')  # base url to the frontend app
-FRONTEND_PREVIEW_URL = os.environ.get('FRONTEND_PREVIEW_URL', '')  # frontend url that renders the preview data
+# base url to the frontend app
+# e.g. 'http://localhost:3000'
+FRONTEND_BASE_URL = os.environ.get('FRONTEND_BASE_URL', '')
+
+# frontend url that renders the preview data using python format
+# e.g. 'http://localhost:3000/preview/{signature}/{page_id}/{revision_id}'
+FRONTEND_PREVIEW_URL = os.environ.get('FRONTEND_PREVIEW_URL', '')  #
+
+# IMAGE_SIGNATURE_KEY = None
+# PREVIEW_SIGNATURE_KEY = None

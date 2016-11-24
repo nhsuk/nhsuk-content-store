@@ -1,0 +1,2 @@
+class DeprecatedException(Exception):
+    pass

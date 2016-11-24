@@ -9,9 +9,10 @@ from wagtail.wagtailadmin.edit_handlers import (
 from wagtail.wagtailcore.fields import StreamField
 from wagtail.wagtailcore.models import Page as WagtailPage
 
+from nhs_wagtailadmin.views import preview_via_POST_deprecated
+
 from .blocks import StreamBlock
 from .page_elements import Components
-from .preview import PreviewHandler
 
 
 class Page(WagtailPage):
@@ -26,12 +27,7 @@ class Page(WagtailPage):
         return redirect('{}{}'.format(settings.FRONTEND_BASE_URL, root_url))
 
     def serve_preview(self, request, mode_name):
-        """
-        Renders the preview version of this page (that is, the unsaved version)
-        by returning the related HTML to be injected in the page.
-        """
-        preview_handler = PreviewHandler()
-        return HttpResponse(preview_handler.get_html_preview(request, self))
+        preview_via_POST_deprecated()
 
     class Meta:
         proxy = True
