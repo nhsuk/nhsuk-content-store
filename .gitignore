@@ -1,4 +1,5 @@
 media/
-/demo/settings/local.py
+**/settings/local.py
 docs/_build
 docs/_build_html
+__pycache__/
