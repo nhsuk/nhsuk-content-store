@@ -1,0 +1,1381 @@
+[
+{
+    "model": "wagtailcore.site",
+    "pk": 2,
+    "fields": {
+        "hostname": "localhost",
+        "port": 80,
+        "site_name": null,
+        "root_page": 3,
+        "is_default_site": true
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 1,
+    "fields": {
+        "path": "0001",
+        "depth": 1,
+        "numchild": 1,
+        "title": "Root",
+        "slug": "root",
+        "content_type": 1,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": null,
+        "latest_revision_created_at": null
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 3,
+    "fields": {
+        "path": "00010001",
+        "depth": 2,
+        "numchild": 2,
+        "title": "Homepage",
+        "slug": "home",
+        "content_type": 2,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": null,
+        "latest_revision_created_at": null
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 4,
+    "fields": {
+        "path": "000100010001",
+        "depth": 3,
+        "numchild": 6,
+        "title": "Conditions",
+        "slug": "conditions",
+        "content_type": 7,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T15:31:08.762Z",
+        "latest_revision_created_at": "2016-12-06T15:31:07.231Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 5,
+    "fields": {
+        "path": "0001000100010001",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Fungal nail infection",
+        "slug": "fungal-nail-infection",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/fungal-nail-infection/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T15:32:41.772Z",
+        "latest_revision_created_at": "2016-12-06T16:58:12.404Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 6,
+    "fields": {
+        "path": "0001000100010002",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Hand, foot and mouth disease",
+        "slug": "hand-foot-and-mouth-disease",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/hand-foot-and-mouth-disease/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T15:33:52.143Z",
+        "latest_revision_created_at": "2016-12-06T16:10:05.373Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 7,
+    "fields": {
+        "path": "0001000100010003",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Head lice and nits",
+        "slug": "head-lice",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/head-lice/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T15:37:34.982Z",
+        "latest_revision_created_at": "2016-12-06T16:10:39.813Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 8,
+    "fields": {
+        "path": "0001000100010004",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Shingles",
+        "slug": "shingles",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/shingles/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T15:38:19.848Z",
+        "latest_revision_created_at": "2016-12-06T16:11:27.068Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 9,
+    "fields": {
+        "path": "0001000100010005",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Warts and verrucas",
+        "slug": "warts",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/warts/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T15:39:03.071Z",
+        "latest_revision_created_at": "2016-12-06T16:12:55.367Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 10,
+    "fields": {
+        "path": "000100010002",
+        "depth": 3,
+        "numchild": 3,
+        "title": "Symptoms",
+        "slug": "symptoms",
+        "content_type": 7,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/symptoms/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T15:40:00.652Z",
+        "latest_revision_created_at": "2016-12-06T15:39:59.158Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 11,
+    "fields": {
+        "path": "0001000100020003",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Headache",
+        "slug": "headache",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/symptoms/headache/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:01:09.829Z",
+        "latest_revision_created_at": "2016-12-06T16:15:12.709Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 12,
+    "fields": {
+        "path": "0001000100020002",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Rashes in babies and children",
+        "slug": "rashes-in-babies-and-children",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/symptoms/rashes-in-babies-and-children/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:01:57.477Z",
+        "latest_revision_created_at": "2016-12-06T16:49:15.121Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 13,
+    "fields": {
+        "path": "0001000100020001",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Stomach ache",
+        "slug": "stomach-ache",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/symptoms/stomach-ache/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:02:25.383Z",
+        "latest_revision_created_at": "2016-12-06T16:15:34.874Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 14,
+    "fields": {
+        "path": "0001000100010006",
+        "depth": 4,
+        "numchild": 7,
+        "title": "Type 2 diabetes",
+        "slug": "type-2-diabetes",
+        "content_type": 7,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/type-2-diabetes/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:49:55.601Z",
+        "latest_revision_created_at": "2016-12-06T16:49:54.290Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 15,
+    "fields": {
+        "path": "00010001000100060004",
+        "depth": 5,
+        "numchild": 0,
+        "title": "Understanding medication",
+        "slug": "understanding-medication",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/type-2-diabetes/understanding-medication/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:50:41.585Z",
+        "latest_revision_created_at": "2016-12-06T17:12:04.646Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 16,
+    "fields": {
+        "path": "00010001000100060006",
+        "depth": 5,
+        "numchild": 0,
+        "title": "Health problems",
+        "slug": "health-problems",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/type-2-diabetes/health-problems/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:51:25.537Z",
+        "latest_revision_created_at": "2016-12-06T17:12:45.584Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 17,
+    "fields": {
+        "path": "00010001000100060005",
+        "depth": 5,
+        "numchild": 0,
+        "title": "Going for regular check ups",
+        "slug": "going-for-regular-check-ups",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/type-2-diabetes/going-for-regular-check-ups/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:52:15.412Z",
+        "latest_revision_created_at": "2016-12-06T17:12:25.764Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 18,
+    "fields": {
+        "path": "00010001000100060002",
+        "depth": 5,
+        "numchild": 0,
+        "title": "Getting diagnosed",
+        "slug": "getting-diagnosed",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/type-2-diabetes/getting-diagnosed/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:52:36.527Z",
+        "latest_revision_created_at": "2016-12-06T17:11:45.068Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 19,
+    "fields": {
+        "path": "00010001000100060007",
+        "depth": 5,
+        "numchild": 0,
+        "title": "Food and keeping active",
+        "slug": "food-and-keeping-active",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": true,
+        "url_path": "/home/conditions/type-2-diabetes/food-and-keeping-active/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:53:01.511Z",
+        "latest_revision_created_at": "2016-12-06T17:14:08.376Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 20,
+    "fields": {
+        "path": "00010001000100060008",
+        "depth": 5,
+        "numchild": 0,
+        "title": "Finding help and support",
+        "slug": "finding-help-and-support",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/type-2-diabetes/finding-help-and-support/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:53:24.654Z",
+        "latest_revision_created_at": "2016-12-06T17:13:18.652Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 21,
+    "fields": {
+        "path": "00010001000100060001",
+        "depth": 5,
+        "numchild": 0,
+        "title": "Check if you have it",
+        "slug": "check-if-you-have-it",
+        "content_type": 6,
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/conditions/type-2-diabetes/check-if-you-have-it/",
+        "owner": 2,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-12-06T16:53:46.029Z",
+        "latest_revision_created_at": "2016-12-06T17:10:35.202Z"
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 1,
+    "fields": {
+        "page": 4,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:31:07.231Z",
+        "user": 2,
+        "content_json": "{\"show_in_menus\": false, \"live\": true, \"latest_revision_created_at\": null, \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"locked\": false, \"pk\": 4, \"path\": \"000100010001\", \"seo_title\": \"\", \"slug\": \"conditions\", \"url_path\": \"/home/conditions/\", \"depth\": 3, \"title\": \"Conditions\", \"content_type\": 7, \"numchild\": 0, \"guide\": false, \"search_description\": \"\", \"has_unpublished_changes\": false, \"expired\": false, \"first_published_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 2,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:32:40.454Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 5, \"path\": \"0001000100010001\", \"non_emergency_callout\": true, \"slug\": \"fungal-nail-infection\", \"url_path\": \"/home/conditions/fungal-nail-infection/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Fungal nail infection\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"first\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 3,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:33:50.738Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 6, \"path\": \"0001000100010002\", \"non_emergency_callout\": false, \"slug\": \"hand-foot-and-mouth-disease\", \"url_path\": \"/home/conditions/hand-foot-and-mouth-disease/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Hand, foot and mouth disease\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 4,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:35:28.285Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": \"2016-12-06T15:32:40.454Z\", \"locked\": false, \"pk\": 5, \"path\": \"0001000100010001\", \"non_emergency_callout\": false, \"slug\": \"fungal-nail-infection\", \"url_path\": \"/home/conditions/fungal-nail-infection/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Fungal nail infection\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"first\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": \"2016-12-06T15:32:41.772Z\", \"choices_origin\": \"conditions/fungal-nail-infection/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 5,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:36:49.388Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": \"2016-12-06T15:33:50.738Z\", \"locked\": false, \"pk\": 6, \"path\": \"0001000100010002\", \"non_emergency_callout\": true, \"slug\": \"hand-foot-and-mouth-disease\", \"url_path\": \"/home/conditions/hand-foot-and-mouth-disease/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Hand, foot and mouth disease\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": \"2016-12-06T15:33:52.143Z\", \"choices_origin\": \"conditions/hand-foot-and-mouth-disease/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 6,
+    "fields": {
+        "page": 7,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:37:33.678Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 7, \"path\": \"0001000100010003\", \"non_emergency_callout\": false, \"slug\": \"head-lice\", \"url_path\": \"/home/conditions/head-lice/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Head lice and nits\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"conditions/head-lice/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 7,
+    "fields": {
+        "page": 8,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:38:18.517Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 8, \"path\": \"0001000100010004\", \"non_emergency_callout\": false, \"slug\": \"shingles\", \"url_path\": \"/home/conditions/shingles/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Shingles\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"conditions/shingles/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 8,
+    "fields": {
+        "page": 9,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:39:01.751Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 9, \"path\": \"0001000100010005\", \"non_emergency_callout\": true, \"slug\": \"warts\", \"url_path\": \"/home/conditions/warts/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Warts and verrucas\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"conditions/warts/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 9,
+    "fields": {
+        "page": 10,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:39:40.862Z",
+        "user": 2,
+        "content_json": "{\"show_in_menus\": false, \"live\": false, \"latest_revision_created_at\": null, \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"locked\": false, \"pk\": 10, \"path\": \"000100010002\", \"seo_title\": \"\", \"slug\": \"symptoms\", \"url_path\": \"/home/symptoms/\", \"depth\": 3, \"title\": \"Symptoms\", \"content_type\": 7, \"numchild\": 0, \"guide\": false, \"search_description\": \"\", \"has_unpublished_changes\": false, \"expired\": false, \"first_published_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 10,
+    "fields": {
+        "page": 10,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T15:39:59.158Z",
+        "user": 2,
+        "content_json": "{\"show_in_menus\": false, \"live\": false, \"latest_revision_created_at\": \"2016-12-06T15:39:40.862Z\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"locked\": false, \"pk\": 10, \"path\": \"000100010002\", \"seo_title\": \"\", \"slug\": \"symptoms\", \"url_path\": \"/home/symptoms/\", \"depth\": 3, \"title\": \"Symptoms\", \"content_type\": 7, \"numchild\": 0, \"guide\": false, \"search_description\": \"\", \"has_unpublished_changes\": true, \"expired\": false, \"first_published_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 11,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:00:41.683Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": \"2016-12-06T15:35:28.285Z\", \"locked\": false, \"pk\": 5, \"path\": \"0001000100010001\", \"non_emergency_callout\": false, \"slug\": \"fungal-nail-infection\", \"url_path\": \"/home/conditions/fungal-nail-infection/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Fungal nail infection\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"first\", \"content_type\": 6, \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Fungal nail infections usually affect your toenails but you can get them on\\\\r\\\\nyour finger nails too.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nIf you have diabetes you should see a foot specialist because any foot injury\\\\r\\\\n[can lead to complications.](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx)\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n## Treating fungal nail infections at home\\\\r\\\\n\\\\r\\\\nSmall fungal nail infections may not need medication.\\\\r\\\\n\\\\r\\\\nYou should:\\\\r\\\\n\\\\r\\\\n* keep your feet clean and dry\\\\r\\\\n* use separate clippers or scissors to cut your infected nails\\\\r\\\\n\\\\r\\\\nIf the look of your nail bothers you or it\\\\u2019s painful, speak to your\\\\r\\\\npharmacist. They may suggest:\\\\r\\\\n\\\\r\\\\n* antifungal nail cream --- it can take up to 12 months to cure the infection\\\\r\\\\n  and doesn\\\\u2019t always work\\\\r\\\\n* nail softening cream --- used for 2 weeks to soften the nail so the\\\\r\\\\n  infection can be scraped off\\\\r\\\\n\\\\r\\\\nThe infection is cured when you see healthy nail growing back at the base.\\\\r\\\\n\\\\r\\\\n## Treatment from your GP\\\\r\\\\n\\\\r\\\\nYour GP can prescribe you tablets if your infection is severe or has spread\\\\r\\\\nto other nails.\\\\r\\\\n\\\\r\\\\nYou need to take tablets every day for up to 6 months.\\\\r\\\\n\\\\r\\\\nTablets can have side effects including:\\\\r\\\\n\\\\r\\\\n* headaches\\\\r\\\\n* itching\\\\r\\\\n* loss of taste\\\\r\\\\n* diarrhoea\\\\r\\\\n\\\\r\\\\nYou can\\\\u2019t take antifungal tablets if you\\\\u2019re pregnant or have certain\\\\r\\\\nconditions. They can damage your liver.\\\\r\\\\n\\\\r\\\\nBadly infected nails sometimes need to be removed. It\\\\u2019s a small procedure\\\\r\\\\ndone under local anaesthetic.\\\\r\\\\n\\\\r\\\\n## Other treatment\\\\r\\\\n\\\\r\\\\nLaser treatment uses laser to destroy the fungus.\\\\r\\\\n\\\\r\\\\nYou\\\\u2019ll have to pay for it as it\\\\u2019s not covered by the NHS. It can be\\\\r\\\\nexpensive. There\\\\u2019s little evidence to show it\\\\u2019s a long-term cure as most\\\\r\\\\nstudies only follow patients for three months.\\\\r\\\\n\\\\r\\\\n## Preventing fungal nail infection\\\\r\\\\n\\\\r\\\\nFungal nail infections develop when your feet are constantly warm and damp.\\\\r\\\\nYou\\\\u2019re more likely to get an infection if you wear trainers for a long time\\\\r\\\\nand have hot, sweaty feet.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nTreat athlete\\\\u2019s foot as soon as possible to avoid it spreading to the nails.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nTo prevent fungal nail infection:\\\\r\\\\n\\\\r\\\\n* keep your feet clean and dry\\\\r\\\\n* wear clean socks every day\\\\r\\\\n* don\\\\u2019t wear shoes that make your feet hot and sweaty\\\\r\\\\n* wear flip flops in showers at the gym, pool etc\\\\r\\\\n* don\\\\u2019t share towels\\\\r\\\\n* throw out old shoes\\\\r\\\\n* don\\\\u2019t wear other people\\\\u2019s shoes\\\\r\\\\n\\\\r\\\\n[Medical detail about fungal nail infections.](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)\\\"}]\", \"search_description\": \"\", \"first_published_at\": \"2016-12-06T15:32:41.772Z\", \"choices_origin\": \"conditions/fungal-nail-infection/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 12,
+    "fields": {
+        "page": 11,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:01:08.429Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 11, \"path\": \"0001000100020001\", \"non_emergency_callout\": true, \"slug\": \"headache\", \"url_path\": \"/home/symptoms/headache/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Headache\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"conditions/headache/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 13,
+    "fields": {
+        "page": 12,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:01:56.199Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 12, \"path\": \"0001000100020002\", \"non_emergency_callout\": true, \"slug\": \"rashes-in-babies-and-children\", \"url_path\": \"/home/symptoms/rashes-in-babies-and-children/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Rashes in babies and children\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"first\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"conditions/skin-rash-children/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 14,
+    "fields": {
+        "page": 13,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:02:23.876Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": null, \"locked\": false, \"pk\": 13, \"path\": \"0001000100020003\", \"non_emergency_callout\": true, \"slug\": \"stomach-ache\", \"url_path\": \"/home/symptoms/stomach-ache/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Stomach ache\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": null, \"choices_origin\": \"conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 15,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:03:07.875Z",
+        "user": 2,
+        "content_json": "{\"sidebar\": \"[]\", \"live\": true, \"latest_revision_created_at\": \"2016-12-06T15:36:49.388Z\", \"locked\": false, \"pk\": 6, \"path\": \"0001000100010002\", \"non_emergency_callout\": true, \"slug\": \"hand-foot-and-mouth-disease\", \"url_path\": \"/home/conditions/hand-foot-and-mouth-disease/\", \"numchild\": 0, \"has_unpublished_changes\": false, \"before\": \"[]\", \"show_in_menus\": false, \"local_header\": \"[]\", \"expire_at\": null, \"go_live_at\": null, \"owner\": 2, \"title\": \"Hand, foot and mouth disease\", \"seo_title\": \"\", \"expired\": false, \"depth\": 4, \"sidebar_order\": \"last\", \"content_type\": 6, \"main\": \"[]\", \"search_description\": \"\", \"first_published_at\": \"2016-12-06T15:33:52.143Z\", \"choices_origin\": \"conditions/hand-foot-and-mouth-disease/pages/introduction.aspx\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 16,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:10:05.373Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/hand-foot-and-mouth-disease/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T16:03:07.875Z\", \"title\": \"Hand, foot and mouth disease\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"If you\\\\u2019re unsure it\\\\u2019s hand, foot and mouth disease, look at other\\\\r\\\\n[childhood rashes.](/symptoms/rashes-in-babies-and-children)\\\\r\\\\n\\\\r\\\\n## How to treat hand, foot and mouth disease at home\\\\r\\\\n\\\\r\\\\n* drink fluids to avoid dehydration (avoid acidic drinks, like fruit juice)\\\\r\\\\n* eat soft foods like soup\\\\r\\\\n* take paracetamol or ibuprofen to help ease a sore throat and bring\\\\r\\\\n  down a temperature\\\\r\\\\n\\\\r\\\\nYou can buy mouth ulcer gels, sprays, and mouthwashes to ease the\\\\r\\\\n  blisters. Always check they are suitable for children and give the\\\\r\\\\n  correct dose.\\\\r\\\\n\\\\r\\\\n!!! attention\\\\r\\\\n## See a GP if\\\\r\\\\n\\\\r\\\\n* your child isn\\\\u2019t better after a week\\\\r\\\\n* your child is dehydrated --- they\\\\u2019re not weeing as often as usual\\\\r\\\\n* you\\\\u2019re concerned about your child\\\\u2019s symptoms\\\\r\\\\n* you\\\\u2019re pregnant and get hand, foot and mouth disease\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n## How to stop hand, foot and mouth disease spreading\\\\r\\\\n\\\\r\\\\nHand, foot and mouth disease spreads easily.\\\\r\\\\n\\\\r\\\\nKeep your child away from school or nursery while they're feeling\\\\r\\\\nunwell. Generally, there's no need to keep them off until the blisters\\\\r\\\\nscab. However, check with your school or nursery as they may have their\\\\r\\\\nown guidance.\\\\r\\\\n\\\\r\\\\n## Hand, foot and mouth disease in pregnancy\\\\r\\\\n\\\\r\\\\nIt\\\\u2019s best to avoid close contact with anyone who has hand, foot and\\\\r\\\\nmouth disease.\\\\r\\\\n\\\\r\\\\nThere\\\\u2019s normally no risk to the pregnancy or baby. However, there\\\\u2019s\\\\r\\\\nlimited evidence that in very rare cases catching it during the first\\\\r\\\\n3 months of pregnancy could lead to miscarriage. This risk is very low.\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"hand-foot-and-mouth-disease\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/conditions/hand-foot-and-mouth-disease/\", \"numchild\": 0, \"before\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"The first sign of hand, foot and mouth disease can be:\\\\r\\\\n\\\\r\\\\n* a sore throat\\\\r\\\\n* a fever, typically 38 to 39&deg;C\\\\r\\\\n* not wanting to eat\\\\r\\\\n\\\\r\\\\nAfter a few days mouth ulcers and a rash will appear.\\\"}]\", \"content_type\": 6, \"path\": \"0001000100010002\", \"sidebar\": \"[]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T15:33:52.143Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 6, \"local_header\": \"[]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 17,
+    "fields": {
+        "page": 7,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:10:39.813Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/head-lice/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T15:37:33.678Z\", \"title\": \"Head lice and nits\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Head lice sometimes can make your head feel:\\\\r\\\\n\\\\r\\\\n* itchy\\\\r\\\\n* like something is moving in your hair\\\\r\\\\n\\\\r\\\\nThe only way to be sure someone has head lice is by finding live lice or\\\\r\\\\neggs. You can do this by combing their hair with a special fine-toothed\\\\r\\\\ncomb (detection comb). You can buy these online or at pharmacies.\\\\r\\\\n\\\\r\\\\n## How to get rid of head lice\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nYou can treat head lice without seeing your GP.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nTreat head lice as soon as you spot them. You should check everyone in the\\\\r\\\\nhouse, and treat them on the same day if they have head lice.\\\\r\\\\n\\\\r\\\\nThere\\\\u2019s no need to keep your child off school with head lice.\\\\r\\\\n\\\\r\\\\n### Use lotion or spray to treat head lice\\\\r\\\\n\\\\r\\\\nYou can use medicated lotions and sprays that kill head lice in all types\\\\r\\\\nof hair, including afro hair. You can buy these from pharmacies,\\\\r\\\\nsupermarkets or online.\\\\r\\\\n\\\\r\\\\nHead lice should die within a day. Lotions and sprays come with a comb to\\\\r\\\\nremove dead lice and eggs.\\\\r\\\\n\\\\r\\\\nSome treatments need to be repeated after a week to kill any newly-hatched\\\\r\\\\nlice. Check the pack to see whether they\\\\u2019re okay for you or your child to\\\\r\\\\nuse and how long they should be left in the hair.\\\\r\\\\n\\\\r\\\\nIf lotions or sprays don\\\\u2019t work, speak to your pharmacist about other\\\\r\\\\ntreatments.\\\\r\\\\n\\\\r\\\\nSome treatments aren\\\\u2019t recommended because they\\\\u2019re unlikely to work:\\\\r\\\\n\\\\r\\\\n* products containing permethrin\\\\r\\\\n* head lice \\\\u201crepellents\\\\u201d\\\\r\\\\n* electric head lice combs\\\\r\\\\n* tree and plant oil treatments, such as tea tree oil, eucalyptus oil,\\\\r\\\\n  and lavender oil herbal remedies\\\\r\\\\n\\\\r\\\\n### If you don\\\\u2019t want to use chemicals\\\\r\\\\n\\\\r\\\\nYou can buy a special fine-toothed comb (detection comb) online or from\\\\r\\\\npharmacies to remove head lice and nits.\\\\r\\\\n\\\\r\\\\nFollow the instructions on the pack, but generally you:\\\\r\\\\n\\\\r\\\\n* use the comb on wet or dry hair, although it usually works best on wet\\\\r\\\\n  hair with conditioner\\\\r\\\\n* comb the whole head of hair, from the roots to the end of the hair\\\\r\\\\n* repeat every few days for 2 weeks\\\\r\\\\n\\\\r\\\\n## You can\\\\u2019t prevent head lice\\\\r\\\\n\\\\r\\\\nThere\\\\u2019s nothing you can do to prevent head lice. You can reduce the risk\\\\r\\\\nof lice spreading by avoiding head-to-head contact.\\\\r\\\\n\\\\r\\\\nDon\\\\u2019t use medicated lotions and sprays to prevent head lice. This can\\\\r\\\\nirritate the scalp.\\\\r\\\\n\\\\r\\\\nThere\\\\u2019s no need for children to stay off school, or to wash laundry on a\\\\r\\\\nhot wash.\\\\r\\\\n\\\\r\\\\n[Medical detail about head lice](http://cks.nice.org.uk/head-lice#!diagnosissub)\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"head-lice\", \"non_emergency_callout\": false, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/conditions/head-lice/\", \"numchild\": 0, \"before\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Check if it\\\\u2019s head lice\\\"}]\", \"content_type\": 6, \"path\": \"0001000100010003\", \"sidebar\": \"[]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T15:37:34.982Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 7, \"local_header\": \"[]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 18,
+    "fields": {
+        "page": 8,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:11:27.068Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/shingles/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T15:38:18.517Z\", \"title\": \"Shingles\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! attention\\\\r\\\\n## Speak to your GP as soon as you suspect shingles\\\\r\\\\n\\\\r\\\\nThere is medicine your GP can prescribe to speed up your recovery.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n## How to treat shingles at home\\\\r\\\\n\\\\r\\\\nYou can buy painkillers to ease shingles pain.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nIt can take up to 4 weeks for the rash to heal. Pain can stay for weeks\\\\r\\\\nafter the rash has gone, but it usually settles in time.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n### Do\\\\r\\\\n\\\\r\\\\n* keep the rash clean and dry to reduce risk of infection\\\\r\\\\n* wear loose-fitting clothing\\\\r\\\\n* buy calamine lotion to ease itching\\\\r\\\\n* use a cool compress (a bag of frozen vegetables wrapped in a towel\\\\r\\\\n  or a wet cloth) a few times a day\\\\r\\\\n\\\\r\\\\n### Don\\\\u2019t\\\\r\\\\n\\\\r\\\\n* let dressings or plasters stick to the rash\\\\r\\\\n* use antibiotic cream --- this slows healing\\\\r\\\\n\\\\r\\\\n## Stay away from certain groups of people if you have shingles\\\\r\\\\n\\\\r\\\\nTry to avoid:\\\\r\\\\n\\\\r\\\\n* pregnant women who have not had chickenpox before\\\\r\\\\n* people with a weakened immune system, such as someone with HIV or AIDS\\\\r\\\\n* babies less than one month old (unless it is your own baby, as they\\\\r\\\\n  should be protected from the virus by your immune system)\\\\r\\\\n\\\\r\\\\n## Stay off work or school until the rash scabs\\\\r\\\\n\\\\r\\\\nShingles is contagious only while the rash oozes fluid.\\\\r\\\\n\\\\r\\\\n## Shingles and pregnancy\\\\r\\\\n\\\\r\\\\nIf you\\\\u2019re pregnant and get shingles, there is no danger to your\\\\r\\\\npregnancy or baby.\\\\r\\\\n\\\\r\\\\nIf your GP thinks you need medicine, they may speak to a specialist to\\\\r\\\\ndecide whether the benefits of medication outweigh any possible risk.\\\\r\\\\n\\\\r\\\\n## You can\\\\u2019t get shingles from chickenpox\\\\r\\\\n\\\\r\\\\nYou can\\\\u2019t get shingles from someone with shingles or chickenpox.\\\\r\\\\n\\\\r\\\\nHowever, you can get chickenpox from someone with shingles, if you\\\\r\\\\nhaven\\\\u2019t had chickenpox before.\\\\r\\\\n\\\\r\\\\nWhen people get chickenpox, the virus remains in the body. It can be\\\\r\\\\nreactivated later and cause shingles if someone\\\\u2019s immune system is\\\\r\\\\nlowered. This can be because of stress, certain conditions or treatments\\\\r\\\\nlike chemotherapy.\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"shingles\", \"non_emergency_callout\": false, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/conditions/shingles/\", \"numchild\": 0, \"before\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Check if you have shingles\\\\r\\\\n\\\\r\\\\nThe first sign of shingles can be:\\\\r\\\\n\\\\r\\\\n* a tingling or painful feeling in an area of skin\\\\r\\\\n* a headache or feeling generally unwell\\\\r\\\\n\\\\r\\\\nA rash will appear a few days later.\\\\r\\\\n\\\\r\\\\nUsually you get shingles on your chest and tummy, but it can appear\\\\r\\\\non your face, eyes and genitals.\\\"}]\", \"content_type\": 6, \"path\": \"0001000100010004\", \"sidebar\": \"[]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T15:38:19.848Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 8, \"local_header\": \"[]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 19,
+    "fields": {
+        "page": 9,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:12:55.367Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/warts/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T15:39:01.751Z\", \"title\": \"Warts and verrucas\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Warts often go away on their own\\\\r\\\\n\\\\r\\\\nYou don\\\\u2019t need to do anything about warts. They\\\\u2019ll usually go away\\\\r\\\\nwithin 2 years.\\\\r\\\\n\\\\r\\\\nWarts don\\\\u2019t cause you any harm. They might itch or bleed but it doesn\\\\u2019t\\\\r\\\\nmean there\\\\u2019s a problem.\\\\r\\\\n\\\\r\\\\nIf you are unsure or worried about a growth on your skin you should see\\\\r\\\\nyour GP.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nWarts on your vulva, penis or anus are [genital warts](http://www.nhs.uk/Conditions/Genital_warts/Pages/Introduction.aspx)\\\\r\\\\nand need treatment. Go to a sexual health clinic or see your GP.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n## Treating warts that are bothering you\\\\r\\\\n\\\\r\\\\nYou can treat warts if they\\\\u2019re bothering you, they keep coming back or\\\\r\\\\nthey\\\\u2019re painful.\\\\r\\\\n\\\\r\\\\n### Treatments from your pharmacy\\\\r\\\\n\\\\r\\\\nYou can buy creams, plasters and sprays from pharmacies to get rid of\\\\r\\\\nwarts. These treatments can take up to 3 months, they can irritate your\\\\r\\\\nskin and they don\\\\u2019t always work.\\\\r\\\\n\\\\r\\\\nAsk your pharmacist for advice on what to use if you have a condition\\\\r\\\\nsuch as diabetes.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nDon\\\\u2019t use pharmacy treatments on your face. See your GP instead.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n### Treatment from your GP\\\\r\\\\n\\\\r\\\\nYour GP may be able to freeze warts off. If the wart is big, it may\\\\r\\\\ntake more than one session. After treatment, the wart should fall off a few\\\\r\\\\nweeks later.\\\\r\\\\n\\\\r\\\\nCheck with your GP if the NHS pays for this treatment in your area.\\\\r\\\\n\\\\r\\\\nIf treatment hasn\\\\u2019t worked or you have a wart on your face, your GP might\\\\r\\\\nrefer you to a skin specialist. Other treatments include minor surgery and\\\\r\\\\ntreatment with laser or light.\\\\r\\\\n\\\\r\\\\n## How to stop warts spreading\\\\r\\\\n\\\\r\\\\n* wash your hands after touching a wart\\\\r\\\\n* don\\\\u2019t bite your nails or suck your fingers with warts on\\\\r\\\\n* change your socks daily if you have verrucas\\\\r\\\\n* avoid cutting warts when shaving\\\\r\\\\n* don\\\\u2019t share towels\\\\r\\\\n* cover warts and verrucas with a plaster when swimming\\\\r\\\\n\\\\r\\\\n[Medical detail about warts](http://cks.nice.org.uk/warts-and-verrucae#!background)\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"warts\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/conditions/warts/\", \"numchild\": 0, \"before\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Check if you have them\\\"}]\", \"content_type\": 6, \"path\": \"0001000100010005\", \"sidebar\": \"[]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T15:39:03.071Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 9, \"local_header\": \"[]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 20,
+    "fields": {
+        "page": 13,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:13:49.737Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T16:02:23.876Z\", \"title\": \"Stomach ache\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Treating stomach ache at home\\\\r\\\\n\\\\r\\\\nSpeak to your pharmacist about medicine to help with:\\\\r\\\\n\\\\r\\\\n* feeling bloated (trapped wind)\\\\r\\\\n* indigestion (burning pain or discomfort after eating)\\\\r\\\\n* constipation (can\\\\u2019t poo)\\\\r\\\\n\\\\r\\\\n!!! info_compact\\\\r\\\\n[Find an open pharmacy near you]({{ findersBaseUrl }}finders/find-help?context=stomach-ache)\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nThere are also things you can do yourself to [help ease indigestion](http://www.nhs.uk/Conditions/Indigestion/Pages/Treatment.aspx)\\\\r\\\\nand [constipation.](http://www.nhs.uk/Conditions/Constipation/Pages/Treatment.aspx)\\\\r\\\\n\\\\r\\\\nIf you have vomiting and diarrhoea with your stomach ache, it should\\\\r\\\\nstop after a few days. Try to drink a lot of fluids to avoid\\\\r\\\\ndehydration.\\\\r\\\\n\\\\r\\\\nPainkillers like paracetamol can help with your stomach ache but won\\\\u2019t\\\\r\\\\nstop any vomiting and diarrhoea.\\\\r\\\\n\\\\r\\\\nFind out more about [treating vomiting and diarrhoea.](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx)\\\\r\\\\n\\\\r\\\\n!!! attention\\\\r\\\\n## See your GP if\\\\r\\\\n\\\\r\\\\n* the pain gets much worse in a short space of time\\\\r\\\\n* the pain or bloating won\\\\u2019t go away or keeps coming back\\\\r\\\\n* you have other symptoms like weight loss or vomiting\\\\r\\\\n* there\\\\u2019s a change in how often you pee\\\\r\\\\n* you have pain when you pee\\\\r\\\\n* you have unusual vaginal bleeding or discharge\\\\r\\\\n* you bleed from your bottom\\\\r\\\\n* your diarrhoea lasts longer than a few days\\\\r\\\\n!!!\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"stomach-ache\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/symptoms/stomach-ache/\", \"numchild\": 0, \"before\": \"[]\", \"content_type\": 6, \"path\": \"0001000100020001\", \"sidebar\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! severe\\\\r\\\\n## Call 999 or go to A&E if you\\\\r\\\\n\\\\r\\\\n* have sudden, severe stomach pain\\\\r\\\\n* have pain when you touch your stomach\\\\r\\\\n* are vomiting blood or a ground coffee like substance\\\\r\\\\n* have bloody or black, sticky poo\\\\r\\\\n* have collapsed\\\\r\\\\n* can\\\\u2019t breathe\\\\r\\\\n* are unable to pee\\\\r\\\\n* are diabetic and vomiting\\\\r\\\\n\\\\r\\\\n*[A&E]: Accident and Emergency\\\\r\\\\n!!!\\\"}]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T16:02:25.383Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 13, \"local_header\": \"[]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 21,
+    "fields": {
+        "page": 11,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:14:47.310Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/headache/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T16:01:08.429Z\", \"title\": \"Headache\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Treating headaches at home\\\\r\\\\n\\\\r\\\\nYou can simply wait until the headache goes away or take painkillers like\\\\r\\\\nparacetamol or ibuprofen. You can buy these over the counter.\\\\r\\\\n\\\\r\\\\nThis will also help with headaches:\\\\r\\\\n\\\\r\\\\n* drink plenty of water\\\\r\\\\n* eat regular meals\\\\r\\\\n* sleep the same amount of hours every night\\\\r\\\\n\\\\r\\\\nHeadaches can last between 30 minutes and several hours.\\\\r\\\\n\\\\r\\\\n## What causes headaches\\\\r\\\\n\\\\r\\\\nYou can get headaches because of something else, for example cold, flu,\\\\r\\\\nbad posture or stress.\\\\r\\\\n\\\\r\\\\nSome women get headaches when they\\\\u2019re on the pill or during their\\\\r\\\\nperiod or menopause.\\\\r\\\\n\\\\r\\\\n!!! attention\\\\r\\\\n## See your GP if\\\\r\\\\n\\\\r\\\\n* you get pain on [chewing or combing your hair](http://www.nhs.uk/Conditions/giant-cell-arteritis/Pages/Introduction.aspx) (get an urgent appointment)\\\\r\\\\n* you have a bad throbbing pain at the front or side of your head --- this could be [migraine](http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx) or more rarely [cluster headaches](http://www.nhs.uk/conditions/cluster-headaches/Pages/Introduction.aspx)\\\\r\\\\n* your headache keeps coming back\\\\r\\\\n* you feel sick, vomit and find light or noise painful\\\\r\\\\n* your headache doesn\\\\u2019t go away and gets worse over time\\\\r\\\\n* you get other symptoms, for example your arms or legs feel numb or weak\\\\r\\\\n!!!\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"headache\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/symptoms/headache/\", \"numchild\": 0, \"before\": \"[]\", \"content_type\": 6, \"path\": \"0001000100020003\", \"sidebar\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! severe\\\\r\\\\n## Call 999 or go to A&E if you\\\\r\\\\n\\\\r\\\\nYou hurt your head badly, for example from a fall or accident.\\\\r\\\\n\\\\r\\\\nIt feels like the worst pain you\\\\u2019ve ever had and came on suddenly.\\\\r\\\\n\\\\r\\\\nYou have a severe headache and:\\\\r\\\\n\\\\r\\\\n* sudden problems speaking, remembering things\\\\r\\\\n* blurred vision\\\\r\\\\n* are feeling drowsy, confused\\\\r\\\\n* high fever\\\\r\\\\n* stiff neck\\\\r\\\\n* rash\\\\r\\\\n* redness in one of your eyes\\\\r\\\\n\\\\r\\\\n*[A&E]: Accident and Emergency\\\\r\\\\n!!!\\\"}]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T16:01:09.829Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 11, \"local_header\": \"[]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 22,
+    "fields": {
+        "page": 11,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:15:12.709Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/headache/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T16:14:47.310Z\", \"title\": \"Headache\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Treating headaches at home\\\\r\\\\n\\\\r\\\\nYou can simply wait until the headache goes away or take painkillers like\\\\r\\\\nparacetamol or ibuprofen. You can buy these over the counter.\\\\r\\\\n\\\\r\\\\nThis will also help with headaches:\\\\r\\\\n\\\\r\\\\n* drink plenty of water\\\\r\\\\n* eat regular meals\\\\r\\\\n* sleep the same amount of hours every night\\\\r\\\\n\\\\r\\\\nHeadaches can last between 30 minutes and several hours.\\\\r\\\\n\\\\r\\\\n## What causes headaches\\\\r\\\\n\\\\r\\\\nYou can get headaches because of something else, for example cold, flu,\\\\r\\\\nbad posture or stress.\\\\r\\\\n\\\\r\\\\nSome women get headaches when they\\\\u2019re on the pill or during their\\\\r\\\\nperiod or menopause.\\\\r\\\\n\\\\r\\\\n!!! attention\\\\r\\\\n## See your GP if\\\\r\\\\n\\\\r\\\\n* you get pain on [chewing or combing your hair](http://www.nhs.uk/Conditions/giant-cell-arteritis/Pages/Introduction.aspx) (get an urgent appointment)\\\\r\\\\n* you have a bad throbbing pain at the front or side of your head --- this could be [migraine](http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx) or more rarely [cluster headaches](http://www.nhs.uk/conditions/cluster-headaches/Pages/Introduction.aspx)\\\\r\\\\n* your headache keeps coming back\\\\r\\\\n* you feel sick, vomit and find light or noise painful\\\\r\\\\n* your headache doesn\\\\u2019t go away and gets worse over time\\\\r\\\\n* you get other symptoms, for example your arms or legs feel numb or weak\\\\r\\\\n!!!\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"headache\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/symptoms/headache/\", \"numchild\": 0, \"before\": \"[]\", \"content_type\": 6, \"path\": \"0001000100020003\", \"sidebar\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! severe\\\\r\\\\n## Call 999 or go to A&E if you\\\\r\\\\n\\\\r\\\\nYou hurt your head badly, for example from a fall or accident.\\\\r\\\\n\\\\r\\\\nIt feels like the worst pain you\\\\u2019ve ever had and came on suddenly.\\\\r\\\\n\\\\r\\\\nYou have a severe headache and:\\\\r\\\\n\\\\r\\\\n* sudden problems speaking, remembering things\\\\r\\\\n* blurred vision\\\\r\\\\n* are feeling drowsy, confused\\\\r\\\\n* high fever\\\\r\\\\n* stiff neck\\\\r\\\\n* rash\\\\r\\\\n* redness in one of your eyes\\\\r\\\\n\\\\r\\\\n*[A&E]: Accident and Emergency\\\\r\\\\n!!!\\\"}]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T16:01:09.829Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 11, \"local_header\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Most headaches will go away on their own and aren\\\\u2019t a sign of something more serious.\\\"}]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 23,
+    "fields": {
+        "page": 13,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:15:34.874Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"last\", \"latest_revision_created_at\": \"2016-12-06T16:13:49.737Z\", \"title\": \"Stomach ache\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"## Treating stomach ache at home\\\\r\\\\n\\\\r\\\\nSpeak to your pharmacist about medicine to help with:\\\\r\\\\n\\\\r\\\\n* feeling bloated (trapped wind)\\\\r\\\\n* indigestion (burning pain or discomfort after eating)\\\\r\\\\n* constipation (can\\\\u2019t poo)\\\\r\\\\n\\\\r\\\\n!!! info_compact\\\\r\\\\n[Find an open pharmacy near you]({{ findersBaseUrl }}finders/find-help?context=stomach-ache)\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nThere are also things you can do yourself to [help ease indigestion](http://www.nhs.uk/Conditions/Indigestion/Pages/Treatment.aspx)\\\\r\\\\nand [constipation.](http://www.nhs.uk/Conditions/Constipation/Pages/Treatment.aspx)\\\\r\\\\n\\\\r\\\\nIf you have vomiting and diarrhoea with your stomach ache, it should\\\\r\\\\nstop after a few days. Try to drink a lot of fluids to avoid\\\\r\\\\ndehydration.\\\\r\\\\n\\\\r\\\\nPainkillers like paracetamol can help with your stomach ache but won\\\\u2019t\\\\r\\\\nstop any vomiting and diarrhoea.\\\\r\\\\n\\\\r\\\\nFind out more about [treating vomiting and diarrhoea.](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx)\\\\r\\\\n\\\\r\\\\n!!! attention\\\\r\\\\n## See your GP if\\\\r\\\\n\\\\r\\\\n* the pain gets much worse in a short space of time\\\\r\\\\n* the pain or bloating won\\\\u2019t go away or keeps coming back\\\\r\\\\n* you have other symptoms like weight loss or vomiting\\\\r\\\\n* there\\\\u2019s a change in how often you pee\\\\r\\\\n* you have pain when you pee\\\\r\\\\n* you have unusual vaginal bleeding or discharge\\\\r\\\\n* you bleed from your bottom\\\\r\\\\n* your diarrhoea lasts longer than a few days\\\\r\\\\n!!!\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"stomach-ache\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/symptoms/stomach-ache/\", \"numchild\": 0, \"before\": \"[]\", \"content_type\": 6, \"path\": \"0001000100020001\", \"sidebar\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! severe\\\\r\\\\n## Call 999 or go to A&E if you\\\\r\\\\n\\\\r\\\\n* have sudden, severe stomach pain\\\\r\\\\n* have pain when you touch your stomach\\\\r\\\\n* are vomiting blood or a ground coffee like substance\\\\r\\\\n* have bloody or black, sticky poo\\\\r\\\\n* have collapsed\\\\r\\\\n* can\\\\u2019t breathe\\\\r\\\\n* are unable to pee\\\\r\\\\n* are diabetic and vomiting\\\\r\\\\n\\\\r\\\\n*[A&E]: Accident and Emergency\\\\r\\\\n!!!\\\"}]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T16:02:25.383Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 13, \"local_header\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Most stomach aches aren\\\\u2019t anything serious and will go away after a few days.\\\"}]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 24,
+    "fields": {
+        "page": 12,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:16:21.033Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/skin-rash-children/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"first\", \"latest_revision_created_at\": \"2016-12-06T16:01:56.199Z\", \"title\": \"Rashes in babies and children\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! attention\\\\r\\\\n## See your GP\\\\r\\\\n\\\\r\\\\nIf your child seems unwell with a rash and has a fever.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nThe information below shouldn\\\\u2019t be used to self-diagnose your child\\\\u2019s\\\\r\\\\ncondition, but it should give you a better idea of what is causing the rash.\\\"}]\", \"has_unpublished_changes\": false, \"slug\": \"rashes-in-babies-and-children\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/symptoms/rashes-in-babies-and-children/\", \"numchild\": 0, \"before\": \"[]\", \"content_type\": 6, \"path\": \"0001000100020002\", \"sidebar\": \"[]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T16:01:57.477Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 12, \"local_header\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Many things can cause a rash in children and they\\\\u2019re often nothing to worry about.\\\"}]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 25,
+    "fields": {
+        "page": 12,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:30:38.996Z",
+        "user": 2,
+        "content_json": "{\"choices_origin\": \"conditions/skin-rash-children/pages/introduction.aspx\", \"owner\": 2, \"sidebar_order\": \"first\", \"latest_revision_created_at\": \"2016-12-06T16:16:21.033Z\", \"title\": \"Rashes in babies and children\", \"main\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! attention\\\\r\\\\n## See your GP\\\\r\\\\n\\\\r\\\\nIf your child seems unwell with a rash and has a fever.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nThe information below shouldn\\\\u2019t be used to self-diagnose your child\\\\u2019s\\\\r\\\\ncondition, but it should give you a better idea of what is causing the rash.\\\"}, {\\\"type\\\": \\\"sectionList\\\", \\\"value\\\": {\\\"title\\\": \\\"Rash with fever\\\", \\\"sections\\\": [{\\\"title\\\": \\\"Fever and red cheeks\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"A fever with bright red rash on both cheeks can be [slapped cheek syndrome.](http://www.nhs.uk/conditions/slapped-cheek-syndrome/Pages/Introduction.aspx)\\\\r\\\\nYour child may have a cold and the rash can spread to the body.\\\\r\\\\n\\\\r\\\\nIt usually clears up within a week. Children\\\\u2019s paracetamol can bring down a fever.\\\"}]}, {\\\"title\\\": \\\"Small spots and blisters\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"[Chickenpox](http://www.nhs.uk/conditions/chickenpox/Pages/Introduction.aspx)\\\\r\\\\ncauses red spots that turn to blisters. They can be itchy. They eventually scab\\\\r\\\\nand fall off. Some children have a few spots, while others have them all over\\\\r\\\\ntheir body.\\\"}]}, {\\\"title\\\": \\\"Blisters on hands and feet and in the mouth\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"A common childhood illness that causes blisters on the hands and feet and\\\\r\\\\nulcers on the tongue, is [hand, foot and mouth disease.](http://www.nhs.uk/conditions/hand-foot-and-mouth-disease/Pages/Introduction.aspx)\\\\r\\\\nIt also causes fever and your child may have a cold.\\\\r\\\\n\\\\r\\\\nIt usually clears up in about a week. Children\\\\u2019s paracetamol can bring down a fever.\\\"}]}, {\\\"title\\\": \\\"Pink-red rash\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"[Scarlet fever](http://www.nhs.uk/Conditions/Scarlet-fever/Pages/Introduction.aspx)\\\\r\\\\ncauses a pink-red rash, which feels like sandpaper and looks like sunburn.\\\\r\\\\n\\\\r\\\\nIt usually starts with a swollen tongue, sore throat, headache and fever.\\\\r\\\\n\\\\r\\\\nSee your GP straight away if you suspect scarlet fever. It\\\\u2019s treated with antibiotics.\\\"}]}]}}, {\\\"type\\\": \\\"sectionList\\\", \\\"value\\\": {\\\"title\\\": \\\"Rash with itching\\\", \\\"sections\\\": [{\\\"title\\\": \\\"Rash caused by heat\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Heat and sweat can cause small, red spots known as prickly heat or heat rash.\\\\r\\\\nIt itches so you may notice your baby scratching.\\\\r\\\\n\\\\r\\\\nHeat rash should clear up without treatment.\\\"}]}, {\\\"title\\\": \\\"Red scaly skin or cracked skin\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Skin that's itchy, red, dry and cracked may be [eczema.](http://www.nhs.uk/conditions/Eczema-(atopic)/Pages/Introduction.aspx) It\\\\u2019s common behind the knees and elbows and the neck, but can appear anywhere.\\\\r\\\\n\\\\r\\\\nSpeak to your GP if you think your child has eczema.\\\"}]}, {\\\"title\\\": \\\"Raised itchy spots\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"A raised, red, itchy rash (hives) can appear as an allergic reaction to things\\\\r\\\\nlike stings, medicines or food.\\\\r\\\\n\\\\r\\\\nIt usually clears up within a day or two.\\\\r\\\\n\\\\r\\\\nSpeak to your GP if your child keeps getting this type of rash. They may be\\\\r\\\\nallergic to something.\\\\r\\\\n\\\\r\\\\nCall 999 if there's swelling around the mouth.\\\"}]}, {\\\"title\\\": \\\"Itchy, round rash\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"An itchy, ring-like rash can be [ringworm.](http://www.nhs.uk/Conditions/Ringworm/Pages/Introduction.aspx)\\\\r\\\\n\\\\r\\\\nAsk your pharmacist for a cream or lotion to treat ringworm.\\\\r\\\\n\\\\r\\\\nIf it appears on your child\\\\u2019s scalp, speak to your GP, as it may need to be\\\\r\\\\ntreated with medicine.\\\"}]}]}}, {\\\"type\\\": \\\"sectionList\\\", \\\"value\\\": {\\\"title\\\": \\\"Rash without fever or itching\\\", \\\"sections\\\": [{\\\"title\\\": \\\"White spots in babies\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Small white spots [(milia)](http://patient.info/health/milia-leaflet) often\\\\r\\\\nappear on a baby\\\\u2019s face when they are a few days old. They usually clear up\\\\r\\\\nwithin a few weeks and don\\\\u2019t need treatment.\\\"}]}, {\\\"title\\\": \\\"Red, yellow and white spots in babies\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Raised red, yellow and white spots (erythema toxicum) can appear on babies\\\\r\\\\nwhen they\\\\u2019re born. They usually appear on the face, the body and the upper\\\\r\\\\narms and thighs.\\\\r\\\\n\\\\r\\\\nThe rash can disappear and reappear.\\\\r\\\\n\\\\r\\\\nIt should clear up in a few weeks without treatment.\\\"}]}, {\\\"title\\\": \\\"Pink or skin-coloured spots\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Small, firm, raised spots that can appear anywhere on the body are common in\\\\r\\\\nchildren and known as [molluscum contagiosum.](http://www.nhs.uk/conditions/molluscum-contagiosum/pages/introduction.aspx)\\\\r\\\\n\\\\r\\\\nTreatment isn\\\\u2019t recommended as the spots clear up, although it can take over\\\\r\\\\na year.\\\"}]}, {\\\"title\\\": \\\"Red patches on a baby\\\\u2019s bottom\\\", \\\"content\\\": [{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"[Nappy rash](http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/Nappy-rash.aspx)\\\\r\\\\ncan be red patches on your baby\\\\u2019s bottom, or the whole nappy area. The skin may\\\\r\\\\nlook sore and feel hot. There may be spots or blisters. It can make you child\\\\r\\\\nfeel uncomfortable or distressed.\\\\r\\\\n\\\\r\\\\nYou can buy creams from your pharmacy to help clear it up.\\\"}]}]}}]\", \"has_unpublished_changes\": false, \"slug\": \"rashes-in-babies-and-children\", \"non_emergency_callout\": true, \"go_live_at\": null, \"search_description\": \"\", \"url_path\": \"/home/symptoms/rashes-in-babies-and-children/\", \"numchild\": 0, \"before\": \"[]\", \"content_type\": 6, \"path\": \"0001000100020002\", \"sidebar\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"!!! severe\\\\r\\\\n## Call 999 or go to A&E if your child has a rash and they:\\\\r\\\\n\\\\r\\\\n* have a stiff neck\\\\r\\\\n* are bothered by light\\\\r\\\\n* seem confused\\\\r\\\\n* are shaking uncontrollably\\\\r\\\\n* have a fever you can\\\\u2019t control\\\\r\\\\n* have unusually cold hands and feet\\\\r\\\\n* have a rash that doesn\\\\u2019t fade when you press [a glass against it](https://www.meningitisnow.org/meningitis-explained/signs-and-symptoms/glass-test/?gclid=CJWh-aLL8s0CFcE_GwodT4ALcg)\\\\r\\\\n\\\\r\\\\nThese can be signs of [meningitis.](http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx)\\\\r\\\\n!!!\\\"}]\", \"expired\": false, \"seo_title\": \"\", \"live\": true, \"first_published_at\": \"2016-12-06T16:01:57.477Z\", \"locked\": false, \"show_in_menus\": false, \"depth\": 4, \"expire_at\": null, \"pk\": 12, \"local_header\": \"[{\\\"type\\\": \\\"markdown\\\", \\\"value\\\": \\\"Many things can cause a rash in children and they\\\\u2019re often nothing to worry about.\\\"}, {\\\"type\\\": \\\"sectionNav\\\", \\\"value\\\": \\\"Section Navigation\\\"}]\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 26,
+    "fields": {
+        "page": 12,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:49:15.121Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"rashes-in-babies-and-children\", \"expired\": false, \"path\": \"0001000100020002\", \"choices_origin\": \"conditions/skin-rash-children/pages/introduction.aspx\", \"depth\": 4, \"local_header\": \"[{\\\"value\\\": \\\"Many things can cause a rash in children and they\\\\u2019re often nothing to worry about.\\\", \\\"type\\\": \\\"markdown\\\"}, {\\\"value\\\": \\\"Section Navigation\\\", \\\"type\\\": \\\"sectionNav\\\"}]\", \"main\": \"[{\\\"value\\\": \\\"!!! attention\\\\r\\\\n## See your GP\\\\r\\\\n\\\\r\\\\nIf your child seems unwell with a rash and has a fever.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nThe information below shouldn\\\\u2019t be used to self-diagnose your child\\\\u2019s\\\\r\\\\ncondition, but it should give you a better idea of what is causing the rash.\\\", \\\"type\\\": \\\"markdown\\\"}, {\\\"value\\\": {\\\"sections\\\": [{\\\"title\\\": \\\"Fever and red cheeks\\\", \\\"content\\\": [{\\\"value\\\": 1, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"A fever with bright red rash on both cheeks can be [slapped cheek syndrome.](http://www.nhs.uk/conditions/slapped-cheek-syndrome/Pages/Introduction.aspx)\\\\r\\\\nYour child may have a cold and the rash can spread to the body.\\\\r\\\\n\\\\r\\\\nIt usually clears up within a week. Children\\\\u2019s paracetamol can bring down a fever.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Small spots and blisters\\\", \\\"content\\\": [{\\\"value\\\": 2, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"[Chickenpox](http://www.nhs.uk/conditions/chickenpox/Pages/Introduction.aspx)\\\\r\\\\ncauses red spots that turn to blisters. They can be itchy. They eventually scab\\\\r\\\\nand fall off. Some children have a few spots, while others have them all over\\\\r\\\\ntheir body.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Blisters on hands and feet and in the mouth\\\", \\\"content\\\": [{\\\"value\\\": 3, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"A common childhood illness that causes blisters on the hands and feet and\\\\r\\\\nulcers on the tongue, is [hand, foot and mouth disease.](http://www.nhs.uk/conditions/hand-foot-and-mouth-disease/Pages/Introduction.aspx)\\\\r\\\\nIt also causes fever and your child may have a cold.\\\\r\\\\n\\\\r\\\\nIt usually clears up in about a week. Children\\\\u2019s paracetamol can bring down a fever.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Pink-red rash\\\", \\\"content\\\": [{\\\"value\\\": 4, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"[Scarlet fever](http://www.nhs.uk/Conditions/Scarlet-fever/Pages/Introduction.aspx)\\\\r\\\\ncauses a pink-red rash, which feels like sandpaper and looks like sunburn.\\\\r\\\\n\\\\r\\\\nIt usually starts with a swollen tongue, sore throat, headache and fever.\\\\r\\\\n\\\\r\\\\nSee your GP straight away if you suspect scarlet fever. It\\\\u2019s treated with antibiotics.\\\", \\\"type\\\": \\\"markdown\\\"}]}], \\\"title\\\": \\\"Rash with fever\\\"}, \\\"type\\\": \\\"sectionList\\\"}, {\\\"value\\\": {\\\"sections\\\": [{\\\"title\\\": \\\"Rash caused by heat\\\", \\\"content\\\": [{\\\"value\\\": 5, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"Heat and sweat can cause small, red spots known as prickly heat or heat rash.\\\\r\\\\nIt itches so you may notice your baby scratching.\\\\r\\\\n\\\\r\\\\nHeat rash should clear up without treatment.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Red scaly skin or cracked skin\\\", \\\"content\\\": [{\\\"value\\\": 6, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"Skin that's itchy, red, dry and cracked may be [eczema.](http://www.nhs.uk/conditions/Eczema-(atopic)/Pages/Introduction.aspx) It\\\\u2019s common behind the knees and elbows and the neck, but can appear anywhere.\\\\r\\\\n\\\\r\\\\nSpeak to your GP if you think your child has eczema.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Raised itchy spots\\\", \\\"content\\\": [{\\\"value\\\": 7, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"A raised, red, itchy rash (hives) can appear as an allergic reaction to things\\\\r\\\\nlike stings, medicines or food.\\\\r\\\\n\\\\r\\\\nIt usually clears up within a day or two.\\\\r\\\\n\\\\r\\\\nSpeak to your GP if your child keeps getting this type of rash. They may be\\\\r\\\\nallergic to something.\\\\r\\\\n\\\\r\\\\nCall 999 if there's swelling around the mouth.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Itchy, round rash\\\", \\\"content\\\": [{\\\"value\\\": 8, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"An itchy, ring-like rash can be [ringworm.](http://www.nhs.uk/Conditions/Ringworm/Pages/Introduction.aspx)\\\\r\\\\n\\\\r\\\\nAsk your pharmacist for a cream or lotion to treat ringworm.\\\\r\\\\n\\\\r\\\\nIf it appears on your child\\\\u2019s scalp, speak to your GP, as it may need to be\\\\r\\\\ntreated with medicine.\\\", \\\"type\\\": \\\"markdown\\\"}]}], \\\"title\\\": \\\"Rash with itching\\\"}, \\\"type\\\": \\\"sectionList\\\"}, {\\\"value\\\": {\\\"sections\\\": [{\\\"title\\\": \\\"White spots in babies\\\", \\\"content\\\": [{\\\"value\\\": 9, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"Small white spots [(milia)](http://patient.info/health/milia-leaflet) often\\\\r\\\\nappear on a baby\\\\u2019s face when they are a few days old. They usually clear up\\\\r\\\\nwithin a few weeks and don\\\\u2019t need treatment.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Red, yellow and white spots in babies\\\", \\\"content\\\": [{\\\"value\\\": 10, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"Raised red, yellow and white spots (erythema toxicum) can appear on babies\\\\r\\\\nwhen they\\\\u2019re born. They usually appear on the face, the body and the upper\\\\r\\\\narms and thighs.\\\\r\\\\n\\\\r\\\\nThe rash can disappear and reappear.\\\\r\\\\n\\\\r\\\\nIt should clear up in a few weeks without treatment.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Pink or skin-coloured spots\\\", \\\"content\\\": [{\\\"value\\\": 11, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"Small, firm, raised spots that can appear anywhere on the body are common in\\\\r\\\\nchildren and known as [molluscum contagiosum.](http://www.nhs.uk/conditions/molluscum-contagiosum/pages/introduction.aspx)\\\\r\\\\n\\\\r\\\\nTreatment isn\\\\u2019t recommended as the spots clear up, although it can take over\\\\r\\\\na year.\\\", \\\"type\\\": \\\"markdown\\\"}]}, {\\\"title\\\": \\\"Red patches on a baby\\\\u2019s bottom\\\", \\\"content\\\": [{\\\"value\\\": 12, \\\"type\\\": \\\"image\\\"}, {\\\"value\\\": \\\"[Nappy rash](http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/Nappy-rash.aspx)\\\\r\\\\ncan be red patches on your baby\\\\u2019s bottom, or the whole nappy area. The skin may\\\\r\\\\nlook sore and feel hot. There may be spots or blisters. It can make you child\\\\r\\\\nfeel uncomfortable or distressed.\\\\r\\\\n\\\\r\\\\nYou can buy creams from your pharmacy to help clear it up.\\\", \\\"type\\\": \\\"markdown\\\"}]}], \\\"title\\\": \\\"Rash without fever or itching\\\"}, \\\"type\\\": \\\"sectionList\\\"}]\", \"url_path\": \"/home/symptoms/rashes-in-babies-and-children/\", \"live\": true, \"expire_at\": null, \"title\": \"Rashes in babies and children\", \"first_published_at\": \"2016-12-06T16:01:57.477Z\", \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 12, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": \"2016-12-06T16:30:38.996Z\", \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"first\", \"sidebar\": \"[{\\\"value\\\": \\\"!!! severe\\\\r\\\\n## Call 999 or go to A&E if your child has a rash and they:\\\\r\\\\n\\\\r\\\\n* have a stiff neck\\\\r\\\\n* are bothered by light\\\\r\\\\n* seem confused\\\\r\\\\n* are shaking uncontrollably\\\\r\\\\n* have a fever you can\\\\u2019t control\\\\r\\\\n* have unusually cold hands and feet\\\\r\\\\n* have a rash that doesn\\\\u2019t fade when you press [a glass against it](https://www.meningitisnow.org/meningitis-explained/signs-and-symptoms/glass-test/?gclid=CJWh-aLL8s0CFcE_GwodT4ALcg)\\\\r\\\\n\\\\r\\\\nThese can be signs of [meningitis.](http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx)\\\\r\\\\n!!!\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 27,
+    "fields": {
+        "page": 14,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:49:54.290Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"type-2-diabetes\", \"expired\": false, \"pk\": 14, \"locked\": false, \"path\": \"0001000100010006\", \"has_unpublished_changes\": false, \"depth\": 4, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"url_path\": \"/home/conditions/type-2-diabetes/\", \"go_live_at\": null, \"show_in_menus\": false, \"live\": true, \"expire_at\": null, \"title\": \"Type 2 diabetes\", \"first_published_at\": null, \"guide\": true, \"search_description\": \"\", \"numchild\": 0, \"content_type\": 7}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 28,
+    "fields": {
+        "page": 15,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:50:40.146Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"understanding-medication\", \"expired\": false, \"path\": \"00010001000100060001\", \"choices_origin\": \"\", \"depth\": 5, \"local_header\": \"[]\", \"main\": \"[]\", \"url_path\": \"/home/conditions/type-2-diabetes/understanding-medication/\", \"live\": true, \"expire_at\": null, \"title\": \"Understanding medication\", \"first_published_at\": null, \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 15, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"last\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 29,
+    "fields": {
+        "page": 16,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:51:24.295Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"health-problems\", \"expired\": false, \"path\": \"00010001000100060002\", \"choices_origin\": \"\", \"depth\": 5, \"local_header\": \"[]\", \"main\": \"[]\", \"url_path\": \"/home/conditions/type-2-diabetes/health-problems/\", \"live\": true, \"expire_at\": null, \"title\": \"Health problems\", \"first_published_at\": null, \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 16, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"last\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 30,
+    "fields": {
+        "page": 17,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:52:14.017Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"going-for-regular-check-ups\", \"expired\": false, \"path\": \"00010001000100060003\", \"choices_origin\": \"\", \"depth\": 5, \"local_header\": \"[]\", \"main\": \"[]\", \"url_path\": \"/home/conditions/type-2-diabetes/going-for-regular-check-ups/\", \"live\": true, \"expire_at\": null, \"title\": \"Going for regular check ups\", \"first_published_at\": null, \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 17, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"last\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 31,
+    "fields": {
+        "page": 18,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:52:35.117Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"getting-diagnosed\", \"expired\": false, \"path\": \"00010001000100060004\", \"choices_origin\": \"\", \"depth\": 5, \"local_header\": \"[]\", \"main\": \"[]\", \"url_path\": \"/home/conditions/type-2-diabetes/getting-diagnosed/\", \"live\": true, \"expire_at\": null, \"title\": \"Getting diagnosed\", \"first_published_at\": null, \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 18, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"last\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 32,
+    "fields": {
+        "page": 19,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:53:00.015Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"food-and-keeping-active\", \"expired\": false, \"path\": \"00010001000100060005\", \"choices_origin\": \"\", \"depth\": 5, \"local_header\": \"[]\", \"main\": \"[]\", \"url_path\": \"/home/conditions/type-2-diabetes/food-and-keeping-active/\", \"live\": true, \"expire_at\": null, \"title\": \"Food and keeping active\", \"first_published_at\": null, \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 19, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"last\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 33,
+    "fields": {
+        "page": 20,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:53:23.359Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"finding-help-and-support\", \"expired\": false, \"path\": \"00010001000100060006\", \"choices_origin\": \"\", \"depth\": 5, \"local_header\": \"[]\", \"main\": \"[]\", \"url_path\": \"/home/conditions/type-2-diabetes/finding-help-and-support/\", \"live\": true, \"expire_at\": null, \"title\": \"Finding help and support\", \"first_published_at\": null, \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 20, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"last\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 34,
+    "fields": {
+        "page": 21,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:53:44.633Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"check-if-you-have-it\", \"expired\": false, \"path\": \"00010001000100060007\", \"choices_origin\": \"\", \"depth\": 5, \"local_header\": \"[]\", \"main\": \"[]\", \"url_path\": \"/home/conditions/type-2-diabetes/check-if-you-have-it/\", \"live\": true, \"expire_at\": null, \"title\": \"Check if you have it\", \"first_published_at\": null, \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 21, \"before\": \"[]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": null, \"locked\": false, \"non_emergency_callout\": true, \"sidebar_order\": \"last\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 35,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:54:50.706Z",
+        "user": 2,
+        "content_json": "{\"slug\": \"fungal-nail-infection\", \"expired\": false, \"path\": \"0001000100010001\", \"choices_origin\": \"conditions/fungal-nail-infection/pages/introduction.aspx\", \"depth\": 4, \"local_header\": \"[]\", \"main\": \"[{\\\"value\\\": \\\"Fungal nail infections usually affect your toenails but you can get them on\\\\r\\\\nyour finger nails too.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nIf you have diabetes you should see a foot specialist because any foot injury\\\\r\\\\n[can lead to complications.](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx)\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n## Treating fungal nail infections at home\\\\r\\\\n\\\\r\\\\nSmall fungal nail infections may not need medication.\\\\r\\\\n\\\\r\\\\nYou should:\\\\r\\\\n\\\\r\\\\n* keep your feet clean and dry\\\\r\\\\n* use separate clippers or scissors to cut your infected nails\\\\r\\\\n\\\\r\\\\nIf the look of your nail bothers you or it\\\\u2019s painful, speak to your\\\\r\\\\npharmacist. They may suggest:\\\\r\\\\n\\\\r\\\\n* antifungal nail cream --- it can take up to 12 months to cure the infection\\\\r\\\\n  and doesn\\\\u2019t always work\\\\r\\\\n* nail softening cream --- used for 2 weeks to soften the nail so the\\\\r\\\\n  infection can be scraped off\\\\r\\\\n\\\\r\\\\nThe infection is cured when you see healthy nail growing back at the base.\\\\r\\\\n\\\\r\\\\n## Treatment from your GP\\\\r\\\\n\\\\r\\\\nYour GP can prescribe you tablets if your infection is severe or has spread\\\\r\\\\nto other nails.\\\\r\\\\n\\\\r\\\\nYou need to take tablets every day for up to 6 months.\\\\r\\\\n\\\\r\\\\nTablets can have side effects including:\\\\r\\\\n\\\\r\\\\n* headaches\\\\r\\\\n* itching\\\\r\\\\n* loss of taste\\\\r\\\\n* diarrhoea\\\\r\\\\n\\\\r\\\\nYou can\\\\u2019t take antifungal tablets if you\\\\u2019re pregnant or have certain\\\\r\\\\nconditions. They can damage your liver.\\\\r\\\\n\\\\r\\\\nBadly infected nails sometimes need to be removed. It\\\\u2019s a small procedure\\\\r\\\\ndone under local anaesthetic.\\\\r\\\\n\\\\r\\\\n## Other treatment\\\\r\\\\n\\\\r\\\\nLaser treatment uses laser to destroy the fungus.\\\\r\\\\n\\\\r\\\\nYou\\\\u2019ll have to pay for it as it\\\\u2019s not covered by the NHS. It can be\\\\r\\\\nexpensive. There\\\\u2019s little evidence to show it\\\\u2019s a long-term cure as most\\\\r\\\\nstudies only follow patients for three months.\\\\r\\\\n\\\\r\\\\n## Preventing fungal nail infection\\\\r\\\\n\\\\r\\\\nFungal nail infections develop when your feet are constantly warm and damp.\\\\r\\\\nYou\\\\u2019re more likely to get an infection if you wear trainers for a long time\\\\r\\\\nand have hot, sweaty feet.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nTreat athlete\\\\u2019s foot as soon as possible to avoid it spreading to the nails.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nTo prevent fungal nail infection:\\\\r\\\\n\\\\r\\\\n* keep your feet clean and dry\\\\r\\\\n* wear clean socks every day\\\\r\\\\n* don\\\\u2019t wear shoes that make your feet hot and sweaty\\\\r\\\\n* wear flip flops in showers at the gym, pool etc\\\\r\\\\n* don\\\\u2019t share towels\\\\r\\\\n* throw out old shoes\\\\r\\\\n* don\\\\u2019t wear other people\\\\u2019s shoes\\\\r\\\\n\\\\r\\\\n[Medical detail about fungal nail infections.](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"url_path\": \"/home/conditions/fungal-nail-infection/\", \"live\": true, \"expire_at\": null, \"title\": \"Fungal nail infection\", \"first_published_at\": \"2016-12-06T15:32:41.772Z\", \"go_live_at\": null, \"content_type\": 6, \"numchild\": 0, \"pk\": 5, \"before\": \"[{\\\"value\\\": [13, 14, 15], \\\"type\\\": \\\"figureList\\\"}]\", \"has_unpublished_changes\": false, \"seo_title\": \"\", \"owner\": 2, \"latest_revision_created_at\": \"2016-12-06T16:00:41.683Z\", \"locked\": false, \"non_emergency_callout\": false, \"sidebar_order\": \"first\", \"sidebar\": \"[]\", \"show_in_menus\": false, \"search_description\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 36,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T16:58:12.404Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"Fungal nail infections usually affect your toenails but you can get them on\\\\r\\\\nyour finger nails too.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nIf you have diabetes you should see a foot specialist because any foot injury\\\\r\\\\n[can lead to complications.](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx)\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n## Treating fungal nail infections at home\\\\r\\\\n\\\\r\\\\nSmall fungal nail infections may not need medication.\\\\r\\\\n\\\\r\\\\nYou should:\\\\r\\\\n\\\\r\\\\n* keep your feet clean and dry\\\\r\\\\n* use separate clippers or scissors to cut your infected nails\\\\r\\\\n\\\\r\\\\nIf the look of your nail bothers you or it\\\\u2019s painful, speak to your\\\\r\\\\npharmacist. They may suggest:\\\\r\\\\n\\\\r\\\\n* antifungal nail cream --- it can take up to 12 months to cure the infection\\\\r\\\\n  and doesn\\\\u2019t always work\\\\r\\\\n* nail softening cream --- used for 2 weeks to soften the nail so the\\\\r\\\\n  infection can be scraped off\\\\r\\\\n\\\\r\\\\nThe infection is cured when you see healthy nail growing back at the base.\\\\r\\\\n\\\\r\\\\n## Treatment from your GP\\\\r\\\\n\\\\r\\\\nYour GP can prescribe you tablets if your infection is severe or has spread\\\\r\\\\nto other nails.\\\\r\\\\n\\\\r\\\\nYou need to take tablets every day for up to 6 months.\\\\r\\\\n\\\\r\\\\nTablets can have side effects including:\\\\r\\\\n\\\\r\\\\n* headaches\\\\r\\\\n* itching\\\\r\\\\n* loss of taste\\\\r\\\\n* diarrhoea\\\\r\\\\n\\\\r\\\\nYou can\\\\u2019t take antifungal tablets if you\\\\u2019re pregnant or have certain\\\\r\\\\nconditions. They can damage your liver.\\\\r\\\\n\\\\r\\\\nBadly infected nails sometimes need to be removed. It\\\\u2019s a small procedure\\\\r\\\\ndone under local anaesthetic.\\\\r\\\\n\\\\r\\\\n## Other treatment\\\\r\\\\n\\\\r\\\\nLaser treatment uses laser to destroy the fungus.\\\\r\\\\n\\\\r\\\\nYou\\\\u2019ll have to pay for it as it\\\\u2019s not covered by the NHS. It can be\\\\r\\\\nexpensive. There\\\\u2019s little evidence to show it\\\\u2019s a long-term cure as most\\\\r\\\\nstudies only follow patients for three months.\\\\r\\\\n\\\\r\\\\n## Preventing fungal nail infection\\\\r\\\\n\\\\r\\\\nFungal nail infections develop when your feet are constantly warm and damp.\\\\r\\\\nYou\\\\u2019re more likely to get an infection if you wear trainers for a long time\\\\r\\\\nand have hot, sweaty feet.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nTreat athlete\\\\u2019s foot as soon as possible to avoid it spreading to the nails.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nTo prevent fungal nail infection:\\\\r\\\\n\\\\r\\\\n* keep your feet clean and dry\\\\r\\\\n* wear clean socks every day\\\\r\\\\n* don\\\\u2019t wear shoes that make your feet hot and sweaty\\\\r\\\\n* wear flip flops in showers at the gym, pool etc\\\\r\\\\n* don\\\\u2019t share towels\\\\r\\\\n* throw out old shoes\\\\r\\\\n* don\\\\u2019t wear other people\\\\u2019s shoes\\\\r\\\\n\\\\r\\\\n[Medical detail about fungal nail infections.](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 5, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:54:50.706Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"conditions/fungal-nail-infection/pages/introduction.aspx\", \"has_unpublished_changes\": false, \"depth\": 4, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Fungal nail infection\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T15:32:41.772Z\", \"non_emergency_callout\": false, \"path\": \"0001000100010001\", \"owner\": 2, \"url_path\": \"/home/conditions/fungal-nail-infection/\", \"sidebar\": \"[]\", \"before\": \"[{\\\"value\\\": [16, 14, 15], \\\"type\\\": \\\"figureList\\\"}]\", \"slug\": \"fungal-nail-infection\", \"expire_at\": null, \"sidebar_order\": \"first\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 37,
+    "fields": {
+        "page": 21,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T17:10:35.202Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"## How to tell if you have type 2 diabetes\\\\r\\\\n\\\\r\\\\nMany people have type 2 diabetes and don\\\\u2019t realise. This is because symptoms\\\\r\\\\ndon\\\\u2019t necessarily make you feel unwell.\\\\r\\\\n\\\\r\\\\nSymptoms of type 2 diabetes include:\\\\r\\\\n\\\\r\\\\n* peeing more than usual, particularly at night\\\\r\\\\n* feeling thirsty all the time\\\\r\\\\n* feeling very tired\\\\r\\\\n* losing weight without trying\\\\r\\\\n* itching around your penis or vagina, or you keep getting thrush\\\\r\\\\n* cuts or wounds that take longer to heal\\\\r\\\\n* blurred vision\\\\r\\\\n\\\\r\\\\nYou\\\\u2019re more at risk of developing type 2 diabetes if you:\\\\r\\\\n\\\\r\\\\n* are over 40 (or 25 for South Asian people)\\\\r\\\\n* have a close relative with diabetes (parent, brother or sister)\\\\r\\\\n* are overweight or obese\\\\r\\\\n* are of South Asian, Chinese, African-Caribbean or black African origin\\\\r\\\\n  (even if you were born in the UK)\\\\r\\\\n\\\\r\\\\n### When to see your GP\\\\r\\\\n\\\\r\\\\nSee your GP if you have any of the symptoms of type 2 diabetes, or you're\\\\r\\\\nworried you may have a higher risk of developing it.\\\\r\\\\n\\\\r\\\\n[Your GP can diagnose diabetes.](getting-diagnosed) You\\\\u2019ll need a blood test\\\\r\\\\nwhich you may have to go to your local health center for if it can\\\\u2019t be done at\\\\r\\\\nyour GP surgery.\\\\r\\\\n\\\\r\\\\nThe earlier diabetes is diagnosed and treatment starts, the better. Treating\\\\r\\\\ndiabetes early reduces your risk of [other health problems.](health-problems)\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 21, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:53:44.633Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"\", \"has_unpublished_changes\": false, \"depth\": 5, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Check if you have it\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T16:53:46.029Z\", \"non_emergency_callout\": true, \"path\": \"00010001000100060001\", \"owner\": 2, \"url_path\": \"/home/conditions/type-2-diabetes/check-if-you-have-it/\", \"sidebar\": \"[]\", \"before\": \"[]\", \"slug\": \"check-if-you-have-it\", \"expire_at\": null, \"sidebar_order\": \"last\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 38,
+    "fields": {
+        "page": 18,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T17:11:45.068Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"## Getting diagnosed\\\\r\\\\n\\\\r\\\\nType 2 diabetes is often diagnosed following blood or urine tests for\\\\r\\\\nsomething else.\\\\r\\\\n\\\\r\\\\nHowever, if you have any [symptoms of diabetes](check-if-you-have-it) you\\\\r\\\\nshould see your GP straight away.\\\\r\\\\n\\\\r\\\\nTo find out if you have type 2 diabetes, you usually have to go through the\\\\r\\\\nfollowing steps:\\\\r\\\\n\\\\r\\\\n1. Speak to your GP about your symptoms.\\\\r\\\\n2. Your GP will check your urine and arrange a blood test to check your blood\\\\r\\\\n   sugar levels. It usually takes about 1 to 2 days for the results to come back.\\\\r\\\\n3. If you have diabetes, your GP will ask you to come in again to explain the\\\\r\\\\n   test results and what will happen next.\\\\r\\\\n\\\\r\\\\n### If you\\\\u2019re diagnosed with diabetes\\\\r\\\\n\\\\r\\\\nWhat your GP will discuss with you during your appointment depends on the\\\\r\\\\ndiagnosis and the treatment they recommend.\\\\r\\\\n\\\\r\\\\nGenerally, they\\\\u2019ll talk to you about:\\\\r\\\\n\\\\r\\\\n* what diabetes is\\\\r\\\\n* what high blood sugar means for your health\\\\r\\\\n* what medication you\\\\u2019ll have to take\\\\r\\\\n* your diet and exercise\\\\r\\\\n* your lifestyle, for example alcohol and smoking\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nYour GP will do their best to discuss the diagnosis with you but this first\\\\r\\\\nappointment might only be 10 to 15 minutes.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n### If you have questions about your diagnosis\\\\r\\\\n\\\\r\\\\nIt\\\\u2019s usually difficult to take in everything the GP tells you during the\\\\r\\\\nappointment.\\\\r\\\\n\\\\r\\\\nTalk to family and friends about what the GP told you and write down all the\\\\r\\\\nquestions you have.\\\\r\\\\n\\\\r\\\\nThen make another GP appointment and take your list of questions with you.\\\\r\\\\n\\\\r\\\\nThere\\\\u2019s also a lot of [information on diabetes](finding-help-and-support)\\\\r\\\\navailable.\\\\r\\\\n\\\\r\\\\n### What happens after the diagnosis\\\\r\\\\n\\\\r\\\\nUsually the following things happen after your diagnosis:\\\\r\\\\n\\\\r\\\\n1. Your GP will prescribe [medication](understanding-medication). It might take\\\\r\\\\n   time for you to get used to the medication and to find the right amounts for you.\\\\r\\\\n2. You might need to make changes to your [diet and be more active.](food-and-keeping-active)\\\\r\\\\n3. You\\\\u2019ll have to go for [regular type 2 diabetes check ups.](going-for-regular-check-ups)\\\\r\\\\n4. You\\\\u2019ll have to look out for certain signs to avoid\\\\r\\\\n   [other health problems.](health-problems)\\\\r\\\\n5. Ask your GP about a [free education course for type 2 diabetes](http://www.desmond-project.org.uk/newlydiagnosedandfoundationmodules-278.html)\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 18, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:52:35.117Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"\", \"has_unpublished_changes\": false, \"depth\": 5, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Getting diagnosed\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T16:52:36.527Z\", \"non_emergency_callout\": true, \"path\": \"00010001000100060002\", \"owner\": 2, \"url_path\": \"/home/conditions/type-2-diabetes/getting-diagnosed/\", \"sidebar\": \"[]\", \"before\": \"[]\", \"slug\": \"getting-diagnosed\", \"expire_at\": null, \"sidebar_order\": \"last\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 39,
+    "fields": {
+        "page": 15,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T17:12:04.646Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"## Understanding medication\\\\r\\\\n\\\\r\\\\nMost people need medicine to control their type 2 diabetes. Medicine helps keep\\\\r\\\\nyour blood sugar level as normal as possible to prevent health problems. You\\\\u2019ll\\\\r\\\\nhave to take it for the rest of your life.\\\\r\\\\n\\\\r\\\\nDiabetes usually gets worse over time so your medicine or dose will need to change.\\\\r\\\\n\\\\r\\\\n[Adjusting your diet and being active](food-and-keeping-active) is also\\\\r\\\\nnecessary to keep your blood sugar level down.\\\\r\\\\n\\\\r\\\\n### Getting the right medicine for you\\\\r\\\\n\\\\r\\\\nDiabetes medicines help lower the amount of sugar in your blood.\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nThere are many types of medicine for type 2 diabetes. It can take time to find\\\\r\\\\na medicine and dose that\\\\u2019s right for you.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\nYou\\\\u2019ll usually be offered a medicine called metformin first. If your blood\\\\r\\\\nsugar levels haven\\\\u2019t lowered within 3 months, you may need another medicine.\\\\r\\\\n\\\\r\\\\nOver time, you may need a combination of medicines. Your GP or diabetes nurse\\\\r\\\\nwill recommend the medicines most suitable for you.\\\\r\\\\n\\\\r\\\\nInsulin isn't often used for type 2 diabetes in the early years. It\\\\u2019s needed\\\\r\\\\nonly when other medicines no longer work.\\\\r\\\\n\\\\r\\\\nDiabetes UK has more information about\\\\r\\\\n[taking medicines for type 2 diabetes.](https://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/Diabetes-treatments/)\\\\r\\\\n\\\\r\\\\n### Taking your medicine\\\\r\\\\n\\\\r\\\\nYour GP or diabetes nurse will explain how to take your medicine and how to\\\\r\\\\nstore it. If you need to inject insulin or a medicine called gliptins, they\\\\u2019ll\\\\r\\\\nshow you how to do it.\\\\r\\\\n\\\\r\\\\n### Side effects\\\\r\\\\n\\\\r\\\\nYour diabetes medicine may cause side effects. These can include:\\\\r\\\\n\\\\r\\\\n* bloating and diarrhoea\\\\r\\\\n* weight loss or weight gain\\\\r\\\\n* feeling sick\\\\r\\\\n* swollen ankles\\\\r\\\\n\\\\r\\\\nNot everyone has side effects.\\\\r\\\\n\\\\r\\\\nIf you feel unwell after taking medicine or notice any side effects, speak to\\\\r\\\\nyour GP or diabetes nurse. Don\\\\u2019t stop taking medication without advice.\\\\r\\\\n\\\\r\\\\n### How to get free prescriptions for diabetes medication\\\\r\\\\n\\\\r\\\\nYou\\\\u2019re entitled to free prescriptions for your diabetes medication.\\\\r\\\\n\\\\r\\\\nTo claim your free prescriptions you\\\\u2019ll need to apply for an exemption\\\\r\\\\ncertificate. To do this:\\\\r\\\\n\\\\r\\\\n* fill in a form at your GP surgery\\\\r\\\\n* you should get the certificate in the post about a week later\\\\r\\\\n  (it will last 5 years)\\\\r\\\\n* take it to your pharmacy with your prescriptions\\\\r\\\\n\\\\r\\\\nSave your receipts if you have to pay for diabetes medication before you receive\\\\r\\\\nyour exemption certificate so you can claim money back.\\\\r\\\\n\\\\r\\\\n### Travelling with diabetes medicines\\\\r\\\\n\\\\r\\\\nIf you\\\\u2019re going on holiday:\\\\r\\\\n\\\\r\\\\n* pack extra medicine --- speak to your diabetes nurse about how much\\\\r\\\\n* carry your medicine in your hand luggage in case your checked-in bags go\\\\r\\\\n  missing or are damaged\\\\r\\\\n* if you're flying with a medicine you inject, get a letter from your GP that\\\\r\\\\n  says you need it to treat diabetes\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 15, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:50:40.146Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"\", \"has_unpublished_changes\": false, \"depth\": 5, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Understanding medication\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T16:50:41.585Z\", \"non_emergency_callout\": true, \"path\": \"00010001000100060004\", \"owner\": 2, \"url_path\": \"/home/conditions/type-2-diabetes/understanding-medication/\", \"sidebar\": \"[]\", \"before\": \"[]\", \"slug\": \"understanding-medication\", \"expire_at\": null, \"sidebar_order\": \"last\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 40,
+    "fields": {
+        "page": 17,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T17:12:25.764Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"## Going for regular check ups\\\\r\\\\n\\\\r\\\\nType 2 diabetes check ups help to make sure your condition doesn\\\\u2019t lead to other\\\\r\\\\nhealth problems.\\\\r\\\\n\\\\r\\\\n### Every 3 months\\\\r\\\\n\\\\r\\\\n#### Blood sugar checks (HbA1C test)\\\\r\\\\n\\\\r\\\\nChecks your average blood sugar levels and how close they are to normal.\\\\r\\\\n\\\\r\\\\nYou have these checks every 3 months when newly diagnosed, then every 6 months\\\\r\\\\nonce you\\\\u2019re stable.\\\\r\\\\n\\\\r\\\\nThis can be done by your GP or diabetes nurse.\\\\r\\\\n\\\\r\\\\n### Once a year\\\\r\\\\n\\\\r\\\\n#### Feet\\\\r\\\\n\\\\r\\\\nChecks if you\\\\u2019ve lost any feeling in your feet and for ulcers and infections.\\\\r\\\\n\\\\r\\\\nThis can be done by your GP, diabetes nurse or podiatrist\\\\r\\\\n\\\\r\\\\nSpeak to your GP immediately if you have cuts, bruises, or numbness in your feet.\\\\r\\\\n\\\\r\\\\n#### Eyes\\\\r\\\\n\\\\r\\\\nChecks for damage to blood vessels in your eyes.\\\\r\\\\n\\\\r\\\\nSpeak to your GP immediately if you have blurred vision.\\\\r\\\\n\\\\r\\\\n#### Blood pressure, blood fats (cholesterol) and kidneys\\\\r\\\\n\\\\r\\\\nChecks for high blood pressure, heart and kidney disease.\\\\r\\\\n\\\\r\\\\nThis can be done by your GP or diabetes nurse.\\\\r\\\\n\\\\r\\\\n[Why it\\\\u2019s important to have these check ups](health-problems)\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 17, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:52:14.017Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"\", \"has_unpublished_changes\": false, \"depth\": 5, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Going for regular check ups\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T16:52:15.412Z\", \"non_emergency_callout\": true, \"path\": \"00010001000100060005\", \"owner\": 2, \"url_path\": \"/home/conditions/type-2-diabetes/going-for-regular-check-ups/\", \"sidebar\": \"[]\", \"before\": \"[]\", \"slug\": \"going-for-regular-check-ups\", \"expire_at\": null, \"sidebar_order\": \"last\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 41,
+    "fields": {
+        "page": 16,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T17:12:45.584Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"## Health problems caused by type 2 diabetes\\\\r\\\\n\\\\r\\\\nYou need to watch your health and have regular check-ups if you have type 2\\\\r\\\\ndiabetes because it can lead to:\\\\r\\\\n\\\\r\\\\n* [heart disease](http://www.nhs.uk/conditions/coronary-heart-disease/pages/introduction.aspx) and [stroke](http://www.nhs.uk/Conditions/Stroke/Pages/Introduction.aspx)\\\\r\\\\n* loss of feeling and pain (nerve damage) --- causing problems with sex\\\\r\\\\n* foot problems --- sores and infections\\\\r\\\\n* vision loss and blindness\\\\r\\\\n* miscarriage and stillbirth\\\\r\\\\n* problems with your kidneys\\\\r\\\\n\\\\r\\\\nControlling your blood sugar level and having regular diabetes check-ups is\\\\r\\\\nthe best way to lower your risk of complications.\\\\r\\\\n\\\\r\\\\n### Getting your heart checked\\\\r\\\\n\\\\r\\\\nYou should have your blood fats (cholesterol) and blood pressure checked at least\\\\r\\\\nonce a year. Diabetes increases your risk of heart disease and stroke so it\\\\u2019s\\\\r\\\\nimportant high blood pressure and high cholesterol is spotted and treated early.\\\\r\\\\n\\\\r\\\\nIf you\\\\u2019re already being treated for high cholesterol and high blood pressure,\\\\r\\\\nkeep taking your medicine.\\\\r\\\\n\\\\r\\\\nDiabetes also worsens the effects of smoking on your heart.\\\\r\\\\n[Get help to quit smoking.](http://www.nhs.uk/LiveWell/Smoking/Pages/stopsmokingnewhome.aspx)\\\\r\\\\n\\\\r\\\\n### Loss of feeling\\\\r\\\\n\\\\r\\\\nYou should let your GP or diabetes nurse know if you notice any changes in your\\\\r\\\\nbody.\\\\r\\\\n\\\\r\\\\nDiabetes can damage your nerves (neuropathy). This usually affects your feet,\\\\r\\\\nbut it can affect other parts of your body, causing:\\\\r\\\\n\\\\r\\\\n* numbness\\\\r\\\\n* pain or tingling\\\\r\\\\n* problems with sex\\\\r\\\\n* constipation or diarrhoea\\\\r\\\\n\\\\r\\\\nEarly treatment can prevent nerve damage getting worse.\\\\r\\\\n\\\\r\\\\n### Looking after your feet\\\\r\\\\n\\\\r\\\\nYou should check your feet every day.\\\\r\\\\n\\\\r\\\\nDiabetes can reduce the blood supply to your feet and cause a loss of feeling.\\\\r\\\\nThis means:\\\\r\\\\n\\\\r\\\\n* foot injuries don\\\\u2019t heal well\\\\r\\\\n* you may not notice if your foot is sore or injured\\\\r\\\\n\\\\r\\\\nThese can lead to ulcers and infections.\\\\r\\\\n\\\\r\\\\nSimple things are important, like:\\\\r\\\\n\\\\r\\\\n* keeping feet clean and dry to avoid infection\\\\r\\\\n* trying not to go barefoot outside to avoid niks and cuts\\\\r\\\\n* wearing shoes that fit well\\\\r\\\\n\\\\r\\\\nSpeak to your GP or diabetes nurse if you notice any changes in your feet,\\\\r\\\\nincluding:\\\\r\\\\n\\\\r\\\\n* cuts, cracks or blisters\\\\r\\\\n* pain or tingling\\\\r\\\\n* numb feet\\\\r\\\\n\\\\r\\\\nDiabetes UK has advice on\\\\r\\\\n[how to check your feet](https://www.diabetes.org.uk/Guide-to-diabetes/Complications/Feet/)\\\\r\\\\n\\\\r\\\\nYour feet should also be checked every year by your GP, diabetes nurse or\\\\r\\\\npodiatrist.\\\\r\\\\n\\\\r\\\\nSores or infections that aren\\\\u2019t treated early can lead to gangrene. More than\\\\r\\\\n135 amputations are carried out every week in the UK due to diabetes.\\\\r\\\\n\\\\r\\\\n### Checking your eyes\\\\r\\\\n\\\\r\\\\n[Your eyes should be checked every year](http://www.nhs.uk/Conditions/diabetic-eye-screening/Pages/Introduction.aspx)\\\\r\\\\nfor damaged blood vessels, which can cause sight problems\\\\r\\\\n[(diabetic retinopathy)](http://www.nhs.uk/Conditions/Diabetic-retinopathy/Pages/Introduction.aspx) and blindness.\\\\r\\\\n\\\\r\\\\nDiabetes eye checks can detect damage before it affects your sight. Treating\\\\r\\\\ndamaged blood vessels early can prevent sight problems.\\\\r\\\\n\\\\r\\\\nSpeak to your GP immediately if you notice changes to your sight, including:\\\\r\\\\n\\\\r\\\\n* blurred vision, especially at night\\\\r\\\\n* shapes floating in your sight (floaters)\\\\r\\\\n* sensitivity to light\\\\r\\\\n\\\\r\\\\n### Pregnancy and diabetes\\\\r\\\\n\\\\r\\\\nSpeak to your GP or care team if you\\\\u2019re thinking of having a baby.\\\\r\\\\n\\\\r\\\\nYou can have a safe pregnancy and birth if you have type 2 diabetes. You will\\\\r\\\\nneed to take extra precautions and have more appointments before and during\\\\r\\\\npregnancy.\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 16, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:51:24.295Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"\", \"has_unpublished_changes\": false, \"depth\": 5, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Health problems\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T16:51:25.537Z\", \"non_emergency_callout\": true, \"path\": \"00010001000100060006\", \"owner\": 2, \"url_path\": \"/home/conditions/type-2-diabetes/health-problems/\", \"sidebar\": \"[]\", \"before\": \"[]\", \"slug\": \"health-problems\", \"expire_at\": null, \"sidebar_order\": \"last\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 42,
+    "fields": {
+        "page": 20,
+        "submitted_for_moderation": false,
+        "created_at": "2016-12-06T17:13:18.652Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"## Finding help and support for type 2 diabetes\\\\r\\\\n\\\\r\\\\nThere is a lot of information and support available for type 2 diabetes.\\\\r\\\\nSome of the support depends on the area you live in.\\\\r\\\\n\\\\r\\\\n### Take a course to help you manage your diabetes\\\\r\\\\n\\\\r\\\\nThere are free education courses to help you learn more about and manage your\\\\r\\\\ntype 2 diabetes.\\\\r\\\\n\\\\r\\\\nYour GP will need to refer you. You can phone your GP surgery to get a referral\\\\r\\\\nletter, you don\\\\u2019t need to make an appointment.\\\\r\\\\n\\\\r\\\\nRead more information about [education courses for type 2 diabetes](http://www.desmond-project.org.uk/newlydiagnosedandfoundationmodules-278.html)\\\\r\\\\n\\\\r\\\\n### Telling DVLA you have type 2 diabetes\\\\r\\\\n\\\\r\\\\nIf you're taking insulin for your type 2 diabetes, you will need to\\\\r\\\\n[tell the DVLA](https://www.gov.uk/diabetes-driving). This is because of the\\\\r\\\\nrisk of hypoglycaemia. You can be fined if you don\\\\u2019t tell DVLA.\\\\r\\\\n\\\\r\\\\n### Support groups for type 2 diabetes\\\\r\\\\n\\\\r\\\\nThe charity Diabetes UK runs [local support groups.](https://www.diabetes.org.uk/How_we_help/Local_support_groups/)\\\\r\\\\n\\\\r\\\\nThey can help with things like managing your diabetes on a daily basis, diet,\\\\r\\\\nexercise or dealing with emotional problems like depression. They\\\\u2019re a place to\\\\r\\\\ntalk and find out how others live with the condition.\\\\r\\\\n\\\\r\\\\n### Blogs and forums about diabetes\\\\r\\\\n\\\\r\\\\n* [Diabetes.co.uk forum](http://www.diabetes.co.uk/forum/) --- discussions about\\\\r\\\\n  living with and managing diabetes\\\\r\\\\n* [Diabetes UK blogs](http://blogs.diabetes.org.uk/) --- collection of different\\\\r\\\\n  blogs on food, eyes, work and diabetes and more\\\\r\\\\n* [Diabetes Chat](http://www.diabetes.co.uk/diabetes-chat/) --- offers scheduled\\\\r\\\\n  chats with healthcare professionals or just the chance to talk to others\\\\r\\\\n\\\\r\\\\n### Telling others can be difficult\\\\r\\\\n\\\\r\\\\nHowever, it can help for certain people to know you have diabetes:\\\\r\\\\n\\\\r\\\\n* family can support you, especially as you will need to make changes to what you eat\\\\r\\\\n* it\\\\u2019s important your colleagues or employer know in case of an emergency\\\\r\\\\n* being diagnosed with diabetes can affect your mood --- telling your partner\\\\r\\\\n  will help them understand how you feel\\\\r\\\\n\\\\r\\\\n### Carry Medical ID in case of an emergency\\\\r\\\\n\\\\r\\\\nSome people choose to wear a special wristband or carry something in their\\\\r\\\\nwallet that says they have diabetes, in case there is a medical emergency.\\\\r\\\\n\\\\r\\\\nKnowing you have diabetes can make a difference to the treatment you\\\\u2019ll be given.\\\\r\\\\n\\\\r\\\\nSearch the internet for \\\\u2018medical ID\\\\u2019 to find a website that sells them.\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 20, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:53:23.359Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"\", \"has_unpublished_changes\": false, \"depth\": 5, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Finding help and support\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T16:53:24.654Z\", \"non_emergency_callout\": true, \"path\": \"00010001000100060008\", \"owner\": 2, \"url_path\": \"/home/conditions/type-2-diabetes/finding-help-and-support/\", \"sidebar\": \"[]\", \"before\": \"[]\", \"slug\": \"finding-help-and-support\", \"expire_at\": null, \"sidebar_order\": \"last\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 43,
+    "fields": {
+        "page": 19,
+        "submitted_for_moderation": true,
+        "created_at": "2016-12-06T17:14:08.376Z",
+        "user": 2,
+        "content_json": "{\"main\": \"[{\\\"value\\\": \\\"## Food and keeping active\\\\r\\\\n\\\\r\\\\nA healthy diet and keeping active will help you manage your blood sugar level.\\\\r\\\\nThey\\\\u2019ll also help you to control your weight and generally feel better.\\\\r\\\\n\\\\r\\\\n### You can eat many types of foods\\\\r\\\\n\\\\r\\\\nThere\\\\u2019s nothing you can\\\\u2019t eat, but you\\\\u2019ll have to limit certain foods.\\\\r\\\\n\\\\r\\\\nYou should:\\\\r\\\\n\\\\r\\\\n* eat a wide range of foods --- including fruit, vegetables, some starchy foods\\\\r\\\\n  such as pasta\\\\r\\\\n* keep sugar, fat and salt to a minimum\\\\r\\\\n* eat breakfast, lunch and dinner every day --- don\\\\u2019t skip meals\\\\r\\\\n\\\\r\\\\nIf you need to change your diet, it might be easier to make small changes every\\\\r\\\\nweek.\\\\r\\\\n\\\\r\\\\nInformation about food can be found on these diabetes sites:\\\\r\\\\n\\\\r\\\\n* [food for people with diabetes](https://www.diabetes.org.uk/Guide-to-diabetes/Enjoy-food/Eating-with-diabetes/What-is-a-healthy-balanced-diet/)\\\\r\\\\n* [tips on eating with your family and eating out](https://www.diabetes.org.uk/Guide-to-diabetes/Enjoy-food/Eating-with-diabetes/)\\\\r\\\\n* [recipes for people with diabetes](https://www.diabetes.org.uk/Guide-to-diabetes/Enjoy-food/Cooking-for-people-with-diabetes/)\\\\r\\\\n* [food and nutrition message board](http://www.diabetes.co.uk/forum/category/food-nutrition-and-recipes.3/)\\\\r\\\\n\\\\r\\\\n!!! warning\\\\r\\\\nOnce a year you should go for a [regular diabetes check](going-for-regular-check-ups)\\\\r\\\\nto make sure your blood pressure and your cholesterol (blood fats) level are ok.\\\\r\\\\n!!!\\\\r\\\\n\\\\r\\\\n### Help with changing your diet\\\\r\\\\n\\\\r\\\\nIf you find it hard to change your diet, a dietitian might be able to help.\\\\r\\\\n\\\\r\\\\nTalk to your GP or diabetes nurse to see if the cost could be covered through\\\\r\\\\nthe NHS.\\\\r\\\\n\\\\r\\\\n### Being active lowers your blood sugar level\\\\r\\\\n\\\\r\\\\nPhysical exercise helps lower your blood sugar level. You should aim for 2.5\\\\r\\\\nhours of activity per week.\\\\r\\\\n\\\\r\\\\nYou can be active anywhere, as long as what you\\\\u2019re doing makes you out of\\\\r\\\\nbreath. This could be:\\\\r\\\\n\\\\r\\\\n* fast walking\\\\r\\\\n* climbing stairs\\\\r\\\\n* doing more strenuous housework or gardening\\\\r\\\\n\\\\r\\\\nThe charity Diabetes UK has [tips on how to get active.](https://www.diabetes.org.uk/Guide-to-diabetes/Managing-your-diabetes/Exercise/)\\\\r\\\\n\\\\r\\\\n### Your weight is important\\\\r\\\\n\\\\r\\\\nLosing weight (if you\\\\u2019re overweight) will make it easier for your body to lower\\\\r\\\\nyour blood sugar level and can improve your blood pressure and cholesterol\\\\r\\\\n(blood fats).\\\\r\\\\n\\\\r\\\\nTo know whether you\\\\u2019re overweight, work out your\\\\r\\\\n[body mass index (BMI).](http://www.nhs.uk/Tools/Pages/Healthyweightcalculator.aspx)\\\\r\\\\n\\\\r\\\\nIf you need to lose weight, try and do it slowly over time, about 0.5 to 1 kilo a week.\\\\r\\\\n\\\\r\\\\nThe charity Diabetes UK has more\\\\r\\\\n[information on healthy weight and weight loss.](https://www.diabetes.org.uk/Guide-to-diabetes/Enjoy-food/Eating-with-diabetes/Whats-your-healthy-weight/)\\\", \\\"type\\\": \\\"markdown\\\"}]\", \"pk\": 19, \"live\": true, \"expired\": false, \"latest_revision_created_at\": \"2016-12-06T16:53:00.015Z\", \"locked\": false, \"seo_title\": \"\", \"choices_origin\": \"\", \"has_unpublished_changes\": false, \"depth\": 5, \"show_in_menus\": false, \"go_live_at\": null, \"local_header\": \"[]\", \"title\": \"Food and keeping active\", \"numchild\": 0, \"content_type\": 6, \"search_description\": \"\", \"first_published_at\": \"2016-12-06T16:53:01.511Z\", \"non_emergency_callout\": true, \"path\": \"00010001000100060007\", \"owner\": 2, \"url_path\": \"/home/conditions/type-2-diabetes/food-and-keeping-active/\", \"sidebar\": \"[]\", \"before\": \"[]\", \"slug\": \"food-and-keeping-active\", \"expire_at\": null, \"sidebar_order\": \"last\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 1,
+    "fields": {
+        "group": 1,
+        "page": 1,
+        "permission_type": "add"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 2,
+    "fields": {
+        "group": 1,
+        "page": 1,
+        "permission_type": "edit"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 3,
+    "fields": {
+        "group": 1,
+        "page": 1,
+        "permission_type": "publish"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 4,
+    "fields": {
+        "group": 2,
+        "page": 1,
+        "permission_type": "add"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 5,
+    "fields": {
+        "group": 2,
+        "page": 1,
+        "permission_type": "edit"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 6,
+    "fields": {
+        "group": 1,
+        "page": 1,
+        "permission_type": "lock"
+    }
+},
+{
+    "model": "wagtailcore.collection",
+    "pk": 1,
+    "fields": {
+        "path": "0001",
+        "depth": 1,
+        "numchild": 0,
+        "name": "Root"
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 1,
+    "fields": {
+        "group": 1,
+        "collection": 1,
+        "permission": 1
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 2,
+    "fields": {
+        "group": 2,
+        "collection": 1,
+        "permission": 1
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 3,
+    "fields": {
+        "group": 1,
+        "collection": 1,
+        "permission": 2
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 4,
+    "fields": {
+        "group": 2,
+        "collection": 1,
+        "permission": 2
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 5,
+    "fields": {
+        "group": 1,
+        "collection": 1,
+        "permission": 5
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 6,
+    "fields": {
+        "group": 2,
+        "collection": 1,
+        "permission": 5
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 7,
+    "fields": {
+        "group": 1,
+        "collection": 1,
+        "permission": 6
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 8,
+    "fields": {
+        "group": 2,
+        "collection": 1,
+        "permission": 6
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 5,
+    "fields": {
+        "sidebar_order": "first",
+        "non_emergency_callout": false,
+        "choices_origin": "conditions/fungal-nail-infection/pages/introduction.aspx",
+        "before": "[{\"value\": [16, 14, 15], \"type\": \"figureList\"}]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"Fungal nail infections usually affect your toenails but you can get them on\\r\\nyour finger nails too.\\r\\n\\r\\n!!! warning\\r\\nIf you have diabetes you should see a foot specialist because any foot injury\\r\\n[can lead to complications.](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx)\\r\\n!!!\\r\\n\\r\\n## Treating fungal nail infections at home\\r\\n\\r\\nSmall fungal nail infections may not need medication.\\r\\n\\r\\nYou should:\\r\\n\\r\\n* keep your feet clean and dry\\r\\n* use separate clippers or scissors to cut your infected nails\\r\\n\\r\\nIf the look of your nail bothers you or it\\u2019s painful, speak to your\\r\\npharmacist. They may suggest:\\r\\n\\r\\n* antifungal nail cream --- it can take up to 12 months to cure the infection\\r\\n  and doesn\\u2019t always work\\r\\n* nail softening cream --- used for 2 weeks to soften the nail so the\\r\\n  infection can be scraped off\\r\\n\\r\\nThe infection is cured when you see healthy nail growing back at the base.\\r\\n\\r\\n## Treatment from your GP\\r\\n\\r\\nYour GP can prescribe you tablets if your infection is severe or has spread\\r\\nto other nails.\\r\\n\\r\\nYou need to take tablets every day for up to 6 months.\\r\\n\\r\\nTablets can have side effects including:\\r\\n\\r\\n* headaches\\r\\n* itching\\r\\n* loss of taste\\r\\n* diarrhoea\\r\\n\\r\\nYou can\\u2019t take antifungal tablets if you\\u2019re pregnant or have certain\\r\\nconditions. They can damage your liver.\\r\\n\\r\\nBadly infected nails sometimes need to be removed. It\\u2019s a small procedure\\r\\ndone under local anaesthetic.\\r\\n\\r\\n## Other treatment\\r\\n\\r\\nLaser treatment uses laser to destroy the fungus.\\r\\n\\r\\nYou\\u2019ll have to pay for it as it\\u2019s not covered by the NHS. It can be\\r\\nexpensive. There\\u2019s little evidence to show it\\u2019s a long-term cure as most\\r\\nstudies only follow patients for three months.\\r\\n\\r\\n## Preventing fungal nail infection\\r\\n\\r\\nFungal nail infections develop when your feet are constantly warm and damp.\\r\\nYou\\u2019re more likely to get an infection if you wear trainers for a long time\\r\\nand have hot, sweaty feet.\\r\\n\\r\\n!!! warning\\r\\nTreat athlete\\u2019s foot as soon as possible to avoid it spreading to the nails.\\r\\n!!!\\r\\n\\r\\nTo prevent fungal nail infection:\\r\\n\\r\\n* keep your feet clean and dry\\r\\n* wear clean socks every day\\r\\n* don\\u2019t wear shoes that make your feet hot and sweaty\\r\\n* wear flip flops in showers at the gym, pool etc\\r\\n* don\\u2019t share towels\\r\\n* throw out old shoes\\r\\n* don\\u2019t wear other people\\u2019s shoes\\r\\n\\r\\n[Medical detail about fungal nail infections.](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 6,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "conditions/hand-foot-and-mouth-disease/pages/introduction.aspx",
+        "before": "[{\"value\": \"The first sign of hand, foot and mouth disease can be:\\r\\n\\r\\n* a sore throat\\r\\n* a fever, typically 38 to 39&deg;C\\r\\n* not wanting to eat\\r\\n\\r\\nAfter a few days mouth ulcers and a rash will appear.\", \"type\": \"markdown\"}]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"If you\\u2019re unsure it\\u2019s hand, foot and mouth disease, look at other\\r\\n[childhood rashes.](/symptoms/rashes-in-babies-and-children)\\r\\n\\r\\n## How to treat hand, foot and mouth disease at home\\r\\n\\r\\n* drink fluids to avoid dehydration (avoid acidic drinks, like fruit juice)\\r\\n* eat soft foods like soup\\r\\n* take paracetamol or ibuprofen to help ease a sore throat and bring\\r\\n  down a temperature\\r\\n\\r\\nYou can buy mouth ulcer gels, sprays, and mouthwashes to ease the\\r\\n  blisters. Always check they are suitable for children and give the\\r\\n  correct dose.\\r\\n\\r\\n!!! attention\\r\\n## See a GP if\\r\\n\\r\\n* your child isn\\u2019t better after a week\\r\\n* your child is dehydrated --- they\\u2019re not weeing as often as usual\\r\\n* you\\u2019re concerned about your child\\u2019s symptoms\\r\\n* you\\u2019re pregnant and get hand, foot and mouth disease\\r\\n!!!\\r\\n\\r\\n## How to stop hand, foot and mouth disease spreading\\r\\n\\r\\nHand, foot and mouth disease spreads easily.\\r\\n\\r\\nKeep your child away from school or nursery while they're feeling\\r\\nunwell. Generally, there's no need to keep them off until the blisters\\r\\nscab. However, check with your school or nursery as they may have their\\r\\nown guidance.\\r\\n\\r\\n## Hand, foot and mouth disease in pregnancy\\r\\n\\r\\nIt\\u2019s best to avoid close contact with anyone who has hand, foot and\\r\\nmouth disease.\\r\\n\\r\\nThere\\u2019s normally no risk to the pregnancy or baby. However, there\\u2019s\\r\\nlimited evidence that in very rare cases catching it during the first\\r\\n3 months of pregnancy could lead to miscarriage. This risk is very low.\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 7,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": false,
+        "choices_origin": "conditions/head-lice/pages/introduction.aspx",
+        "before": "[{\"value\": \"## Check if it\\u2019s head lice\", \"type\": \"markdown\"}]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"Head lice sometimes can make your head feel:\\r\\n\\r\\n* itchy\\r\\n* like something is moving in your hair\\r\\n\\r\\nThe only way to be sure someone has head lice is by finding live lice or\\r\\neggs. You can do this by combing their hair with a special fine-toothed\\r\\ncomb (detection comb). You can buy these online or at pharmacies.\\r\\n\\r\\n## How to get rid of head lice\\r\\n\\r\\n!!! warning\\r\\nYou can treat head lice without seeing your GP.\\r\\n!!!\\r\\n\\r\\nTreat head lice as soon as you spot them. You should check everyone in the\\r\\nhouse, and treat them on the same day if they have head lice.\\r\\n\\r\\nThere\\u2019s no need to keep your child off school with head lice.\\r\\n\\r\\n### Use lotion or spray to treat head lice\\r\\n\\r\\nYou can use medicated lotions and sprays that kill head lice in all types\\r\\nof hair, including afro hair. You can buy these from pharmacies,\\r\\nsupermarkets or online.\\r\\n\\r\\nHead lice should die within a day. Lotions and sprays come with a comb to\\r\\nremove dead lice and eggs.\\r\\n\\r\\nSome treatments need to be repeated after a week to kill any newly-hatched\\r\\nlice. Check the pack to see whether they\\u2019re okay for you or your child to\\r\\nuse and how long they should be left in the hair.\\r\\n\\r\\nIf lotions or sprays don\\u2019t work, speak to your pharmacist about other\\r\\ntreatments.\\r\\n\\r\\nSome treatments aren\\u2019t recommended because they\\u2019re unlikely to work:\\r\\n\\r\\n* products containing permethrin\\r\\n* head lice \\u201crepellents\\u201d\\r\\n* electric head lice combs\\r\\n* tree and plant oil treatments, such as tea tree oil, eucalyptus oil,\\r\\n  and lavender oil herbal remedies\\r\\n\\r\\n### If you don\\u2019t want to use chemicals\\r\\n\\r\\nYou can buy a special fine-toothed comb (detection comb) online or from\\r\\npharmacies to remove head lice and nits.\\r\\n\\r\\nFollow the instructions on the pack, but generally you:\\r\\n\\r\\n* use the comb on wet or dry hair, although it usually works best on wet\\r\\n  hair with conditioner\\r\\n* comb the whole head of hair, from the roots to the end of the hair\\r\\n* repeat every few days for 2 weeks\\r\\n\\r\\n## You can\\u2019t prevent head lice\\r\\n\\r\\nThere\\u2019s nothing you can do to prevent head lice. You can reduce the risk\\r\\nof lice spreading by avoiding head-to-head contact.\\r\\n\\r\\nDon\\u2019t use medicated lotions and sprays to prevent head lice. This can\\r\\nirritate the scalp.\\r\\n\\r\\nThere\\u2019s no need for children to stay off school, or to wash laundry on a\\r\\nhot wash.\\r\\n\\r\\n[Medical detail about head lice](http://cks.nice.org.uk/head-lice#!diagnosissub)\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 8,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": false,
+        "choices_origin": "conditions/shingles/pages/introduction.aspx",
+        "before": "[{\"value\": \"## Check if you have shingles\\r\\n\\r\\nThe first sign of shingles can be:\\r\\n\\r\\n* a tingling or painful feeling in an area of skin\\r\\n* a headache or feeling generally unwell\\r\\n\\r\\nA rash will appear a few days later.\\r\\n\\r\\nUsually you get shingles on your chest and tummy, but it can appear\\r\\non your face, eyes and genitals.\", \"type\": \"markdown\"}]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"!!! attention\\r\\n## Speak to your GP as soon as you suspect shingles\\r\\n\\r\\nThere is medicine your GP can prescribe to speed up your recovery.\\r\\n!!!\\r\\n\\r\\n## How to treat shingles at home\\r\\n\\r\\nYou can buy painkillers to ease shingles pain.\\r\\n\\r\\n!!! warning\\r\\nIt can take up to 4 weeks for the rash to heal. Pain can stay for weeks\\r\\nafter the rash has gone, but it usually settles in time.\\r\\n!!!\\r\\n\\r\\n### Do\\r\\n\\r\\n* keep the rash clean and dry to reduce risk of infection\\r\\n* wear loose-fitting clothing\\r\\n* buy calamine lotion to ease itching\\r\\n* use a cool compress (a bag of frozen vegetables wrapped in a towel\\r\\n  or a wet cloth) a few times a day\\r\\n\\r\\n### Don\\u2019t\\r\\n\\r\\n* let dressings or plasters stick to the rash\\r\\n* use antibiotic cream --- this slows healing\\r\\n\\r\\n## Stay away from certain groups of people if you have shingles\\r\\n\\r\\nTry to avoid:\\r\\n\\r\\n* pregnant women who have not had chickenpox before\\r\\n* people with a weakened immune system, such as someone with HIV or AIDS\\r\\n* babies less than one month old (unless it is your own baby, as they\\r\\n  should be protected from the virus by your immune system)\\r\\n\\r\\n## Stay off work or school until the rash scabs\\r\\n\\r\\nShingles is contagious only while the rash oozes fluid.\\r\\n\\r\\n## Shingles and pregnancy\\r\\n\\r\\nIf you\\u2019re pregnant and get shingles, there is no danger to your\\r\\npregnancy or baby.\\r\\n\\r\\nIf your GP thinks you need medicine, they may speak to a specialist to\\r\\ndecide whether the benefits of medication outweigh any possible risk.\\r\\n\\r\\n## You can\\u2019t get shingles from chickenpox\\r\\n\\r\\nYou can\\u2019t get shingles from someone with shingles or chickenpox.\\r\\n\\r\\nHowever, you can get chickenpox from someone with shingles, if you\\r\\nhaven\\u2019t had chickenpox before.\\r\\n\\r\\nWhen people get chickenpox, the virus remains in the body. It can be\\r\\nreactivated later and cause shingles if someone\\u2019s immune system is\\r\\nlowered. This can be because of stress, certain conditions or treatments\\r\\nlike chemotherapy.\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 9,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "conditions/warts/pages/introduction.aspx",
+        "before": "[{\"value\": \"## Check if you have them\", \"type\": \"markdown\"}]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"## Warts often go away on their own\\r\\n\\r\\nYou don\\u2019t need to do anything about warts. They\\u2019ll usually go away\\r\\nwithin 2 years.\\r\\n\\r\\nWarts don\\u2019t cause you any harm. They might itch or bleed but it doesn\\u2019t\\r\\nmean there\\u2019s a problem.\\r\\n\\r\\nIf you are unsure or worried about a growth on your skin you should see\\r\\nyour GP.\\r\\n\\r\\n!!! warning\\r\\nWarts on your vulva, penis or anus are [genital warts](http://www.nhs.uk/Conditions/Genital_warts/Pages/Introduction.aspx)\\r\\nand need treatment. Go to a sexual health clinic or see your GP.\\r\\n!!!\\r\\n\\r\\n## Treating warts that are bothering you\\r\\n\\r\\nYou can treat warts if they\\u2019re bothering you, they keep coming back or\\r\\nthey\\u2019re painful.\\r\\n\\r\\n### Treatments from your pharmacy\\r\\n\\r\\nYou can buy creams, plasters and sprays from pharmacies to get rid of\\r\\nwarts. These treatments can take up to 3 months, they can irritate your\\r\\nskin and they don\\u2019t always work.\\r\\n\\r\\nAsk your pharmacist for advice on what to use if you have a condition\\r\\nsuch as diabetes.\\r\\n\\r\\n!!! warning\\r\\nDon\\u2019t use pharmacy treatments on your face. See your GP instead.\\r\\n!!!\\r\\n\\r\\n### Treatment from your GP\\r\\n\\r\\nYour GP may be able to freeze warts off. If the wart is big, it may\\r\\ntake more than one session. After treatment, the wart should fall off a few\\r\\nweeks later.\\r\\n\\r\\nCheck with your GP if the NHS pays for this treatment in your area.\\r\\n\\r\\nIf treatment hasn\\u2019t worked or you have a wart on your face, your GP might\\r\\nrefer you to a skin specialist. Other treatments include minor surgery and\\r\\ntreatment with laser or light.\\r\\n\\r\\n## How to stop warts spreading\\r\\n\\r\\n* wash your hands after touching a wart\\r\\n* don\\u2019t bite your nails or suck your fingers with warts on\\r\\n* change your socks daily if you have verrucas\\r\\n* avoid cutting warts when shaving\\r\\n* don\\u2019t share towels\\r\\n* cover warts and verrucas with a plaster when swimming\\r\\n\\r\\n[Medical detail about warts](http://cks.nice.org.uk/warts-and-verrucae#!background)\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 11,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "conditions/headache/pages/introduction.aspx",
+        "before": "[]",
+        "local_header": "[{\"value\": \"Most headaches will go away on their own and aren\\u2019t a sign of something more serious.\", \"type\": \"markdown\"}]",
+        "main": "[{\"value\": \"## Treating headaches at home\\r\\n\\r\\nYou can simply wait until the headache goes away or take painkillers like\\r\\nparacetamol or ibuprofen. You can buy these over the counter.\\r\\n\\r\\nThis will also help with headaches:\\r\\n\\r\\n* drink plenty of water\\r\\n* eat regular meals\\r\\n* sleep the same amount of hours every night\\r\\n\\r\\nHeadaches can last between 30 minutes and several hours.\\r\\n\\r\\n## What causes headaches\\r\\n\\r\\nYou can get headaches because of something else, for example cold, flu,\\r\\nbad posture or stress.\\r\\n\\r\\nSome women get headaches when they\\u2019re on the pill or during their\\r\\nperiod or menopause.\\r\\n\\r\\n!!! attention\\r\\n## See your GP if\\r\\n\\r\\n* you get pain on [chewing or combing your hair](http://www.nhs.uk/Conditions/giant-cell-arteritis/Pages/Introduction.aspx) (get an urgent appointment)\\r\\n* you have a bad throbbing pain at the front or side of your head --- this could be [migraine](http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx) or more rarely [cluster headaches](http://www.nhs.uk/conditions/cluster-headaches/Pages/Introduction.aspx)\\r\\n* your headache keeps coming back\\r\\n* you feel sick, vomit and find light or noise painful\\r\\n* your headache doesn\\u2019t go away and gets worse over time\\r\\n* you get other symptoms, for example your arms or legs feel numb or weak\\r\\n!!!\", \"type\": \"markdown\"}]",
+        "sidebar": "[{\"value\": \"!!! severe\\r\\n## Call 999 or go to A&E if you\\r\\n\\r\\nYou hurt your head badly, for example from a fall or accident.\\r\\n\\r\\nIt feels like the worst pain you\\u2019ve ever had and came on suddenly.\\r\\n\\r\\nYou have a severe headache and:\\r\\n\\r\\n* sudden problems speaking, remembering things\\r\\n* blurred vision\\r\\n* are feeling drowsy, confused\\r\\n* high fever\\r\\n* stiff neck\\r\\n* rash\\r\\n* redness in one of your eyes\\r\\n\\r\\n*[A&E]: Accident and Emergency\\r\\n!!!\", \"type\": \"markdown\"}]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 12,
+    "fields": {
+        "sidebar_order": "first",
+        "non_emergency_callout": true,
+        "choices_origin": "conditions/skin-rash-children/pages/introduction.aspx",
+        "before": "[]",
+        "local_header": "[{\"value\": \"Many things can cause a rash in children and they\\u2019re often nothing to worry about.\", \"type\": \"markdown\"}, {\"value\": \"Section Navigation\", \"type\": \"sectionNav\"}]",
+        "main": "[{\"value\": \"!!! attention\\r\\n## See your GP\\r\\n\\r\\nIf your child seems unwell with a rash and has a fever.\\r\\n!!!\\r\\n\\r\\nThe information below shouldn\\u2019t be used to self-diagnose your child\\u2019s\\r\\ncondition, but it should give you a better idea of what is causing the rash.\", \"type\": \"markdown\"}, {\"value\": {\"title\": \"Rash with fever\", \"sections\": [{\"title\": \"Fever and red cheeks\", \"content\": [{\"value\": 1, \"type\": \"image\"}, {\"value\": \"A fever with bright red rash on both cheeks can be [slapped cheek syndrome.](http://www.nhs.uk/conditions/slapped-cheek-syndrome/Pages/Introduction.aspx)\\r\\nYour child may have a cold and the rash can spread to the body.\\r\\n\\r\\nIt usually clears up within a week. Children\\u2019s paracetamol can bring down a fever.\", \"type\": \"markdown\"}]}, {\"title\": \"Small spots and blisters\", \"content\": [{\"value\": 2, \"type\": \"image\"}, {\"value\": \"[Chickenpox](http://www.nhs.uk/conditions/chickenpox/Pages/Introduction.aspx)\\r\\ncauses red spots that turn to blisters. They can be itchy. They eventually scab\\r\\nand fall off. Some children have a few spots, while others have them all over\\r\\ntheir body.\", \"type\": \"markdown\"}]}, {\"title\": \"Blisters on hands and feet and in the mouth\", \"content\": [{\"value\": 3, \"type\": \"image\"}, {\"value\": \"A common childhood illness that causes blisters on the hands and feet and\\r\\nulcers on the tongue, is [hand, foot and mouth disease.](http://www.nhs.uk/conditions/hand-foot-and-mouth-disease/Pages/Introduction.aspx)\\r\\nIt also causes fever and your child may have a cold.\\r\\n\\r\\nIt usually clears up in about a week. Children\\u2019s paracetamol can bring down a fever.\", \"type\": \"markdown\"}]}, {\"title\": \"Pink-red rash\", \"content\": [{\"value\": 4, \"type\": \"image\"}, {\"value\": \"[Scarlet fever](http://www.nhs.uk/Conditions/Scarlet-fever/Pages/Introduction.aspx)\\r\\ncauses a pink-red rash, which feels like sandpaper and looks like sunburn.\\r\\n\\r\\nIt usually starts with a swollen tongue, sore throat, headache and fever.\\r\\n\\r\\nSee your GP straight away if you suspect scarlet fever. It\\u2019s treated with antibiotics.\", \"type\": \"markdown\"}]}]}, \"type\": \"sectionList\"}, {\"value\": {\"title\": \"Rash with itching\", \"sections\": [{\"title\": \"Rash caused by heat\", \"content\": [{\"value\": 5, \"type\": \"image\"}, {\"value\": \"Heat and sweat can cause small, red spots known as prickly heat or heat rash.\\r\\nIt itches so you may notice your baby scratching.\\r\\n\\r\\nHeat rash should clear up without treatment.\", \"type\": \"markdown\"}]}, {\"title\": \"Red scaly skin or cracked skin\", \"content\": [{\"value\": 6, \"type\": \"image\"}, {\"value\": \"Skin that's itchy, red, dry and cracked may be [eczema.](http://www.nhs.uk/conditions/Eczema-(atopic)/Pages/Introduction.aspx) It\\u2019s common behind the knees and elbows and the neck, but can appear anywhere.\\r\\n\\r\\nSpeak to your GP if you think your child has eczema.\", \"type\": \"markdown\"}]}, {\"title\": \"Raised itchy spots\", \"content\": [{\"value\": 7, \"type\": \"image\"}, {\"value\": \"A raised, red, itchy rash (hives) can appear as an allergic reaction to things\\r\\nlike stings, medicines or food.\\r\\n\\r\\nIt usually clears up within a day or two.\\r\\n\\r\\nSpeak to your GP if your child keeps getting this type of rash. They may be\\r\\nallergic to something.\\r\\n\\r\\nCall 999 if there's swelling around the mouth.\", \"type\": \"markdown\"}]}, {\"title\": \"Itchy, round rash\", \"content\": [{\"value\": 8, \"type\": \"image\"}, {\"value\": \"An itchy, ring-like rash can be [ringworm.](http://www.nhs.uk/Conditions/Ringworm/Pages/Introduction.aspx)\\r\\n\\r\\nAsk your pharmacist for a cream or lotion to treat ringworm.\\r\\n\\r\\nIf it appears on your child\\u2019s scalp, speak to your GP, as it may need to be\\r\\ntreated with medicine.\", \"type\": \"markdown\"}]}]}, \"type\": \"sectionList\"}, {\"value\": {\"title\": \"Rash without fever or itching\", \"sections\": [{\"title\": \"White spots in babies\", \"content\": [{\"value\": 9, \"type\": \"image\"}, {\"value\": \"Small white spots [(milia)](http://patient.info/health/milia-leaflet) often\\r\\nappear on a baby\\u2019s face when they are a few days old. They usually clear up\\r\\nwithin a few weeks and don\\u2019t need treatment.\", \"type\": \"markdown\"}]}, {\"title\": \"Red, yellow and white spots in babies\", \"content\": [{\"value\": 10, \"type\": \"image\"}, {\"value\": \"Raised red, yellow and white spots (erythema toxicum) can appear on babies\\r\\nwhen they\\u2019re born. They usually appear on the face, the body and the upper\\r\\narms and thighs.\\r\\n\\r\\nThe rash can disappear and reappear.\\r\\n\\r\\nIt should clear up in a few weeks without treatment.\", \"type\": \"markdown\"}]}, {\"title\": \"Pink or skin-coloured spots\", \"content\": [{\"value\": 11, \"type\": \"image\"}, {\"value\": \"Small, firm, raised spots that can appear anywhere on the body are common in\\r\\nchildren and known as [molluscum contagiosum.](http://www.nhs.uk/conditions/molluscum-contagiosum/pages/introduction.aspx)\\r\\n\\r\\nTreatment isn\\u2019t recommended as the spots clear up, although it can take over\\r\\na year.\", \"type\": \"markdown\"}]}, {\"title\": \"Red patches on a baby\\u2019s bottom\", \"content\": [{\"value\": 12, \"type\": \"image\"}, {\"value\": \"[Nappy rash](http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/Nappy-rash.aspx)\\r\\ncan be red patches on your baby\\u2019s bottom, or the whole nappy area. The skin may\\r\\nlook sore and feel hot. There may be spots or blisters. It can make you child\\r\\nfeel uncomfortable or distressed.\\r\\n\\r\\nYou can buy creams from your pharmacy to help clear it up.\", \"type\": \"markdown\"}]}]}, \"type\": \"sectionList\"}]",
+        "sidebar": "[{\"value\": \"!!! severe\\r\\n## Call 999 or go to A&E if your child has a rash and they:\\r\\n\\r\\n* have a stiff neck\\r\\n* are bothered by light\\r\\n* seem confused\\r\\n* are shaking uncontrollably\\r\\n* have a fever you can\\u2019t control\\r\\n* have unusually cold hands and feet\\r\\n* have a rash that doesn\\u2019t fade when you press [a glass against it](https://www.meningitisnow.org/meningitis-explained/signs-and-symptoms/glass-test/?gclid=CJWh-aLL8s0CFcE_GwodT4ALcg)\\r\\n\\r\\nThese can be signs of [meningitis.](http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx)\\r\\n!!!\", \"type\": \"markdown\"}]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 13,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx",
+        "before": "[]",
+        "local_header": "[{\"value\": \"Most stomach aches aren\\u2019t anything serious and will go away after a few days.\", \"type\": \"markdown\"}]",
+        "main": "[{\"value\": \"## Treating stomach ache at home\\r\\n\\r\\nSpeak to your pharmacist about medicine to help with:\\r\\n\\r\\n* feeling bloated (trapped wind)\\r\\n* indigestion (burning pain or discomfort after eating)\\r\\n* constipation (can\\u2019t poo)\\r\\n\\r\\n!!! info_compact\\r\\n[Find an open pharmacy near you]({{ findersBaseUrl }}finders/find-help?context=stomach-ache)\\r\\n!!!\\r\\n\\r\\nThere are also things you can do yourself to [help ease indigestion](http://www.nhs.uk/Conditions/Indigestion/Pages/Treatment.aspx)\\r\\nand [constipation.](http://www.nhs.uk/Conditions/Constipation/Pages/Treatment.aspx)\\r\\n\\r\\nIf you have vomiting and diarrhoea with your stomach ache, it should\\r\\nstop after a few days. Try to drink a lot of fluids to avoid\\r\\ndehydration.\\r\\n\\r\\nPainkillers like paracetamol can help with your stomach ache but won\\u2019t\\r\\nstop any vomiting and diarrhoea.\\r\\n\\r\\nFind out more about [treating vomiting and diarrhoea.](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx)\\r\\n\\r\\n!!! attention\\r\\n## See your GP if\\r\\n\\r\\n* the pain gets much worse in a short space of time\\r\\n* the pain or bloating won\\u2019t go away or keeps coming back\\r\\n* you have other symptoms like weight loss or vomiting\\r\\n* there\\u2019s a change in how often you pee\\r\\n* you have pain when you pee\\r\\n* you have unusual vaginal bleeding or discharge\\r\\n* you bleed from your bottom\\r\\n* your diarrhoea lasts longer than a few days\\r\\n!!!\", \"type\": \"markdown\"}]",
+        "sidebar": "[{\"value\": \"!!! severe\\r\\n## Call 999 or go to A&E if you\\r\\n\\r\\n* have sudden, severe stomach pain\\r\\n* have pain when you touch your stomach\\r\\n* are vomiting blood or a ground coffee like substance\\r\\n* have bloody or black, sticky poo\\r\\n* have collapsed\\r\\n* can\\u2019t breathe\\r\\n* are unable to pee\\r\\n* are diabetic and vomiting\\r\\n\\r\\n*[A&E]: Accident and Emergency\\r\\n!!!\", \"type\": \"markdown\"}]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 15,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "",
+        "before": "[]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"## Understanding medication\\r\\n\\r\\nMost people need medicine to control their type 2 diabetes. Medicine helps keep\\r\\nyour blood sugar level as normal as possible to prevent health problems. You\\u2019ll\\r\\nhave to take it for the rest of your life.\\r\\n\\r\\nDiabetes usually gets worse over time so your medicine or dose will need to change.\\r\\n\\r\\n[Adjusting your diet and being active](food-and-keeping-active) is also\\r\\nnecessary to keep your blood sugar level down.\\r\\n\\r\\n### Getting the right medicine for you\\r\\n\\r\\nDiabetes medicines help lower the amount of sugar in your blood.\\r\\n\\r\\n!!! warning\\r\\nThere are many types of medicine for type 2 diabetes. It can take time to find\\r\\na medicine and dose that\\u2019s right for you.\\r\\n!!!\\r\\n\\r\\nYou\\u2019ll usually be offered a medicine called metformin first. If your blood\\r\\nsugar levels haven\\u2019t lowered within 3 months, you may need another medicine.\\r\\n\\r\\nOver time, you may need a combination of medicines. Your GP or diabetes nurse\\r\\nwill recommend the medicines most suitable for you.\\r\\n\\r\\nInsulin isn't often used for type 2 diabetes in the early years. It\\u2019s needed\\r\\nonly when other medicines no longer work.\\r\\n\\r\\nDiabetes UK has more information about\\r\\n[taking medicines for type 2 diabetes.](https://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/Diabetes-treatments/)\\r\\n\\r\\n### Taking your medicine\\r\\n\\r\\nYour GP or diabetes nurse will explain how to take your medicine and how to\\r\\nstore it. If you need to inject insulin or a medicine called gliptins, they\\u2019ll\\r\\nshow you how to do it.\\r\\n\\r\\n### Side effects\\r\\n\\r\\nYour diabetes medicine may cause side effects. These can include:\\r\\n\\r\\n* bloating and diarrhoea\\r\\n* weight loss or weight gain\\r\\n* feeling sick\\r\\n* swollen ankles\\r\\n\\r\\nNot everyone has side effects.\\r\\n\\r\\nIf you feel unwell after taking medicine or notice any side effects, speak to\\r\\nyour GP or diabetes nurse. Don\\u2019t stop taking medication without advice.\\r\\n\\r\\n### How to get free prescriptions for diabetes medication\\r\\n\\r\\nYou\\u2019re entitled to free prescriptions for your diabetes medication.\\r\\n\\r\\nTo claim your free prescriptions you\\u2019ll need to apply for an exemption\\r\\ncertificate. To do this:\\r\\n\\r\\n* fill in a form at your GP surgery\\r\\n* you should get the certificate in the post about a week later\\r\\n  (it will last 5 years)\\r\\n* take it to your pharmacy with your prescriptions\\r\\n\\r\\nSave your receipts if you have to pay for diabetes medication before you receive\\r\\nyour exemption certificate so you can claim money back.\\r\\n\\r\\n### Travelling with diabetes medicines\\r\\n\\r\\nIf you\\u2019re going on holiday:\\r\\n\\r\\n* pack extra medicine --- speak to your diabetes nurse about how much\\r\\n* carry your medicine in your hand luggage in case your checked-in bags go\\r\\n  missing or are damaged\\r\\n* if you're flying with a medicine you inject, get a letter from your GP that\\r\\n  says you need it to treat diabetes\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 16,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "",
+        "before": "[]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"## Health problems caused by type 2 diabetes\\r\\n\\r\\nYou need to watch your health and have regular check-ups if you have type 2\\r\\ndiabetes because it can lead to:\\r\\n\\r\\n* [heart disease](http://www.nhs.uk/conditions/coronary-heart-disease/pages/introduction.aspx) and [stroke](http://www.nhs.uk/Conditions/Stroke/Pages/Introduction.aspx)\\r\\n* loss of feeling and pain (nerve damage) --- causing problems with sex\\r\\n* foot problems --- sores and infections\\r\\n* vision loss and blindness\\r\\n* miscarriage and stillbirth\\r\\n* problems with your kidneys\\r\\n\\r\\nControlling your blood sugar level and having regular diabetes check-ups is\\r\\nthe best way to lower your risk of complications.\\r\\n\\r\\n### Getting your heart checked\\r\\n\\r\\nYou should have your blood fats (cholesterol) and blood pressure checked at least\\r\\nonce a year. Diabetes increases your risk of heart disease and stroke so it\\u2019s\\r\\nimportant high blood pressure and high cholesterol is spotted and treated early.\\r\\n\\r\\nIf you\\u2019re already being treated for high cholesterol and high blood pressure,\\r\\nkeep taking your medicine.\\r\\n\\r\\nDiabetes also worsens the effects of smoking on your heart.\\r\\n[Get help to quit smoking.](http://www.nhs.uk/LiveWell/Smoking/Pages/stopsmokingnewhome.aspx)\\r\\n\\r\\n### Loss of feeling\\r\\n\\r\\nYou should let your GP or diabetes nurse know if you notice any changes in your\\r\\nbody.\\r\\n\\r\\nDiabetes can damage your nerves (neuropathy). This usually affects your feet,\\r\\nbut it can affect other parts of your body, causing:\\r\\n\\r\\n* numbness\\r\\n* pain or tingling\\r\\n* problems with sex\\r\\n* constipation or diarrhoea\\r\\n\\r\\nEarly treatment can prevent nerve damage getting worse.\\r\\n\\r\\n### Looking after your feet\\r\\n\\r\\nYou should check your feet every day.\\r\\n\\r\\nDiabetes can reduce the blood supply to your feet and cause a loss of feeling.\\r\\nThis means:\\r\\n\\r\\n* foot injuries don\\u2019t heal well\\r\\n* you may not notice if your foot is sore or injured\\r\\n\\r\\nThese can lead to ulcers and infections.\\r\\n\\r\\nSimple things are important, like:\\r\\n\\r\\n* keeping feet clean and dry to avoid infection\\r\\n* trying not to go barefoot outside to avoid niks and cuts\\r\\n* wearing shoes that fit well\\r\\n\\r\\nSpeak to your GP or diabetes nurse if you notice any changes in your feet,\\r\\nincluding:\\r\\n\\r\\n* cuts, cracks or blisters\\r\\n* pain or tingling\\r\\n* numb feet\\r\\n\\r\\nDiabetes UK has advice on\\r\\n[how to check your feet](https://www.diabetes.org.uk/Guide-to-diabetes/Complications/Feet/)\\r\\n\\r\\nYour feet should also be checked every year by your GP, diabetes nurse or\\r\\npodiatrist.\\r\\n\\r\\nSores or infections that aren\\u2019t treated early can lead to gangrene. More than\\r\\n135 amputations are carried out every week in the UK due to diabetes.\\r\\n\\r\\n### Checking your eyes\\r\\n\\r\\n[Your eyes should be checked every year](http://www.nhs.uk/Conditions/diabetic-eye-screening/Pages/Introduction.aspx)\\r\\nfor damaged blood vessels, which can cause sight problems\\r\\n[(diabetic retinopathy)](http://www.nhs.uk/Conditions/Diabetic-retinopathy/Pages/Introduction.aspx) and blindness.\\r\\n\\r\\nDiabetes eye checks can detect damage before it affects your sight. Treating\\r\\ndamaged blood vessels early can prevent sight problems.\\r\\n\\r\\nSpeak to your GP immediately if you notice changes to your sight, including:\\r\\n\\r\\n* blurred vision, especially at night\\r\\n* shapes floating in your sight (floaters)\\r\\n* sensitivity to light\\r\\n\\r\\n### Pregnancy and diabetes\\r\\n\\r\\nSpeak to your GP or care team if you\\u2019re thinking of having a baby.\\r\\n\\r\\nYou can have a safe pregnancy and birth if you have type 2 diabetes. You will\\r\\nneed to take extra precautions and have more appointments before and during\\r\\npregnancy.\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 17,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "",
+        "before": "[]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"## Going for regular check ups\\r\\n\\r\\nType 2 diabetes check ups help to make sure your condition doesn\\u2019t lead to other\\r\\nhealth problems.\\r\\n\\r\\n### Every 3 months\\r\\n\\r\\n#### Blood sugar checks (HbA1C test)\\r\\n\\r\\nChecks your average blood sugar levels and how close they are to normal.\\r\\n\\r\\nYou have these checks every 3 months when newly diagnosed, then every 6 months\\r\\nonce you\\u2019re stable.\\r\\n\\r\\nThis can be done by your GP or diabetes nurse.\\r\\n\\r\\n### Once a year\\r\\n\\r\\n#### Feet\\r\\n\\r\\nChecks if you\\u2019ve lost any feeling in your feet and for ulcers and infections.\\r\\n\\r\\nThis can be done by your GP, diabetes nurse or podiatrist\\r\\n\\r\\nSpeak to your GP immediately if you have cuts, bruises, or numbness in your feet.\\r\\n\\r\\n#### Eyes\\r\\n\\r\\nChecks for damage to blood vessels in your eyes.\\r\\n\\r\\nSpeak to your GP immediately if you have blurred vision.\\r\\n\\r\\n#### Blood pressure, blood fats (cholesterol) and kidneys\\r\\n\\r\\nChecks for high blood pressure, heart and kidney disease.\\r\\n\\r\\nThis can be done by your GP or diabetes nurse.\\r\\n\\r\\n[Why it\\u2019s important to have these check ups](health-problems)\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 18,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "",
+        "before": "[]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"## Getting diagnosed\\r\\n\\r\\nType 2 diabetes is often diagnosed following blood or urine tests for\\r\\nsomething else.\\r\\n\\r\\nHowever, if you have any [symptoms of diabetes](check-if-you-have-it) you\\r\\nshould see your GP straight away.\\r\\n\\r\\nTo find out if you have type 2 diabetes, you usually have to go through the\\r\\nfollowing steps:\\r\\n\\r\\n1. Speak to your GP about your symptoms.\\r\\n2. Your GP will check your urine and arrange a blood test to check your blood\\r\\n   sugar levels. It usually takes about 1 to 2 days for the results to come back.\\r\\n3. If you have diabetes, your GP will ask you to come in again to explain the\\r\\n   test results and what will happen next.\\r\\n\\r\\n### If you\\u2019re diagnosed with diabetes\\r\\n\\r\\nWhat your GP will discuss with you during your appointment depends on the\\r\\ndiagnosis and the treatment they recommend.\\r\\n\\r\\nGenerally, they\\u2019ll talk to you about:\\r\\n\\r\\n* what diabetes is\\r\\n* what high blood sugar means for your health\\r\\n* what medication you\\u2019ll have to take\\r\\n* your diet and exercise\\r\\n* your lifestyle, for example alcohol and smoking\\r\\n\\r\\n!!! warning\\r\\nYour GP will do their best to discuss the diagnosis with you but this first\\r\\nappointment might only be 10 to 15 minutes.\\r\\n!!!\\r\\n\\r\\n### If you have questions about your diagnosis\\r\\n\\r\\nIt\\u2019s usually difficult to take in everything the GP tells you during the\\r\\nappointment.\\r\\n\\r\\nTalk to family and friends about what the GP told you and write down all the\\r\\nquestions you have.\\r\\n\\r\\nThen make another GP appointment and take your list of questions with you.\\r\\n\\r\\nThere\\u2019s also a lot of [information on diabetes](finding-help-and-support)\\r\\navailable.\\r\\n\\r\\n### What happens after the diagnosis\\r\\n\\r\\nUsually the following things happen after your diagnosis:\\r\\n\\r\\n1. Your GP will prescribe [medication](understanding-medication). It might take\\r\\n   time for you to get used to the medication and to find the right amounts for you.\\r\\n2. You might need to make changes to your [diet and be more active.](food-and-keeping-active)\\r\\n3. You\\u2019ll have to go for [regular type 2 diabetes check ups.](going-for-regular-check-ups)\\r\\n4. You\\u2019ll have to look out for certain signs to avoid\\r\\n   [other health problems.](health-problems)\\r\\n5. Ask your GP about a [free education course for type 2 diabetes](http://www.desmond-project.org.uk/newlydiagnosedandfoundationmodules-278.html)\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 19,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "",
+        "before": "[]",
+        "local_header": "[]",
+        "main": "[]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 20,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "",
+        "before": "[]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"## Finding help and support for type 2 diabetes\\r\\n\\r\\nThere is a lot of information and support available for type 2 diabetes.\\r\\nSome of the support depends on the area you live in.\\r\\n\\r\\n### Take a course to help you manage your diabetes\\r\\n\\r\\nThere are free education courses to help you learn more about and manage your\\r\\ntype 2 diabetes.\\r\\n\\r\\nYour GP will need to refer you. You can phone your GP surgery to get a referral\\r\\nletter, you don\\u2019t need to make an appointment.\\r\\n\\r\\nRead more information about [education courses for type 2 diabetes](http://www.desmond-project.org.uk/newlydiagnosedandfoundationmodules-278.html)\\r\\n\\r\\n### Telling DVLA you have type 2 diabetes\\r\\n\\r\\nIf you're taking insulin for your type 2 diabetes, you will need to\\r\\n[tell the DVLA](https://www.gov.uk/diabetes-driving). This is because of the\\r\\nrisk of hypoglycaemia. You can be fined if you don\\u2019t tell DVLA.\\r\\n\\r\\n### Support groups for type 2 diabetes\\r\\n\\r\\nThe charity Diabetes UK runs [local support groups.](https://www.diabetes.org.uk/How_we_help/Local_support_groups/)\\r\\n\\r\\nThey can help with things like managing your diabetes on a daily basis, diet,\\r\\nexercise or dealing with emotional problems like depression. They\\u2019re a place to\\r\\ntalk and find out how others live with the condition.\\r\\n\\r\\n### Blogs and forums about diabetes\\r\\n\\r\\n* [Diabetes.co.uk forum](http://www.diabetes.co.uk/forum/) --- discussions about\\r\\n  living with and managing diabetes\\r\\n* [Diabetes UK blogs](http://blogs.diabetes.org.uk/) --- collection of different\\r\\n  blogs on food, eyes, work and diabetes and more\\r\\n* [Diabetes Chat](http://www.diabetes.co.uk/diabetes-chat/) --- offers scheduled\\r\\n  chats with healthcare professionals or just the chance to talk to others\\r\\n\\r\\n### Telling others can be difficult\\r\\n\\r\\nHowever, it can help for certain people to know you have diabetes:\\r\\n\\r\\n* family can support you, especially as you will need to make changes to what you eat\\r\\n* it\\u2019s important your colleagues or employer know in case of an emergency\\r\\n* being diagnosed with diabetes can affect your mood --- telling your partner\\r\\n  will help them understand how you feel\\r\\n\\r\\n### Carry Medical ID in case of an emergency\\r\\n\\r\\nSome people choose to wear a special wristband or carry something in their\\r\\nwallet that says they have diabetes, in case there is a medical emergency.\\r\\n\\r\\nKnowing you have diabetes can make a difference to the treatment you\\u2019ll be given.\\r\\n\\r\\nSearch the internet for \\u2018medical ID\\u2019 to find a website that sells them.\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.editorialpage",
+    "pk": 21,
+    "fields": {
+        "sidebar_order": "last",
+        "non_emergency_callout": true,
+        "choices_origin": "",
+        "before": "[]",
+        "local_header": "[]",
+        "main": "[{\"value\": \"## How to tell if you have type 2 diabetes\\r\\n\\r\\nMany people have type 2 diabetes and don\\u2019t realise. This is because symptoms\\r\\ndon\\u2019t necessarily make you feel unwell.\\r\\n\\r\\nSymptoms of type 2 diabetes include:\\r\\n\\r\\n* peeing more than usual, particularly at night\\r\\n* feeling thirsty all the time\\r\\n* feeling very tired\\r\\n* losing weight without trying\\r\\n* itching around your penis or vagina, or you keep getting thrush\\r\\n* cuts or wounds that take longer to heal\\r\\n* blurred vision\\r\\n\\r\\nYou\\u2019re more at risk of developing type 2 diabetes if you:\\r\\n\\r\\n* are over 40 (or 25 for South Asian people)\\r\\n* have a close relative with diabetes (parent, brother or sister)\\r\\n* are overweight or obese\\r\\n* are of South Asian, Chinese, African-Caribbean or black African origin\\r\\n  (even if you were born in the UK)\\r\\n\\r\\n### When to see your GP\\r\\n\\r\\nSee your GP if you have any of the symptoms of type 2 diabetes, or you're\\r\\nworried you may have a higher risk of developing it.\\r\\n\\r\\n[Your GP can diagnose diabetes.](getting-diagnosed) You\\u2019ll need a blood test\\r\\nwhich you may have to go to your local health center for if it can\\u2019t be done at\\r\\nyour GP surgery.\\r\\n\\r\\nThe earlier diabetes is diagnosed and treatment starts, the better. Treating\\r\\ndiabetes early reduces your risk of [other health problems.](health-problems)\", \"type\": \"markdown\"}]",
+        "sidebar": "[]"
+    }
+},
+{
+    "model": "pages.folderpage",
+    "pk": 4,
+    "fields": {
+        "guide": false
+    }
+},
+{
+    "model": "pages.folderpage",
+    "pk": 10,
+    "fields": {
+        "guide": false
+    }
+},
+{
+    "model": "pages.folderpage",
+    "pk": 14,
+    "fields": {
+        "guide": true
+    }
+}
+]

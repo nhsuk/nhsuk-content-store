@@ -1,0 +1,885 @@
+[
+{
+    "model": "wagtailimages.image",
+    "pk": 1,
+    "fields": {
+        "collection": 1,
+        "title": "A child\u2019s face showing a bright red rash on both cheeks",
+        "file": "original_images/fever-and-red-cheeks-1280_pMAwCib.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:43:08.080Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 2,
+    "fields": {
+        "collection": 1,
+        "title": "A baby covered in small spots",
+        "file": "original_images/chicken-pox-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:43:40.350Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 3,
+    "fields": {
+        "collection": 1,
+        "title": "Blisters on the small finger on a hand",
+        "file": "original_images/hand-foot-and-mouth-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:44:16.815Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 4,
+    "fields": {
+        "collection": 1,
+        "title": "A child\u2019s chest and shoulders covered in a pink-red rash",
+        "file": "original_images/scarlet-fever-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:45:48.599Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 5,
+    "fields": {
+        "collection": 1,
+        "title": "A child\u2019s back showing a heat rash under a pulled up t-shirt",
+        "file": "original_images/heat-rash-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:46:22.877Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 6,
+    "fields": {
+        "collection": 1,
+        "title": "Back of a child\u2019s knees showing red, cracked skin",
+        "file": "original_images/eczma-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:46:52.136Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 7,
+    "fields": {
+        "collection": 1,
+        "title": "Side of a child\u2019s knee showing hives",
+        "file": "original_images/hives-1280.jpg",
+        "width": 1279,
+        "height": 719,
+        "created_at": "2016-12-06T16:47:12.217Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 8,
+    "fields": {
+        "collection": 1,
+        "title": "Ringworm rash on skin",
+        "file": "original_images/ringworm-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:47:30.651Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 9,
+    "fields": {
+        "collection": 1,
+        "title": "Close-up of a baby\u2019s nose showing small white spots",
+        "file": "original_images/milia-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:48:00.059Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 10,
+    "fields": {
+        "collection": 1,
+        "title": "Baby\u2019s head and shoulders showing raised spots",
+        "file": "original_images/erythema-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:48:27.591Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 11,
+    "fields": {
+        "collection": 1,
+        "title": "Small, pink raised spots on skin",
+        "file": "original_images/molluscum-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:48:49.305Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 12,
+    "fields": {
+        "collection": 1,
+        "title": "Red patch on a baby\u2019s bottom",
+        "file": "original_images/nappy-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "created_at": "2016-12-06T16:49:08.114Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 13,
+    "fields": {
+        "collection": 1,
+        "title": "Fungal infection at the edge of the nail",
+        "file": "original_images/stage-1-600.jpg",
+        "width": 600,
+        "height": 400,
+        "created_at": "2016-12-06T16:52:50.365Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": 23681
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 14,
+    "fields": {
+        "collection": 1,
+        "title": "Infection spread to the middle of the toe",
+        "file": "original_images/400.jpeg",
+        "width": 600,
+        "height": 400,
+        "created_at": "2016-12-06T16:54:04.000Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 15,
+    "fields": {
+        "collection": 1,
+        "title": "Brittle nail with pieces missing",
+        "file": "original_images/stage-3-600.jpg",
+        "width": 600,
+        "height": 400,
+        "created_at": "2016-12-06T16:54:44.083Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": null
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 16,
+    "fields": {
+        "collection": 1,
+        "title": "Fungal nail infections usually start at the edge of the nail.",
+        "file": "original_images/stage-2-600.jpg",
+        "width": 600,
+        "height": 400,
+        "created_at": "2016-12-06T16:57:07.069Z",
+        "uploaded_by_user": 2,
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": 25462
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 1,
+    "fields": {
+        "spec": "max-165x165"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 2,
+    "fields": {
+        "spec": "width-1280"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 3,
+    "fields": {
+        "spec": "width-600"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 4,
+    "fields": {
+        "spec": "original"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 5,
+    "fields": {
+        "spec": "max-800x600"
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 1,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/fever-and-red-cheeks-1280_pMAwCib.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 1
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 2,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/chicken-pox-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 2
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 3,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/hand-foot-and-mouth-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 3
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 4,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/scarlet-fever-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 4
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 5,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/heat-rash-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 5
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 6,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/eczma-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 6
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 7,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/hives-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 7
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 8,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/ringworm-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 8
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 9,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/milia-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 9
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 10,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/erythema-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 10
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 11,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/molluscum-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 11
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 12,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/nappy-1280.max-165x165.jpg",
+        "width": 165,
+        "height": 92,
+        "focal_point_key": "",
+        "image": 12
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 13,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/fever-and-red-cheeks-1280_pMAwCib.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 1
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 14,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/chicken-pox-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 2
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 15,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/hand-foot-and-mouth-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 3
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 16,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/scarlet-fever-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 4
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 17,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/heat-rash-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 5
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 18,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/eczma-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 6
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 19,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/hives-1280.width-1280.jpg",
+        "width": 1279,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 7
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 20,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/ringworm-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 8
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 21,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/milia-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 9
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 22,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/nappy-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 12
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 23,
+    "fields": {
+        "filter": 2,
+        "filter_spec": "width-1280",
+        "file": "images/erythema-1280.width-1280.jpg",
+        "width": 1280,
+        "height": 719,
+        "focal_point_key": "",
+        "image": 10
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 25,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/400.max-165x165.jpg",
+        "width": 165,
+        "height": 110,
+        "focal_point_key": "",
+        "image": 14
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 26,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/stage-3-600.max-165x165.jpg",
+        "width": 165,
+        "height": 110,
+        "focal_point_key": "",
+        "image": 15
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 27,
+    "fields": {
+        "filter": 3,
+        "filter_spec": "width-600",
+        "file": "images/400.width-600.jpg",
+        "width": 600,
+        "height": 400,
+        "focal_point_key": "",
+        "image": 14
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 28,
+    "fields": {
+        "filter": 3,
+        "filter_spec": "width-600",
+        "file": "images/stage-3-600.width-600.jpg",
+        "width": 600,
+        "height": 400,
+        "focal_point_key": "",
+        "image": 15
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 31,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/stage-1-600.max-165x165.jpg",
+        "width": 165,
+        "height": 110,
+        "focal_point_key": "",
+        "image": 13
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 32,
+    "fields": {
+        "filter": 1,
+        "filter_spec": "max-165x165",
+        "file": "images/stage-2-600.max-165x165.jpg",
+        "width": 165,
+        "height": 110,
+        "focal_point_key": "",
+        "image": 16
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 33,
+    "fields": {
+        "filter": 4,
+        "filter_spec": "original",
+        "file": "images/stage-2-600.original.jpg",
+        "width": 600,
+        "height": 400,
+        "focal_point_key": "",
+        "image": 16
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 34,
+    "fields": {
+        "filter": 5,
+        "filter_spec": "max-800x600",
+        "file": "images/stage-2-600.max-800x600.jpg",
+        "width": 600,
+        "height": 400,
+        "focal_point_key": "",
+        "image": 16
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 35,
+    "fields": {
+        "filter": 3,
+        "filter_spec": "width-600",
+        "file": "images/stage-2-600.width-600.jpg",
+        "width": 600,
+        "height": 400,
+        "focal_point_key": "",
+        "image": 16
+    }
+},
+{
+    "model": "images.image",
+    "pk": 1,
+    "fields": {
+        "caption": "",
+        "slug": "a-childs-face-showing-a-bright-red-rash-on-both-ch.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 2,
+    "fields": {
+        "caption": "",
+        "slug": "a-baby-covered-in-small-spots.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 3,
+    "fields": {
+        "caption": "",
+        "slug": "blisters-on-the-small-finger-on-a-hand.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 4,
+    "fields": {
+        "caption": "",
+        "slug": "a-childs-chest-and-shoulders-covered-in-a-pink-red.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 5,
+    "fields": {
+        "caption": "",
+        "slug": "a-childs-back-showing-a-heat-rash-under-a-pulled-u.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 6,
+    "fields": {
+        "caption": "",
+        "slug": "back-of-a-childs-knees-showing-red-cracked-skin.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 7,
+    "fields": {
+        "caption": "",
+        "slug": "side-of-a-childs-knee-showing-hives.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 8,
+    "fields": {
+        "caption": "",
+        "slug": "ringworm-rash-on-skin.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 9,
+    "fields": {
+        "caption": "",
+        "slug": "close-up-of-a-babys-nose-showing-small-white-spots.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 10,
+    "fields": {
+        "caption": "",
+        "slug": "babys-head-and-shoulders-showing-raised-spots.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 11,
+    "fields": {
+        "caption": "",
+        "slug": "small-pink-raised-spots-on-skin.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 12,
+    "fields": {
+        "caption": "",
+        "slug": "red-patch-on-a-babys-bottom.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 13,
+    "fields": {
+        "caption": "Fungal nail infections usually start at the edge of the nail.",
+        "slug": "fungal-infection-at-the-edge-of-the-nail.jpeg",
+        "version": 2
+    }
+},
+{
+    "model": "images.image",
+    "pk": 14,
+    "fields": {
+        "caption": "They often then spread to the middle. The cat becomes discoloured and lifts off.",
+        "slug": "infection-spread-to-the-middle-of-the-toe.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 15,
+    "fields": {
+        "caption": "The nail becomes brittle and pieces can break off. It can cause pain and swelling in the skin around the nail.",
+        "slug": "brittle-nail-with-pieces-missing.jpeg",
+        "version": 1
+    }
+},
+{
+    "model": "images.image",
+    "pk": 16,
+    "fields": {
+        "caption": "Fungal infection at the edge of the nail",
+        "slug": "fungal-nail-infections-usually-start-at-the-edge-o.jpeg",
+        "version": 1
+    }
+}
+]
