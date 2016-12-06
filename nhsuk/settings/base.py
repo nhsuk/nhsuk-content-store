@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'wagtail.wagtailsites',
     'wagtail.wagtailusers',
     'wagtail.wagtailsnippets',
-    'wagtail.wagtaildocs',
     'wagtail.wagtailimages',
     'wagtail.wagtailsearch',
     'wagtail.wagtailadmin',
@@ -151,7 +150,7 @@ OAUTH2_PROVIDER = {
 
 # Wagtail settings
 
-WAGTAIL_SITE_NAME = "nhsuk"
+WAGTAIL_SITE_NAME = "NHS.UK"
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
