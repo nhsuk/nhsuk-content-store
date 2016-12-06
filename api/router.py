@@ -50,7 +50,7 @@ class PagesAPIEndpoint(BasePagesAPIEndpoint):
         """
         url_patterns = list(super(PagesAPIEndpoint, cls).get_urlpatterns())
         url_patterns.append(
-            url(r'^with-path/(?P<path>[\w/-]+)$', cls.as_view({'get': 'detail_view_by_path'}), name='detail_by_path')
+            url(r'^with-path/(?P<path>[\w/-]*)$', cls.as_view({'get': 'detail_view_by_path'}), name='detail_by_path')
         )
         return url_patterns
 
