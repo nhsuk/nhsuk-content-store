@@ -16,6 +16,8 @@ from .page_elements import Components
 
 
 class Page(WagtailPage):
+    is_creatable = False
+
     def serve(self, request, *args, **kwargs):
         """
         Redirects to the live frontend version of this page.
