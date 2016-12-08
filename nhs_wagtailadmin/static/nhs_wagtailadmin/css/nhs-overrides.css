@@ -3,3 +3,39 @@
     margin-top: 214px;
   }
 }
+
+
+/* Form footer */
+
+#page-edit-form footer {
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 0 50px;
+  background: none;
+  color: #777;
+  font-size: 1.2em;
+}
+
+#page-edit-form footer .meta {
+  text-align: left;
+  float: none;
+  clear: left;
+  padding: 20px 0 0;
+}
+
+#page-edit-form footer .meta p {
+  white-space: normal;
+}
+
+#page-edit-form footer .actions {
+  margin-bottom: 5px;
+}
+
+#page-edit-form .dropdown-toggle {
+  line-height: 2.5em;
+}
+
+#page-edit-form footer .actions.preview {
+  width: auto;
+}
