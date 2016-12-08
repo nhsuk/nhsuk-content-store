@@ -39,3 +39,9 @@
 #page-edit-form footer .actions.preview {
   width: auto;
 }
+
+#page-edit-form .object h2:before,
+#page-edit-form .object h2 label:before {
+  content: '';
+  height: 100%;
+}
