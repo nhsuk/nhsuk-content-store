@@ -4,7 +4,6 @@
   }
 }
 
-
 /* Form footer */
 
 #page-edit-form footer {
@@ -40,8 +39,33 @@
   width: auto;
 }
 
+/* Section heading arrow icons */
+
 #page-edit-form .object h2:before,
 #page-edit-form .object h2 label:before {
   content: '';
   height: 100%;
+}
+
+/* Page listings */
+
+#page-reorder-form .listing tbody .title h2 {
+  font-size: 1.5em;
+}
+
+#page-reorder-form .listing tbody .title h2 a {
+  text-decoration: underline;
+  color: #43b1b0;
+}
+
+#page-reorder-form .listing tbody .title h2 a:hover {
+  text-decoration: none;
+}
+
+#page-reorder-form .listing .actions {
+  visibility: visible;
+}
+
+#page-reorder-form .listing .status-tag {
+  margin: 0;
 }

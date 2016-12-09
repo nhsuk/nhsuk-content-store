@@ -1,0 +1,15 @@
+{% load i18n %}
+{% load wagtailadmin_tags %}
+
+{# The title field for a parent page when the listing is in 'explore' mode #}
+
+<h2{% if parent_page.is_navigable %} class="folder"{% endif %}>
+  {{ parent_page.title }}
+  {% include "wagtailadmin/pages/listing/_locked_indicator.html" with page=parent_page %}
+</h2>
+
+{% include "wagtailadmin/pages/_privacy_switch.html" with page=parent_page %}
+
+<ul class="actions">
+  {% page_listing_buttons parent_page parent_page_perms is_parent=True %}
+</ul>
