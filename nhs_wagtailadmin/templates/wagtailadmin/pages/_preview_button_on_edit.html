@@ -4,7 +4,7 @@
     type="button"
     data-preview-disabled="{{ has_unsaved_changes|yesno:"true,false" }}"
     data-action="{% url 'wagtailadmin_pages:revisions_view' page.id current_revision.id %}"
-    data-windowname="wagtail_preview_{{ page.id }}_{{ current_revision.id }}"
+    data-windowname="wagtail_preview_{{ page.id }}"
 >
     {{ label }}
 </button>
