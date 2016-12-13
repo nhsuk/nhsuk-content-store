@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'images',
     'wagtailmarkdown',
     'nhs_wagtailadmin',
+    'corsheaders',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
@@ -70,6 +71,8 @@ MIDDLEWARE = [
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'nhsuk.urls'
