@@ -25,6 +25,14 @@ class BasePagesAPIEndpoint(WagtailPagesAPIEndpoint):
     base_serializer_class = PageSerializer
     renderer_classes = [CamelCaseJSONRenderer]
 
+    body_fields = WagtailPagesAPIEndpoint.body_fields + [
+        'guide'
+    ]
+
+    meta_fields = WagtailPagesAPIEndpoint.meta_fields + [
+        'children', 'siblings'
+    ]
+
 
 class PagesAPIEndpoint(BasePagesAPIEndpoint):
     """

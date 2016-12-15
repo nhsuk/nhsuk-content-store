@@ -130,10 +130,7 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     # API
     api_fields = [
         'sidebar_order', 'non_emergency_callout', 'choices_origin',
-        'local_header', 'before', 'main', 'sidebar', 'guide'
-    ]
-    api_meta_fields = [
-        'children', 'siblings'
+        'local_header', 'before', 'main', 'sidebar'
     ]
 
 
@@ -155,12 +152,4 @@ class FolderPage(ChildrenSiblingsMixin, Page):
         MultiFieldPanel([
             FieldPanel('slug'),
         ], ugettext_lazy('Common page configuration')),
-    ]
-
-    # API
-    api_fields = [
-        'guide'
-    ]
-    api_meta_fields = [
-        'children', 'siblings'
     ]
