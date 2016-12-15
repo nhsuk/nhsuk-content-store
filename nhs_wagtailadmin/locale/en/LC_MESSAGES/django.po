@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-08 11:12+0000\n"
+"POT-Creation-Date: 2016-12-15 11:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,159 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:5
+msgid "Pages awaiting moderation"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:13
+#: templates/wagtailadmin/home/recent_edits.html:12
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:36
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:39
+msgid "Title"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:14
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:43
+msgid "Parent"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:15
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:59
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:62
+msgid "Type"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:16
+msgid "Edited"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:24
+#: templates/wagtailadmin/home/recent_edits.html:22
+msgid "Edit this page"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:33
+#: wagtail_override_messages.py:10
+msgid "Approve"
+msgstr "Publish"
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:39
+msgid "Reject"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:42
+#: templates/wagtailadmin/home/recent_edits.html:28
+msgid "Edit"
+msgstr ""
+
+#: templates/wagtailadmin/home/pages_for_moderation.html:43
+msgid "Preview"
+msgstr ""
+
+#: templates/wagtailadmin/home/recent_edits.html:5
+msgid "Your most recent edits"
+msgstr ""
+
+#: templates/wagtailadmin/home/recent_edits.html:13
+msgid "Date"
+msgstr ""
+
+#: templates/wagtailadmin/home/recent_edits.html:14
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:69
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:72
+msgid "Status"
+msgstr ""
+
+#: templates/wagtailadmin/home/recent_edits.html:30
+#: wagtail_override_messages.py:9
+msgid "Draft"
+msgstr "View draft"
+
+#: templates/wagtailadmin/home/recent_edits.html:33
+#: wagtail_override_messages.py:8
+msgid "Live"
+msgstr "View live"
+
+#: templates/wagtailadmin/pages/listing/_list.html:58
+msgid "Drag"
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:21
+msgid ""
+"\n"
+"                  The root level is where you can add new sites to your "
+"Wagtail installation.\n"
+"                  Pages created here will not be accessible at any URL until "
+"they are associated with a site.\n"
+"                "
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:26
+#: templates/wagtailadmin/pages/listing/_list_explore.html:54
+msgid "Configure a site now."
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:30
+msgid ""
+"\n"
+"                  If you just want to add pages to an existing site, create "
+"them as children of the homepage instead.\n"
+"                "
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:35
+msgid ""
+"\n"
+"                Pages created here will not be accessible at any URL. To add "
+"pages to an existing site, create them as\n"
+"                children of the homepage.\n"
+"              "
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:49
+msgid ""
+"\n"
+"                There is no site set up for this location. Pages created "
+"here will not be accessible at any URL until a\n"
+"                site is associated with this location.\n"
+"              "
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:57
+msgid ""
+"\n"
+"                There is no site record for this location. Pages created "
+"here will not be accessible at any URL.\n"
+"              "
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:80
+msgid "No pages have been created at this location."
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_list_explore.html:82
+#, python-format
+msgid "Why not <a href=\"%(add_page_url)s\">create one</a>?"
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:24
+msgid "Disable ordering of child pages"
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:24
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:27
+msgid "Order"
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:27
+msgid "Enable ordering of child pages"
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:49
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:52
+msgid "Updated"
+msgstr ""
 
 #: views.py:50
 msgid "Please set FRONTEND_PREVIEW_URL in your settings.py"
@@ -26,10 +179,10 @@ msgstr ""
 msgid "The page '{0}' is not currently awaiting moderation."
 msgstr ""
 
-#: wagtail_hooks.py:22
+#: wagtail_hooks.py:38
 msgid "Dashboard"
 msgstr ""
 
-#: wagtail_override_messages.py:8
+#: wagtail_override_messages.py:7
 msgid "Explorer"
 msgstr "Pages"
