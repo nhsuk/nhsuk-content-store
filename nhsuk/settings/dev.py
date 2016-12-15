@@ -14,6 +14,8 @@ PREVIEW_SIGNATURE_KEY = 'mxwtt97p8[)89+Qm8xwMWTXK](Qc&MhdT=dW72bfhL/du4({sR'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+WAGTAILAPI_BASE_URL = "http://localhost:8000"
+
 
 # importing test settings file if necessary
 if sys.argv[1:2] == ['test']:
