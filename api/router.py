@@ -6,6 +6,7 @@ from oauth2_provider.ext.rest_framework import (
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from wagtail.api.v2.endpoints import PagesAPIEndpoint as WagtailPagesAPIEndpoint
+from wagtail.api.v2.endpoints import BaseAPIEndpoint
 from wagtail.api.v2.router import WagtailAPIRouter
 from wagtail.wagtailimages.api.v2.endpoints import \
     ImagesAPIEndpoint as WagtailImagesAPIEndpoint
@@ -26,11 +27,16 @@ class BasePagesAPIEndpoint(WagtailPagesAPIEndpoint):
     renderer_classes = [CamelCaseJSONRenderer]
 
     body_fields = WagtailPagesAPIEndpoint.body_fields + [
-        'guide'
+        'guide',
+        'content'
     ]
 
-    meta_fields = WagtailPagesAPIEndpoint.meta_fields + [
-        'children', 'siblings'
+    meta_fields = BaseAPIEndpoint.meta_fields + [
+        'html_url',
+        'slug',
+        'parent',
+        'children',
+        'siblings',
     ]
 
 

@@ -44,19 +44,7 @@ class ChildrenSiblingsMixin(object):
 
 
 class EditorialPage(ChildrenSiblingsMixin, Page):
-    SIDEBAR_ORDER_LAST = 'last'
-    SIDEBAR_ORDER_FIRST = 'first'
-    SIDEBAR_ORDER_CHOICES = (
-        (SIDEBAR_ORDER_LAST, 'Last'),
-        (SIDEBAR_ORDER_FIRST, 'First'),
-    )
-
     # META
-    sidebar_order = models.CharField(
-        max_length=50,
-        choices=SIDEBAR_ORDER_CHOICES,
-        default=SIDEBAR_ORDER_LAST
-    )
     non_emergency_callout = models.BooleanField(
         default=True,
         verbose_name='Non-emergency callout',
@@ -71,55 +59,33 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     )
 
     # CONTENT BLOCKS
-    before = StreamField(
+    header = StreamField(
         StreamBlock([
             Components.get('markdown'),
-            Components.get('figureList'),
-        ]), null=True, blank=True
-    )
-
-    local_header = StreamField(
-        StreamBlock([
-            Components.get('markdown'),
-            Components.get('sectionNav'),
-        ]), null=True, blank=True
+        ]), verbose_name='Header Content',
+        null=True, blank=True
     )
 
     main = StreamField(
         StreamBlock([
             Components.get('markdown'),
-            Components.get('sectionList'),
-        ]), null=True, blank=True
-    )
-
-    sidebar = StreamField(
-        StreamBlock([
-            Components.get('markdown'),
-        ]), null=True, blank=True
+        ]), verbose_name='Main Content',
+        null=True, blank=True
     )
 
     # PANELS
     content_panels = [
-        MultiFieldPanel([
-            FieldPanel('title'),
-            FieldPanel('sidebar_order'),
-        ]),
-        StreamFieldPanel('local_header'),
-        StreamFieldPanel('before'),
+        FieldPanel('title'),
+        StreamFieldPanel('header'),
         StreamFieldPanel('main'),
-        StreamFieldPanel('sidebar')
     ]
 
     promote_panels = [
         MultiFieldPanel([
             FieldPanel('non_emergency_callout'),
             FieldPanel('choices_origin'),
-        ]),
-        MultiFieldPanel([
             FieldPanel('slug'),
-            FieldPanel('seo_title'),
-            FieldPanel('search_description'),
-        ], ugettext_lazy('Common page configuration')),
+        ]),
     ]
 
     @property
@@ -129,8 +95,7 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
 
     # API
     api_fields = [
-        'sidebar_order', 'non_emergency_callout', 'choices_origin',
-        'local_header', 'before', 'main', 'sidebar'
+        'non_emergency_callout', 'choices_origin'
     ]
 
 
