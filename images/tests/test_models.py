@@ -1,6 +1,6 @@
 from django.test import TestCase
 from wagtail.wagtailcore.models import Collection
-from wagtail.wagtailimages.models import get_image_model
+from wagtail.wagtailimages import get_image_model
 from wagtail.wagtailimages.tests.utils import get_test_image_file
 
 

@@ -31,7 +31,7 @@ class Components(object):
         'image': ImageChooserBlock,
         'figureList': partial(ListBlock, ImageChooserBlock()),
         'sectionList': section_list,
-        'sectionNav': partial(StaticBlock, 'Section Navigation')
+        'sectionNav': partial(StaticBlock, admin_text='Section Navigation')
     }
 
     @classmethod
