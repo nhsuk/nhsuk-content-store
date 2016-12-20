@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='editorialpage',
             name='local_header',
-            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('sectionNav', pages.blocks.StaticBlock('Section Navigation', label='section nav'))), blank=True, null=True),
+            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('sectionNav', pages.blocks.StaticBlock(admin_text='Section Navigation', label='section nav'))), blank=True, null=True),
         ),
         migrations.AlterField(
             model_name='editorialpage',

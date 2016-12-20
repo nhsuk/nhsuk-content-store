@@ -1,10 +1,10 @@
 from datetime import timedelta
 
+from django.contrib.auth import get_user_model
 from django.contrib.contenttypes.models import ContentType
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.utils.timezone import now
-from oauth2_provider.compat import get_user_model
 from oauth2_provider.models import AccessToken, get_application_model
 from wagtail.wagtailcore.models import Page, Site
 

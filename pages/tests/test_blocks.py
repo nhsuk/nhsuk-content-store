@@ -1,11 +1,10 @@
-from unittest import mock
 
 from django.test import TestCase
 from wagtail.wagtailcore.blocks.field_block import CharBlock
 from wagtail.wagtailcore.blocks.stream_block import StreamValue
 from wagtail.wagtailcore.blocks.struct_block import StructValue
 
-from pages.blocks import ListBlock, StaticBlock, StreamBlock, StructBlock
+from pages.blocks import ListBlock, StreamBlock, StructBlock
 
 
 class TestCharBlock(CharBlock):
@@ -112,27 +111,3 @@ class StructBlockTestCase(TestCase):
             context={}
         )
         self.assertEqual(representation, {'test': expected})
-
-
-class StaticBlockTestCase(TestCase):
-    def setUp(self):
-        super(StaticBlockTestCase, self).setUp()
-
-        self.value = 'some value'
-        self.block = StaticBlock(self.value)
-
-    def test_render_form_returns_static_value(self):
-        self.assertEqual(
-            self.block.render_form(
-                mock.MagicMock(), prefix=mock.MagicMock(), errors=mock.MagicMock()
-            ),
-            self.value
-        )
-
-    def test_value_from_datadict_returns_static_value(self):
-        self.assertEqual(
-            self.block.value_from_datadict(
-                mock.MagicMock(), mock.MagicMock(), mock.MagicMock()
-            ),
-            self.value
-        )

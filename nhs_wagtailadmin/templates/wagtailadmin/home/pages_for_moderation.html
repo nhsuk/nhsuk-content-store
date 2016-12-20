@@ -20,7 +20,7 @@
                         <tr>
                             <td class="title" valign="top" colspan="2">
                                 <h2>
-                                    {{ revision.page.title }}
+                                    {{ revision.page.get_admin_display_title }}
 
                                     {% include "wagtailadmin/pages/listing/_privacy_indicator.html" with page=revision.page %}
                                     {% include "wagtailadmin/pages/listing/_locked_indicator.html" with page=revision.page %}

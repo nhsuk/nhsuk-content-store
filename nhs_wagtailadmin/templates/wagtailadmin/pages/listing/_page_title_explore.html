@@ -3,18 +3,16 @@
 {# The title field for a page in the page listing, when in 'explore' mode #}
 
 <h2>
-  {% if page.is_navigable %}
-    <a href="{% url 'wagtailadmin_explore' page.id %}" class="folder">
-      {{ page.title }}
-    </a>
-  {% else %}
-    {{ page.title }}
-  {% endif %}
+    {% if page.is_navigable %}
+        <a href="{% url 'wagtailadmin_explore' page.id %}" class="folder">{{ page.get_admin_display_title }}</a>
+    {% else %}
+        {{ page.get_admin_display_title }}
+    {% endif %}
 
-  {% include "wagtailadmin/pages/listing/_privacy_indicator.html" with page=page %}
-  {% include "wagtailadmin/pages/listing/_locked_indicator.html" with page=page %}
+    {% include "wagtailadmin/pages/listing/_privacy_indicator.html" with page=page %}
+    {% include "wagtailadmin/pages/listing/_locked_indicator.html" with page=page %}
 </h2>
 
 <ul class="actions">
-  {% page_listing_buttons page page_perms %}
+    {% page_listing_buttons page page_perms %}
 </ul>

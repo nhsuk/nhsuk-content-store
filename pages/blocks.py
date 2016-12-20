@@ -1,5 +1,6 @@
-from wagtail.wagtailcore.blocks import Block
 from wagtail.wagtailcore.blocks.list_block import ListBlock as WagtailListBlock
+from wagtail.wagtailcore.blocks.static_block import \
+    StaticBlock as WagtailStaticBlock
 from wagtail.wagtailcore.blocks.stream_block import \
     StreamBlock as WagtailStreamBlock
 from wagtail.wagtailcore.blocks.struct_block import \
@@ -62,21 +63,6 @@ class StructBlock(WagtailStructBlock):
         ])
 
 
-class StaticBlock(Block):
-    """
-    Very simple static block that only returns the value given as init param.
-    When added to a page, the frontend can use it to trigger some related logic that doesn't
-    require any particular dynamic block content.
-    """
-    def __init__(self, value, *args, **kwargs):
-        self.value = value
-        super(StaticBlock, self).__init__(*args, **kwargs)
-
-    def render_form(self, *args, **kwargs):
-        return self.value
-
-    def value_from_datadict(self, *args, **kwargs):
-        return self.value
-
-    class Meta:
-        default = None
+class StaticBlock(WagtailStaticBlock):
+    def value_from_datadict(self, data, files, prefix):
+        return self.name

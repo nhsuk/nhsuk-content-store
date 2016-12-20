@@ -9,8 +9,9 @@ from django.http import (
 from django.shortcuts import get_object_or_404
 from django.utils.decorators import classonlymethod
 from django.views.generic import View
+from wagtail.wagtailimages import get_image_model
 from wagtail.wagtailimages.exceptions import InvalidFilterSpecError
-from wagtail.wagtailimages.models import SourceImageIOError, get_image_model
+from wagtail.wagtailimages.models import SourceImageIOError
 from wagtail.wagtailimages.views.serve import verify_signature
 
 
