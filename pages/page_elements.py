@@ -25,9 +25,18 @@ def section_list(**kwargs):
     ], **kwargs)
 
 
+def panel(**kwargs):
+    return StructBlock([
+        ('main', RichTextBlock(label='Panel content')),
+        ('footer', RichTextBlock(label='Footer content', required=False)),
+    ], **kwargs)
+
+
 class Components(object):
     TYPES = {
         'markdown': RichTextBlock,
+        'panel': panel,
+
         'image': ImageChooserBlock,
         'figureList': partial(ListBlock, ImageChooserBlock()),
         'sectionList': section_list,
@@ -37,4 +46,4 @@ class Components(object):
     @classmethod
     def get(cls, _type):
         label = LABEL_RE.sub("\g<1> \g<2>", _type).lower()
-        return (_type, cls.TYPES[_type](label=label))
+        return (_type, cls.TYPES[_type](label=label, icon="radio-full"))

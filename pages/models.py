@@ -69,6 +69,7 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     main = StreamField(
         StreamBlock([
             Components.get('markdown'),
+            Components.get('panel'),
         ]), verbose_name='Main Content',
         null=True, blank=True
     )
