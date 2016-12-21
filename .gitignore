@@ -3,3 +3,4 @@ media/
 docs/_build
 docs/_build_html
 __pycache__/
+exported_content/

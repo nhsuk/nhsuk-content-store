@@ -1,0 +1,21 @@
+{% extends "wagtailadmin/base.html" %}
+{% load i18n %}
+{% block titletag %}Export content{% endblock %}
+{% block content %}
+    {% include "wagtailadmin/shared/header.html" with title="Export content" %}
+
+    <div class="nice-padding">
+        <div id="form-results" class="forms">
+            <form action="." method="post">
+              {% csrf_token %}
+
+              <p>You are about to export the entire content to a zip file.</p>
+              <p>Are you sure you want to continue?</p>
+
+              <div>
+                <button class="button">Yes, export</button>
+              </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
