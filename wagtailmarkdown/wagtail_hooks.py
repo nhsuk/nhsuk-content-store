@@ -7,7 +7,8 @@ from wagtail.wagtailcore import hooks
 @hooks.register('insert_editor_css')
 def insert_editor_css():
     css_files = [
-        'wagtailmarkdown/css/simplemde.css'
+        'wagtailmarkdown/css/simplemde.css',
+        'wagtailmarkdown/css/simplemde-overrides.css'
     ]
     css_includes = format_html_join(
         '\n',
@@ -21,7 +22,7 @@ def insert_editor_css():
 def insert_editor_js():
     js_files = [
         'wagtailmarkdown/js/simplemde.js',
-        'wagtailmarkdown/js/simplemde_init.js',
+        'wagtailmarkdown/js/simplemde-init.js',
     ]
 
     js_includes = format_html_join(
