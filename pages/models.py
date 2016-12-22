@@ -70,6 +70,7 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
         StreamBlock([
             Components.get('markdown'),
             Components.get('panel'),
+            Components.get('splitPanel'),
         ]), verbose_name='Main Content',
         null=True, blank=True
     )

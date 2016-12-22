@@ -5,7 +5,9 @@ from wagtail.wagtailcore.blocks import CharBlock, RichTextBlock
 
 from images.blocks import ImageChooserBlock
 
-from .blocks import ListBlock, StaticBlock, StreamBlock, StructBlock
+from .blocks import (
+    FixedListBlock, ListBlock, StaticBlock, StreamBlock, StructBlock
+)
 
 LABEL_RE = re.compile("([a-z])([A-Z])")
 
@@ -36,6 +38,7 @@ class Components(object):
     TYPES = {
         'markdown': RichTextBlock,
         'panel': panel,
+        'splitPanel': partial(FixedListBlock, RichTextBlock()),
 
         'image': ImageChooserBlock,
         'figureList': partial(ListBlock, ImageChooserBlock()),
