@@ -1,0 +1,14 @@
+<li id="{{ prefix }}-container" class="sequence-member required">
+    <input type="hidden" id="{{ prefix }}-deleted" name="{{ prefix }}-deleted" value="">
+    <input type="hidden" id="{{ prefix }}-order" name="{{ prefix }}-order" value="{{ index }}">
+
+    {% block hidden_fields %}{% endblock %}
+
+    {% block header_controls %}
+    <label>{{ label }}:</label>
+    {% endblock %}
+
+    <div class="sequence-member-inner {% block sequence_member_inner_classes %}{% endblock %}">{{ child.render_form }}</div>
+
+    {% block footer_controls %}{% endblock %}
+</li>

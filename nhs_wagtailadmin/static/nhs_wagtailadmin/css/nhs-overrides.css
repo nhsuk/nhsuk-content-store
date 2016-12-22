@@ -69,3 +69,15 @@
 .listing .status-tag {
   margin: 0;
 }
+
+
+/* Fixed List Block */
+li.sequence-member .sequence-type-fixed-list li.required > label:after {
+  content: '*';
+  color: #cd3238;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 0.5em;
+  line-height: 1em;
+  font-size: 13px;
+}
