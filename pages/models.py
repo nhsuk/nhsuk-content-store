@@ -99,6 +99,9 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     api_fields = [
         'non_emergency_callout', 'choices_origin'
     ]
+    admin_api_fields = [
+        'non_emergency_callout', 'choices_origin', 'header', 'main'
+    ]
 
 
 class FolderPage(ChildrenSiblingsMixin, Page):
