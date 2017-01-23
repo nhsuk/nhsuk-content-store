@@ -8,8 +8,6 @@ from rest_framework.response import Response
 from wagtail.api.v2.endpoints import PagesAPIEndpoint as WagtailPagesAPIEndpoint
 from wagtail.api.v2.endpoints import BaseAPIEndpoint
 from wagtail.api.v2.router import WagtailAPIRouter
-from wagtail.wagtailimages.api.v2.endpoints import \
-    ImagesAPIEndpoint as WagtailImagesAPIEndpoint
 
 from home.models import HomePage
 
@@ -108,10 +106,5 @@ class PreviewPagesAPIEndpoint(BasePagesAPIEndpoint):
         ]
 
 
-class ImagesAPIEndpoint(WagtailImagesAPIEndpoint):
-    renderer_classes = [CamelCaseJSONRenderer]
-
-
 api_router.register_endpoint('pages', PagesAPIEndpoint)
 api_router.register_endpoint('preview-pages', PreviewPagesAPIEndpoint)
-api_router.register_endpoint('images', ImagesAPIEndpoint)
