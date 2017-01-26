@@ -52,12 +52,11 @@ class SimpleMDETextArea(WidgetWithScript, widgets.Textarea):
 
     def __init__(self, attrs=None, **kwargs):
         super(SimpleMDETextArea, self).__init__(attrs)
-        self.kwargs = dict(self.getDefaultArgs())
-        if kwargs is not None:
-            self.kwargs.update(kwargs)
+        self.options = dict(self.getDefaultArgs())
+        self.options.update(kwargs.get('options', {}))
 
     def get_panel(self):
         return RichTextFieldPanel
 
     def render_js_init(self, id_, name, value):
-        return "initSimpleMDE({0}, {1});".format(json.dumps(id_), json.dumps(self.kwargs))
+        return "initSimpleMDE({0}, {1});".format(json.dumps(id_), json.dumps(self.options))

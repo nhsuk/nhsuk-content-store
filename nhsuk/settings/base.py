@@ -166,7 +166,17 @@ WAGTAILIMAGES_IMAGE_MODEL = 'images.Image'
 
 WAGTAILADMIN_RICH_TEXT_EDITORS = {
     'default': {
-        'WIDGET': 'wagtailmarkdown.rich_text.SimpleMDETextArea'
+        'WIDGET': 'wagtailmarkdown.rich_text.SimpleMDETextArea',
+        'OPTIONS': {
+            'spellChecker': False,
+            'placeholder': ' ',
+            'toolbar': [
+                "bold", "italic", "heading", "|",
+                "quote", "unordered-list", "ordered-list", "|",
+                "link", "|",
+                "guide"
+            ],
+        }
     },
 }
 
