@@ -16,6 +16,10 @@ class Image(WagtailImage):
     )
     version = models.IntegerField(default=1)
 
+    @property
+    def alt(self):
+        return self.title
+
     admin_form_fields = (
         'title',
         'file',
@@ -29,7 +33,7 @@ class Image(WagtailImage):
     )
 
     api_fields = [
-        'title', 'caption', 'slug', 'version', 'width', 'height'
+        'alt', 'caption', 'slug', 'version', 'width', 'height'
     ]
 
     def save(self, *args, **kwargs):
