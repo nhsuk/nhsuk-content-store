@@ -36,7 +36,13 @@ class ImageChooserBlockTestCase(TestCase):
     def test_empty_list(self):
         block = ImageChooserBlock()
 
-        representation = block.to_api_representation(None, context={})
+        representation = block.to_api_representation(None, context={'key': 'value'})
+        self.assertEqual(representation, None)
+
+    def test_empty_context(self):
+        block = ImageChooserBlock()
+
+        representation = block.to_api_representation(self.image, context={})
         self.assertEqual(representation, None)
 
     def test_value(self):
@@ -44,13 +50,23 @@ class ImageChooserBlockTestCase(TestCase):
 
         expected_data = {
             'id': self.image.id,
-            'title': self.image.title
+            'title': self.image.title,
+            'width': self.image.width,
+            'height': self.image.height,
+            'alt': self.image.title,
+            'version': 1,
+            'caption': self.image.caption,
+            'slug': self.image.slug
         }
         mocked_router = self.get_mocked_router(expected_data)
 
         representation = block.to_api_representation(
             self.image, context={
-                'router': mocked_router
+                'request': mock.MagicMock(),
+                'router': mocked_router,
+                'view': mock.MagicMock()
             }
         )
-        self.assertEqual(representation, expected_data)
+
+        for key, value in expected_data.items():
+            self.assertEqual(representation[key], value)

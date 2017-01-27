@@ -34,14 +34,21 @@ def panel(**kwargs):
     ], **kwargs)
 
 
+def figure_list(**kwargs):
+    kwargs['label'] = 'image gallery'
+    return ListBlock(
+        ImageChooserBlock(), **kwargs
+    )
+
+
 class Components(object):
     TYPES = {
         'markdown': RichTextBlock,
         'panel': panel,
         'splitPanel': partial(FixedListBlock, RichTextBlock()),
+        'figureList': figure_list,
 
         'image': ImageChooserBlock,
-        'figureList': partial(ListBlock, ImageChooserBlock()),
         'sectionList': section_list,
         'sectionNav': partial(StaticBlock, admin_text='Section Navigation')
     }

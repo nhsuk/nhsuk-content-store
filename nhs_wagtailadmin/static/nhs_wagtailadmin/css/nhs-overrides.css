@@ -81,3 +81,10 @@ li.sequence-member .sequence-type-fixed-list li.required > label:after {
   line-height: 1em;
   font-size: 13px;
 }
+
+/* Fixes one-line labels when adding components */
+.stream-menu .stream-menu-inner button span {
+  white-space: nowrap;
+  overflow: visible;
+  padding: 0;
+}

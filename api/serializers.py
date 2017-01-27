@@ -83,7 +83,10 @@ class ContentField(Field):
             for field_name, serializer_field in self.fields:
                 if hasattr(page, field_name):
                     value = getattr(page, field_name)
-                    content[field_name] = serializer_field().to_representation(value)
+
+                    field = serializer_field()
+                    field.context = dict(self.context)
+                    content[field_name] = field.to_representation(value)
         return content
 
 
