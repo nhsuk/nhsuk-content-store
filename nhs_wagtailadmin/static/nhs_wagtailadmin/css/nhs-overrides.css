@@ -90,7 +90,9 @@ li.sequence-member .sequence-type-fixed-list li.required > label:after {
 }
 
 /* Makes links in the markdown editor darker */
-.CodeMirror.CodeMirror-wrap .CodeMirror-code .cm-link,
+.CodeMirror.CodeMirror-wrap .CodeMirror-code .cm-link {
+  color: inherit;
+}
 .CodeMirror.CodeMirror-wrap .CodeMirror-code .cm-url {
-  color: #555;
+  color: #0072c6;
 }
