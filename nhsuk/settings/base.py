@@ -176,6 +176,7 @@ WAGTAILADMIN_RICH_TEXT_EDITORS = {
                 "link", "|",
                 "guide"
             ],
+            'status': False,
         }
     },
 }

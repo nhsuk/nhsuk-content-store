@@ -11,8 +11,8 @@ from wagtail.wagtailcore.models import Page as WagtailPage
 
 from nhs_wagtailadmin.views import preview_via_POST_deprecated
 
+from . import components
 from .blocks import StreamBlock
-from .page_elements import Components
 
 
 class Page(WagtailPage):
@@ -61,17 +61,21 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     # CONTENT BLOCKS
     header = StreamField(
         StreamBlock([
-            Components.get('markdown'),
+            components.text.as_tuple(),
         ]), verbose_name='Header Content',
         null=True, blank=True
     )
 
     main = StreamField(
         StreamBlock([
-            Components.get('markdown'),
-            Components.get('figureList'),
-            Components.get('panel'),
-            Components.get('splitPanel'),
+            components.text.as_tuple(),
+            components.callout.as_tuple(),
+            components.image.as_tuple(),
+            components.gallery.as_tuple(),
+            components.panel.as_tuple(),
+            components.reveal.as_tuple(),
+            components.split_content.as_tuple(),
+            components.tabs.as_tuple(),
         ]), verbose_name='Main Content',
         null=True, blank=True
     )
