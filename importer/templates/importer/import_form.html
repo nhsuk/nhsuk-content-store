@@ -1,0 +1,60 @@
+{% extends "wagtailadmin/base.html" %}
+{% load i18n %}
+{% block titletag %}Import content{% endblock %}
+{% block extra_css %}{{ block.super }}
+    <style media="screen">
+    @media screen and (min-width: 50em) {
+        .import-form label {
+            display: block;
+            float: none;
+            width: inherit;
+        }
+    }
+    </style>
+{% endblock %}
+{% block content %}
+    {% include "wagtailadmin/shared/header.html" with title="Import content" %}
+
+    <div class="nice-padding">
+        <div id="form-results" class="forms">
+            {% if saved %}
+                <p>Done!</p>
+
+                {% if items_in_error %}
+                <p>
+                    The following items were not imported because of an error:
+                    <ul>
+                        {% for item in items_in_error %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </p>
+                {% endif %}
+            {% else %}
+
+                <form action="." class="import-form" method="post">
+                    {% csrf_token %}
+
+                    <div>
+                        <p>
+                            The pages not selected by default already exist in the database, they might be out-of-date
+                            but this script prefers not to assume you want to override them.
+                        </p>
+                        <p>Check and decide if you want to import those as well.</p>
+                    </div>
+
+                    <div>
+                        <strong>The import process can take a while so we recommend you import 10 pages at the time.</strong>
+                    </div>
+
+                    {{ form }}
+
+                    <div>
+                        <button class="button">Import</button>
+                    </div>
+                </form>
+
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
