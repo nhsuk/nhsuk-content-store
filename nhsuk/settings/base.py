@@ -60,6 +60,7 @@ INSTALLED_APPS = [
 
     'bakery',
     'exporter',
+    'importer',
 ]
 
 MIDDLEWARE = [
@@ -176,6 +177,7 @@ WAGTAILADMIN_RICH_TEXT_EDITORS = {
                 "link", "|",
                 "guide"
             ],
+            'status': False,
         }
     },
 }
@@ -190,3 +192,10 @@ FRONTEND_PREVIEW_URL = os.environ.get('FRONTEND_PREVIEW_URL', '')  #
 
 # IMAGE_SIGNATURE_KEY = None
 # PREVIEW_SIGNATURE_KEY = None
+
+# import from github settings
+IMPORT_URL_FORMAT = os.environ.get(
+    'IMPORT_URL_FORMAT',
+    'https://api.github.com/repos/nhsuk/betahealth/contents{url_part}'
+)
+GITHUB_OAUTH_TOKEN = os.environ.get('GITHUB_OAUTH_TOKEN', '')

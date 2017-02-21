@@ -23,6 +23,7 @@ def global_admin_css():
         '\n', '<link rel="stylesheet" href="{0}" type="text/css" />',
         [
             (static('nhs_wagtailadmin/css/nhs-overrides.css'),),
+            (static('nhs_wagtailadmin/css/nhs-editor-overrides.css'),),
         ]
     )
 

@@ -1,0 +1,321 @@
+#wagtail .content-wrapper {
+  margin-bottom: 0;
+}
+
+#wagtail .tab-content .active,
+#wagtail .content {
+  padding: 0;
+}
+
+#wagtail .modal .tab-content .active {
+  padding: 20px;
+}
+#wagtail .modal .tab-content .listing.images {
+  margin: 0 -2px 10px;
+}
+
+#wagtail .modal-content {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+/* Region title */
+#wagtail .object > h2 {
+  margin: 10px 0 0;
+}
+
+#wagtail .object fieldset,
+#wagtail .object .object-help,
+#wagtail .field-content {
+  float: none;
+  display: block;
+  width: auto;
+  position: static;
+  padding: 0;
+  margin: 0;
+}
+
+/* Help text */
+#wagtail .object .object-help {
+  margin: 1em 0;
+  opacity: 1;
+  padding-left: 2em;
+}
+#wagtail .object .object-help::before {
+  margin-top: 0;
+}
+
+#wagtail .fields > li {
+  padding: 0;
+}
+
+#wagtail .fields > li:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+/* Region containers */
+#wagtail .objects .object,
+#page-edit-form footer {
+  padding: 80px 40px 40px;
+}
+
+#wagtail .objects .object:first-of-type {
+  margin-top: 0;
+}
+
+#wagtail .stream-menu.stream-menu-closed .toggle {
+  left: 0;
+  margin: 0;
+}
+
+#wagtail .stream-menu .toggle {
+  color: inherit;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+#wagtail .stream-menu .toggle:active {
+  color: #222;
+}
+
+/* Form controls */
+input,
+textarea,
+select,
+.richtext,
+.tagit,
+#wagtail .CodeMirror {
+  border-radius: 0;
+  border: 2px solid #777;
+  font-size: 1.2em;
+  padding: 14px;
+  color: #222;
+  -webkit-font-smoothing: auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.richtext:focus,
+.tagit:focus,
+#wagtail .CodeMirror {
+  background-color: #fff;
+}
+
+#wagtail .sequence-member {
+  background-color: transparent;
+  border: 0;
+  margin-left: 10px;
+  padding: 10px 10px 10px 20px;
+  border-left: 2px dotted #ddd;
+}
+
+#wagtail .sequence-member-inner {
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* Region toolbar */
+#wagtail .stream-menu {
+  background: #ddd;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 1px;
+}
+
+#wagtail .stream-menu .toggle {
+  left: auto;
+  right: -0.5em;
+}
+
+#wagtail .stream-menu-closed:hover .toggle:hover span {
+  clip: auto;
+  margin: 0 0 0 20px;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  background: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1px 10px;
+  font-size: 12px;
+}
+
+#wagtail .stream-menu .stream-menu-inner {
+  margin: 0;
+  max-width: none;
+}
+
+#wagtail .stream-menu ul {
+  padding: 5px;
+}
+
+#wagtail .stream-menu li {
+  padding: 5px;
+}
+
+/* Component buttons */
+#wagtail .stream-menu button {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  background-color: #444;
+}
+
+#wagtail .stream-menu button:hover {
+  background-color: #333;
+}
+#wagtail .stream-menu button:active {
+  transition: none;
+  background-color: #000;
+}
+
+#wagtail .stream-menu button::before {
+  content: none;
+}
+
+.field {
+  max-width: 1024px;
+  margin-left: 0;
+}
+
+.fields label {
+  display: inline-block;
+  float: none;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+#wagtail .struct-block .sequence-container {
+  float: none;
+  display: block;
+  width: auto;
+  margin: 20px 0;
+}
+
+#wagtail .struct-block .fields {
+  width: auto;
+  float: none;
+  display: block;
+}
+
+#wagtail .struct-block .fields > li:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.sequence-member {
+  padding: 10px;
+  border-color: #ccf1f1;
+}
+
+/* Component toolbar */
+#wagtail .sequence-controls {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+#wagtail .sequence-controls h3 {
+  color: #444;
+  letter-spacing: 2px;
+}
+
+#wagtail .sequence-controls h3 label {
+  color: #888;
+  font-weight: bold;
+}
+
+#wagtail .sequence-member .sequence-controls {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#wagtail .sequence-member .sequence-controls,
+#wagtail .sequence-member .stream-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+#wagtail .sequence-controls .icon {
+  background-color: #888;
+  border-radius: 3px;
+  border: 0;
+}
+
+#wagtail .sequence-controls .icon:hover {
+  background-color: #666;
+}
+
+#wagtail .sequence-controls .icon.hover-no:hover {
+  background-color: #cd3238;
+}
+
+.sequence-controls button.icon {
+  background-color: inherit;
+}
+
+#wagtail .sequence-member .stream-menu {
+  margin-left: -32px;
+}
+
+#wagtail .sequence-member .sequence-member {
+  margin-left: 10px;
+  padding: 10px 10px 10px 20px;
+  border: 0;
+  border-left: 2px dotted #ddd;
+}
+
+#wagtail .sequence-container > .stream-menu {
+  margin: 0;
+}
+#wagtail .sequence-container > .stream-menu:last-child {
+  margin-bottom: 20px;
+}
+
+/* Dropdown */
+.choice_field .input select,
+.model_choice_field .input select,
+.typed_choice_field .input select {
+  vertical-align: bottom;
+}
+
+.choice_field .input select:focus,
+.model_choice_field .input select:focus,
+.typed_choice_field .input select:focus {
+  outline-color: #43b1b0;
+}
+
+.choice_field .input select ~ span,
+.model_choice_field .input select ~ span,
+.typed_choice_field .input select ~ span {
+  vertical-align: bottom;
+}
+
+.choice_field .input select ~ span:after,
+.model_choice_field .input select ~ span:after,
+.typed_choice_field .input select ~ span:after {
+  border-left: 2px solid;
+  margin: 0;
+  color: #777;
+  background: none;
+  border-radius: 0;
+}
+
+.choice_field .input select:focus ~ span:after,
+.model_choice_field .input select:focus ~ span:after,
+.typed_choice_field .input select:focus ~ span:after {
+  color: #54d0d0;
+}
+
+#wagtail .editor-toolbar {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+#wagtail .editor-toolbar::before {
+  margin: 0;
+}

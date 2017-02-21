@@ -57,7 +57,7 @@ class StreamBlockTestCase(TestCase):
         )
         self.assertEqual(
             representation,
-            [{'type': 'test', 'value': expected}]
+            [{'type': 'test', 'props': expected}]
         )
 
 

@@ -30,7 +30,7 @@ class StreamBlock(WagtailStreamBlock):
                 # if the value is a related obj and it gets deleted, represented_value == None so we skip it
                 output.append({
                     'type': child.block.name,
-                    'value': represented_value
+                    'props': represented_value
                 })
         return output
 
