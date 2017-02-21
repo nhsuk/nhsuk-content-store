@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 from datetime import timedelta
@@ -10,13 +11,39 @@ from rest_framework.test import APIClient
 
 from pages.models import Page
 
+from ..components import StructuralComponent
+
 logger = logging.getLogger(__name__)
 
 
 class BakeryPageView(BuildableMixin):
+    CONTENT_AREAS = ['header', 'main']
+
     def __init__(self, build_path):
         super(BakeryPageView, self).__init__()
         self.build_path = build_path
+
+    def transform_content(self, obj, raw_content):
+        content = json.loads(raw_content.decode('utf-8'))
+        context = {
+            'item_base_path': self.get_item_base_path(obj),
+            'new_files': []
+        }
+
+        component_exporter = StructuralComponent(context)
+        for area in self.CONTENT_AREAS:
+            content_area = content.get('content', {}).get(area, [])
+            if content_area:
+                component_exporter.transform_components(content_area)
+
+        content_files = context['new_files']
+        content_files.append(
+            (
+                os.path.join(context['item_base_path'], 'manifest.json'),
+                json.dumps(content, indent=2, sort_keys=True)
+            )
+        )
+        return content_files
 
     @property
     def build_method(self):
@@ -32,8 +59,9 @@ class BakeryPageView(BuildableMixin):
         client.handler._force_token = self.get_auth_token()
         response = client.get(self.get_url(obj))
 
-        path = self.get_build_path(obj)
-        self.build_file(path, response.content)
+        content_files = self.transform_content(obj, response.content)
+        for path, content in content_files:
+            self.build_file(path, content.encode('utf-8'))
 
     def get_url(self, obj):
         return reverse('wagtailapi:pages:detail', kwargs={'pk': obj.pk})
@@ -44,7 +72,7 @@ class BakeryPageView(BuildableMixin):
             expires=now() + timedelta(days=1)
         )
 
-    def get_build_path(self, obj):
+    def get_item_base_path(self, obj):
         path = os.path.join(self.build_path, obj.url[1:])
         os.path.exists(path) or os.makedirs(path)
-        return os.path.join(path, 'manifest.json')
+        return path
