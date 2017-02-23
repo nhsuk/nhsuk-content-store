@@ -1,26 +1,14 @@
 from django.core.urlresolvers import reverse
 from django.test import TestCase
-from wagtail.wagtailcore.models import Collection
-from wagtail.wagtailimages.tests.utils import Image, get_test_image_file
 from wagtail.wagtailimages.views.serve import generate_signature
 
+from images.factories import ImageFactory
 from images.views import ServeView
 
 
 class ServeViewTestCase(TestCase):
     def setUp(self):
-        Collection.objects.create(
-            name="Root",
-            path='0001',
-            depth=1,
-            numchild=0,
-        )
-
-        # Create an image for running tests on
-        self.image = Image.objects.create(
-            title="Test image",
-            file=get_test_image_file(),
-        )
+        self.image = ImageFactory(title="Test image")
 
     def _get_url(self, signature, image_id, filter_spec, slug, key=ServeView.key):
         return reverse(

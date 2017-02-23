@@ -1,5 +1,7 @@
 import copy
-from unittest import TestCase
+from unittest import TestCase, mock
+
+from images.factories import ImageFactory
 
 from .. import components
 
@@ -63,6 +65,72 @@ class TextComponentTestCase(TestCase):
         self.assertEqual(
             context['new_files'],
             [('/path/file1', 'content'), ('/item/path/content-2.md', 'lorem ipsum')]
+        )
+
+
+class ImageComponentTestCase(TestCase):
+    def setUp(self):
+        super().setUp()
+        self.image = ImageFactory(title='test image')
+        self.default_image_data = {
+            'type': 'image',
+            'props': {
+                'id': self.image.id,
+                'caption': 'some caption text',
+                'alt': 'some alt'
+            }
+        }
+
+    def transform_from_gallery(self):
+        """
+        If the image component is part of a gallery, it generates only 2 specs.
+        """
+        data = self.default_image_data
+
+        context = {
+            'page': mock.MagicMock(slug='page'),
+            'root_path': '/path/to/root/'
+        }
+        component = components.ImageComponent(context)
+        transformed_data = component.transform(
+            data, parent=components.GalleryComponent({})
+        )
+
+        slug_postfix = self.image._random_slug_postfix
+        self.assertEqual(transformed_data['props']['caption'], data['props']['caption'])
+        self.assertEqual(transformed_data['props']['alt'], data['props']['alt'])
+        self.assertCountEqual(
+            transformed_data['props']['srcset'],
+            [
+                'assets/images/page/test-image-%s-width-300.png 300w' % slug_postfix,
+                'assets/images/page/test-image-%s-width-600.png 600w' % slug_postfix
+            ]
+        )
+
+    def transform_default(self):
+        """
+        If the image component is not part of a gallery, it generates 4 different specs.
+        """
+        data = self.default_image_data
+
+        context = {
+            'page': mock.MagicMock(slug='page'),
+            'root_path': '/path/to/root/'
+        }
+        component = components.ImageComponent(context)
+        transformed_data = component.transform(data)
+
+        slug_postfix = self.image._random_slug_postfix
+        self.assertEqual(transformed_data['props']['caption'], data['props']['caption'])
+        self.assertEqual(transformed_data['props']['alt'], data['props']['alt'])
+        self.assertCountEqual(
+            transformed_data['props']['srcset'],
+            [
+                'assets/images/page/test-image-%s-width-400.png 400w' % slug_postfix,
+                'assets/images/page/test-image-%s-width-640.png 640w' % slug_postfix,
+                'assets/images/page/test-image-%s-width-800.png 800w' % slug_postfix,
+                'assets/images/page/test-image-%s-width-1280.png 1280w' % slug_postfix
+            ]
         )
 
 
