@@ -1,38 +1,36 @@
+import json
 import tempfile
 import zipfile
 
-from django.contrib.contenttypes.models import ContentType
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from wagtail.tests.utils import WagtailTestUtils
 from wagtail.wagtailcore.models import Collection, Page, Site
 from wagtail.wagtailimages.tests.utils import Image, get_test_image_file
 
+from pages.factories import ConditionPageFactory
 from pages.models import EditorialPage
 
 
 class ExportContentTestCase(TestCase, WagtailTestUtils):
     def setUp(self):
-        # set up pages
-        root = Page.objects.create(
-            title="Root",
-            slug='root',
-            content_type=ContentType.objects.get_for_model(Page),
-            path='0001',
-            depth=1,
-            numchild=1,
-            url_path='/',
+        # Set up pages
+        ConditionPageFactory(
+            title='condition-1', slug='condition-1',
+            main=EditorialPage._meta.get_field('main').to_python(
+                json.dumps([{
+                    'type': 'text',
+                    'value': {
+                        'variant': 'markdown',
+                        'value': 'lorem ipsum'
+                    }
+                }])
+            )
         )
-        self.site = Site.objects.create(hostname='localhost', root_page=root, is_default_site=True)
-
-        self.page = EditorialPage.objects.create(
-            title="Page",
-            slug='page',
-            content_type=ContentType.objects.get_for_model(EditorialPage),
-            path='00010001',
-            depth=2,
-            numchild=0,
-            url_path='/page/',
+        self.site = Site.objects.create(
+            hostname='localhost',
+            root_page=Page.objects.get(slug='root'),
+            is_default_site=True
         )
 
         # set up images
@@ -67,12 +65,15 @@ class ExportContentTestCase(TestCase, WagtailTestUtils):
                 self.assertCountEqual(
                     zf.namelist(),
                     [
+                        'content/home/manifest.json',
+                        'content/home/conditions/manifest.json',
+                        'content/home/conditions/condition-1/manifest.json',
+                        'content/home/conditions/condition-1/content-1.md',
                         'content/images/width-1280-test-image.png',
                         'content/images/width-300-test-image.png',
                         'content/images/width-400-test-image.png',
                         'content/images/width-600-test-image.png',
                         'content/images/width-800-test-image.png',
-                        'content/page/manifest.json'
                     ]
                 )
 
