@@ -52,17 +52,53 @@ class ExportContentTestCase(TestCase, WagtailTestUtils):
 
             with zipfile.ZipFile(tf.name) as zf:
                 slug_postfix = self.image._random_slug_postfix
+
+                condition_manifest_path = 'content/home/conditions/condition-1/manifest.json'
+                condition_md_path = 'content/home/conditions/condition-1/content-1.md'
+
+                def image_path(slug_postfix, size, in_srcset=False):
+                    root = 'assets' if in_srcset else 'content'
+                    postfix = ' %sw' % size if in_srcset else ''
+
+                    return '{root}/images/condition-1/test-image-{slug_postfix}-width-{size}.png{postfix}'.format(
+                        root=root,
+                        slug_postfix=slug_postfix,
+                        size=size,
+                        postfix=postfix
+                    )
+
+                # check manifest.json
+                condition_manifest = json.loads(
+                    zf.read(condition_manifest_path).decode()
+                )
+                main_content = condition_manifest['content']['main']
+                self.assertEqual(main_content[0]['props']['value'], '!file=content-1.md')
+                self.assertCountEqual(
+                    main_content[1]['props']['srcset'],
+                    [
+                        image_path(slug_postfix, 400, in_srcset=True),
+                        image_path(slug_postfix, 640, in_srcset=True),
+                        image_path(slug_postfix, 800, in_srcset=True),
+                        image_path(slug_postfix, 1280, in_srcset=True),
+                    ]
+                )
+
+                # check md file
+                condition_md = zf.read(condition_md_path).decode()
+                self.assertEqual(condition_md, 'lorem ipsum')
+
+                # check the zip files
                 self.assertCountEqual(
                     zf.namelist(),
                     [
+                        condition_manifest_path,
+                        condition_md_path,
                         'content/home/manifest.json',
                         'content/home/conditions/manifest.json',
-                        'content/home/conditions/condition-1/manifest.json',
-                        'content/home/conditions/condition-1/content-1.md',
-                        'content/images/condition-1/test-image-%s-width-1280.png' % slug_postfix,
-                        'content/images/condition-1/test-image-%s-width-800.png' % slug_postfix,
-                        'content/images/condition-1/test-image-%s-width-400.png' % slug_postfix,
-                        'content/images/condition-1/test-image-%s-width-640.png' % slug_postfix,
+                        image_path(slug_postfix, 400),
+                        image_path(slug_postfix, 640),
+                        image_path(slug_postfix, 800),
+                        image_path(slug_postfix, 1280)
                     ]
                 )
 
