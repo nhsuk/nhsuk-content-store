@@ -9,7 +9,7 @@ TEST_FRONTEND_BASE_URL = 'https://example.com'
 
 class LivePagesTestCase(TestCase):
     def setUp(self):
-        super(LivePagesTestCase, self).setUp()
+        super().setUp()
 
         self.page = ConditionPageFactory(title='Page')
         self.request = self.get_request(Site.objects.first())

@@ -12,7 +12,7 @@ from pages.blocks import FixedListBlock, ListBlock, StreamBlock, StructBlock
 class TestCharBlock(CharBlock):
     def __init__(self, *args, **kwargs):
         self.expected = kwargs.pop('expected', None)
-        super(TestCharBlock, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def to_api_representation(self, value, context=None):
         return self.expected

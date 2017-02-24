@@ -126,7 +126,7 @@ class ViewDraftTestCase(BaseRevisionPreviewTestCase):
 
 class PreviewForModerationTestCase(BaseRevisionPreviewTestCase):
     def setUp(self):
-        super(PreviewForModerationTestCase, self).setUp()
+        super().setUp()
 
         # mark the revision as awaiting moderation
         self.revision.submitted_for_moderation = True

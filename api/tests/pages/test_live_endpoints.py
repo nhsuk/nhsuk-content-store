@@ -8,7 +8,7 @@ class GetByUrlPathTestCase(ContentAPIBaseTestCase):
     Tests getting a page by its path.
     """
     def setUp(self):
-        super(GetByUrlPathTestCase, self).setUp()
+        super().setUp()
         self.page = ConditionPageFactory(title='Page')
 
     def test_get(self):

@@ -46,7 +46,7 @@ class ContentAPIBaseTestCase(TestCase):
         RootPageFactory()
 
     def setUp(self):
-        super(ContentAPIBaseTestCase, self).setUp()
+        super().setUp()
         self.setUpAuthData()
         self.setUpPages()
 

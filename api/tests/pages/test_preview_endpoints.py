@@ -11,7 +11,7 @@ class PreviewPagesTestCase(ContentAPIBaseTestCase):
     """
 
     def setUp(self):
-        super(PreviewPagesTestCase, self).setUp()
+        super().setUp()
         self.page = ConditionPageFactory(title='Page')
 
     def test_get_by_revision_x(self):

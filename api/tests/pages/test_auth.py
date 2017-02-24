@@ -12,7 +12,7 @@ class AuthTestCase(ContentAPIBaseTestCase):
     Tests related to authenticating against the Content API.
     """
     def setUp(self):
-        super(AuthTestCase, self).setUp()
+        super().setUp()
         self.page = ConditionPageFactory(title='Page')
 
     def test_401_without_token(self):

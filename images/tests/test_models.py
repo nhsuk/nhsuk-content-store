@@ -6,7 +6,7 @@ from wagtail.wagtailimages.tests.utils import get_test_image_file
 
 class BaseImageTestCase(TestCase):
     def setUp(self):
-        super(BaseImageTestCase, self).setUp()
+        super().setUp()
 
         Collection.objects.create(
             name="Root",

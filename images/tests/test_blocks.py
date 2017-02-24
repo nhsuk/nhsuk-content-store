@@ -10,7 +10,7 @@ from images.blocks import ImageChooserBlock
 
 class ImageChooserBlockTestCase(TestCase):
     def setUp(self):
-        super(ImageChooserBlockTestCase, self).setUp()
+        super().setUp()
 
         Collection.objects.create(
             name="Root",

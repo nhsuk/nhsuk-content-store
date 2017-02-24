@@ -51,4 +51,4 @@ class Image(WagtailImage):
         if self.id:
             self.version = self.version + 1
 
-        return super(Image, self).save(*args, **kwargs)
+        return super().save(*args, **kwargs)
