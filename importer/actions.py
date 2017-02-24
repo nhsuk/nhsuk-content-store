@@ -41,6 +41,7 @@ class Importer(object):
             # populate basic props
             page.slug = item_slug
             page.title = item_data['title']
+            page.search_description = item_data.get('description', '')
             page.live = True
 
             if is_folder_page:

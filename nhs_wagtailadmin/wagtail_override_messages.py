@@ -8,4 +8,5 @@ wagtail_standard_messages_to_override = [
     _("Live"),
     _("Draft"),
     _("Approve"),
+    _("search description"),
 ]
