@@ -5,7 +5,6 @@ import zipfile
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from wagtail.tests.utils import WagtailTestUtils
-from wagtail.wagtailcore.models import Page, Site
 
 from images.factories import ImageFactory
 from pages.factories import ConditionPageFactory
@@ -36,12 +35,6 @@ class ExportContentTestCase(TestCase, WagtailTestUtils):
                 ])
             )
         )
-        self.site = Site.objects.create(
-            hostname='localhost',
-            root_page=Page.objects.get(slug='root'),
-            is_default_site=True
-        )
-
         self.url = reverse('export-content',)
 
         # Login

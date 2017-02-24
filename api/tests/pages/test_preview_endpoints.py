@@ -1,8 +1,6 @@
-from django.contrib.contenttypes.models import ContentType
 from wagtail.wagtailcore.models import PageRevision
 
-from home.models import HomePage
-from pages.models import EditorialPage
+from pages.factories import ConditionPageFactory
 
 from .base import ContentAPIBaseTestCase
 
@@ -14,27 +12,7 @@ class PreviewPagesTestCase(ContentAPIBaseTestCase):
 
     def setUp(self):
         super(PreviewPagesTestCase, self).setUp()
-
-        self.home = HomePage.objects.create(
-            title='Homepage',
-            slug='home',
-            content_type=ContentType.objects.get_for_model(HomePage),
-            path='00010001',
-            depth=2,
-            numchild=1,
-            url_path='/home/',
-
-        )
-        self.page = EditorialPage.objects.create(
-            title='Page',
-            slug='page',
-            content_type=ContentType.objects.get_for_model(EditorialPage),
-            path='000100010001',
-            depth=3,
-            numchild=0,
-            url_path='/home/page/',
-            live=True
-        )
+        self.page = ConditionPageFactory(title='Page')
 
     def test_get_by_revision_x(self):
         """

@@ -4,10 +4,10 @@ from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.test.utils import override_settings
 from wagtail.tests.utils import WagtailTestUtils
-from wagtail.wagtailcore.models import Page, Site
 
 from nhs_wagtailadmin.exceptions import DeprecatedException
 from nhs_wagtailadmin.views import generate_preview_signature
+from pages.factories import ConditionPageFactory
 
 
 class GeneratePreviewSignatureTestCase(TestCase):
@@ -85,26 +85,7 @@ class BaseRevisionPreviewTestCase(TestCase, WagtailTestUtils):
         self.user = self.login()
 
         # create pages
-        root = Page.objects.create(
-            title="Root",
-            slug='root',
-            content_type=ContentType.objects.get_for_model(Page),
-            path='0001',
-            depth=1,
-            numchild=1,
-            url_path='/',
-        )
-        self.site = Site.objects.create(hostname='localhost', root_page=root, is_default_site=True)
-
-        self.page = Page.objects.create(
-            title="Page",
-            slug='page',
-            content_type=ContentType.objects.get_for_model(Page),
-            path='00010001',
-            depth=2,
-            numchild=0,
-            url_path='/page/',
-        )
+        self.page = ConditionPageFactory(title='Page')
         self.revision = self.page.save_revision()
 
 
