@@ -2,7 +2,6 @@ from django.conf import settings
 from django.db import models
 from django.http import HttpResponse
 from django.shortcuts import redirect
-from django.utils.translation import ugettext_lazy
 from wagtail.wagtailadmin.edit_handlers import (
     FieldPanel, MultiFieldPanel, StreamFieldPanel
 )
@@ -17,6 +16,10 @@ from .blocks import StreamBlock
 
 class Page(WagtailPage):
     is_creatable = False
+
+    @property
+    def description(self):
+        return self.search_description
 
     def serve(self, request, *args, **kwargs):
         """
@@ -88,11 +91,10 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     ]
 
     promote_panels = [
-        MultiFieldPanel([
-            FieldPanel('non_emergency_callout'),
-            FieldPanel('choices_origin'),
-            FieldPanel('slug'),
-        ]),
+        FieldPanel('non_emergency_callout'),
+        FieldPanel('search_description'),
+        FieldPanel('choices_origin'),
+        FieldPanel('slug'),
     ]
 
     @property
@@ -121,7 +123,6 @@ class FolderPage(ChildrenSiblingsMixin, Page):
     ]
 
     promote_panels = [
-        MultiFieldPanel([
-            FieldPanel('slug'),
-        ], ugettext_lazy('Common page configuration')),
+        FieldPanel('search_description'),
+        FieldPanel('slug'),
     ]

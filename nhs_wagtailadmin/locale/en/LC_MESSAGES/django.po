@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-15 11:04+0000\n"
+"POT-Creation-Date: 2017-02-24 09:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,46 +23,36 @@ msgstr ""
 
 #: templates/wagtailadmin/home/pages_for_moderation.html:13
 #: templates/wagtailadmin/home/recent_edits.html:12
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:33
 #: templates/wagtailadmin/pages/listing/_table_headers_explore.html:36
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:39
 msgid "Title"
 msgstr ""
 
 #: templates/wagtailadmin/home/pages_for_moderation.html:14
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:43
-msgid "Parent"
-msgstr ""
-
-#: templates/wagtailadmin/home/pages_for_moderation.html:15
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:59
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:62
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:54
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:57
 msgid "Type"
 msgstr ""
 
-#: templates/wagtailadmin/home/pages_for_moderation.html:16
+#: templates/wagtailadmin/home/pages_for_moderation.html:15
 msgid "Edited"
 msgstr ""
 
-#: templates/wagtailadmin/home/pages_for_moderation.html:24
-#: templates/wagtailadmin/home/recent_edits.html:22
-msgid "Edit this page"
-msgstr ""
-
-#: templates/wagtailadmin/home/pages_for_moderation.html:33
+#: templates/wagtailadmin/home/pages_for_moderation.html:32
 #: wagtail_override_messages.py:10
 msgid "Approve"
 msgstr "Publish"
 
-#: templates/wagtailadmin/home/pages_for_moderation.html:39
+#: templates/wagtailadmin/home/pages_for_moderation.html:38
 msgid "Reject"
 msgstr ""
 
-#: templates/wagtailadmin/home/pages_for_moderation.html:42
+#: templates/wagtailadmin/home/pages_for_moderation.html:41
 #: templates/wagtailadmin/home/recent_edits.html:28
 msgid "Edit"
 msgstr ""
 
-#: templates/wagtailadmin/home/pages_for_moderation.html:43
+#: templates/wagtailadmin/home/pages_for_moderation.html:42
 msgid "Preview"
 msgstr ""
 
@@ -75,8 +65,8 @@ msgid "Date"
 msgstr ""
 
 #: templates/wagtailadmin/home/recent_edits.html:14
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:69
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:72
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:63
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:66
 msgid "Status"
 msgstr ""
 
@@ -90,83 +80,86 @@ msgstr "View draft"
 msgid "Live"
 msgstr "View live"
 
-#: templates/wagtailadmin/pages/listing/_list.html:58
+#: templates/wagtailadmin/pages/listing/_list.html:49
 msgid "Drag"
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:21
+#: templates/wagtailadmin/pages/listing/_list_explore.html:19
 msgid ""
 "\n"
-"                  The root level is where you can add new sites to your "
-"Wagtail installation.\n"
-"                  Pages created here will not be accessible at any URL until "
-"they are associated with a site.\n"
-"                "
+"                            The root level is where you can add new sites to "
+"your Wagtail installation. Pages created here will not be accessible at any "
+"URL until they are associated with a site.\n"
+"                        "
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:26
-#: templates/wagtailadmin/pages/listing/_list_explore.html:54
+#: templates/wagtailadmin/pages/listing/_list_explore.html:23
+#: templates/wagtailadmin/pages/listing/_list_explore.html:45
 msgid "Configure a site now."
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:30
+#: templates/wagtailadmin/pages/listing/_list_explore.html:27
 msgid ""
 "\n"
-"                  If you just want to add pages to an existing site, create "
-"them as children of the homepage instead.\n"
-"                "
+"                            If you just want to add pages to an existing "
+"site, create them as children of the homepage instead.\n"
+"                        "
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:35
+#: templates/wagtailadmin/pages/listing/_list_explore.html:32
 msgid ""
 "\n"
-"                Pages created here will not be accessible at any URL. To add "
-"pages to an existing site, create them as\n"
-"                children of the homepage.\n"
-"              "
+"                        Pages created here will not be accessible at any "
+"URL. To add pages to an existing site, create them as children of the "
+"homepage.\n"
+"                    "
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:49
+#: templates/wagtailadmin/pages/listing/_list_explore.html:41
 msgid ""
 "\n"
-"                There is no site set up for this location. Pages created "
-"here will not be accessible at any URL until a\n"
-"                site is associated with this location.\n"
-"              "
+"                        There is no site set up for this location. Pages "
+"created here will not be accessible at any URL until a site is associated "
+"with this location.\n"
+"                    "
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:57
+#: templates/wagtailadmin/pages/listing/_list_explore.html:48
 msgid ""
 "\n"
-"                There is no site record for this location. Pages created "
-"here will not be accessible at any URL.\n"
-"              "
+"                        There is no site record for this location. Pages "
+"created here will not be accessible at any URL.\n"
+"                    "
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:80
+#: templates/wagtailadmin/pages/listing/_list_explore.html:68
 msgid "No pages have been created at this location."
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_list_explore.html:82
+#: templates/wagtailadmin/pages/listing/_list_explore.html:68
 #, python-format
 msgid "Why not <a href=\"%(add_page_url)s\">create one</a>?"
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:24
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:23
 msgid "Disable ordering of child pages"
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:24
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:27
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:23
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:25
 msgid "Order"
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:27
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:25
 msgid "Enable ordering of child pages"
 msgstr ""
 
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:49
-#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:52
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:40
+msgid "Parent"
+msgstr ""
+
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:45
+#: templates/wagtailadmin/pages/listing/_table_headers_explore.html:48
 msgid "Updated"
 msgstr ""
 
@@ -179,10 +172,14 @@ msgstr ""
 msgid "The page '{0}' is not currently awaiting moderation."
 msgstr ""
 
-#: wagtail_hooks.py:38
+#: wagtail_hooks.py:39
 msgid "Dashboard"
 msgstr ""
 
 #: wagtail_override_messages.py:7
 msgid "Explorer"
 msgstr "Pages"
+
+#: wagtail_override_messages.py:11
+msgid "search description"
+msgstr "description"

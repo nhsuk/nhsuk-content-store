@@ -26,7 +26,8 @@ class BasePagesAPIEndpoint(WagtailPagesAPIEndpoint):
 
     body_fields = WagtailPagesAPIEndpoint.body_fields + [
         'guide',
-        'content'
+        'content',
+        'description'
     ]
 
     meta_fields = BaseAPIEndpoint.meta_fields + [
