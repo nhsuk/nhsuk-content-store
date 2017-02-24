@@ -11,7 +11,7 @@ class ContentFieldTestCase(TestCase):
     Tests the ContentField serializer field.
     """
     def setUp(self):
-        super(ContentFieldTestCase, self).setUp()
+        super().setUp()
 
         self.serializer_field = ContentField(
             fields=(

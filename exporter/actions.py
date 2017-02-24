@@ -20,7 +20,7 @@ class BakeryPageView(BuildableMixin):
     CONTENT_AREAS = ['header', 'main']
 
     def __init__(self, build_path):
-        super(BakeryPageView, self).__init__()
+        super().__init__()
         self.build_path = build_path
 
     def transform_content(self, obj, raw_content):

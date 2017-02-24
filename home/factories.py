@@ -1,5 +1,6 @@
 import factory
 from django.core.exceptions import ObjectDoesNotExist
+from wagtail.wagtailcore.models import Site
 
 from pages.models import Page
 
@@ -49,6 +50,20 @@ class RootPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):
 
     class Meta:
         model = Page
+
+    @classmethod
+    def create_if_necessary(cls, *args, **kwargs):
+        root = super().create_if_necessary(*args, **kwargs)
+
+        # create default Site if it doesn't exist
+        Site.objects.get_or_create(
+            hostname='localhost',
+            defaults={
+                'root_page': root,
+                'is_default_site': True
+            }
+        )
+        return root
 
 
 class HomePageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):

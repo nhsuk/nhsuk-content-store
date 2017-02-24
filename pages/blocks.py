@@ -79,7 +79,7 @@ class FixedListBlock(ListBlock):
         - members have a label == `<label> A|B|C|D...` (configurable)
     """
     def __init__(self, *args, **kwargs):
-        super(FixedListBlock, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
         # checks that number of defaults is not bigger than members number
         if len(self.meta.default) > self.meta.members_number:

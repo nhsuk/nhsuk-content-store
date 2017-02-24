@@ -14,7 +14,7 @@ class HierarchyBaseTestCase(ContentAPIBaseTestCase):
                 <page2> (live)
                 <page3> (not live)
         """
-        super(HierarchyBaseTestCase, self).setUp()
+        super().setUp()
 
         # create guide folder
         self.folder = FolderPage.objects.create(

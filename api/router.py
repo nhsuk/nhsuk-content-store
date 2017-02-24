@@ -61,7 +61,7 @@ class PagesAPIEndpoint(BasePagesAPIEndpoint):
         """
         Extends the default Wagtail list of endpoints.
         """
-        url_patterns = list(super(PagesAPIEndpoint, cls).get_urlpatterns())
+        url_patterns = list(super().get_urlpatterns())
         url_patterns.append(
             url(r'^with-path/(?P<path>[\w/-]*)$', cls.as_view({'get': 'detail_view_by_path'}), name='detail_by_path')
         )
@@ -82,7 +82,7 @@ class PreviewPagesAPIEndpoint(BasePagesAPIEndpoint):
 
         The revision can be selected by using the query param `revision-id` which defaults to the latest one.
         """
-        obj = super(PreviewPagesAPIEndpoint, self).get_object()
+        obj = super().get_object()
 
         revision_id = self.request.query_params.get('revision-id')
         if revision_id:

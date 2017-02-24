@@ -10,7 +10,7 @@ class TempMediaMixin(object):
 
     def setup_test_environment(self):
         "Create temp directory and update MEDIA_ROOT and default storage."
-        super(TempMediaMixin, self).setup_test_environment()
+        super().setup_test_environment()
         settings._original_media_root = settings.MEDIA_ROOT
         settings._original_file_storage = settings.DEFAULT_FILE_STORAGE
         self._temp_media = tempfile.mkdtemp()
@@ -19,7 +19,7 @@ class TempMediaMixin(object):
 
     def teardown_test_environment(self):
         "Delete temp storage."
-        super(TempMediaMixin, self).teardown_test_environment()
+        super().teardown_test_environment()
         shutil.rmtree(self._temp_media, ignore_errors=True)
         settings.MEDIA_ROOT = settings._original_media_root
         del settings._original_media_root

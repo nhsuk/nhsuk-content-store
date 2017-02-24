@@ -71,7 +71,7 @@ class ContentField(Field):
     """
     def __init__(self, *args, **kwargs):
         self.fields = kwargs.pop('fields')
-        super(ContentField, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def get_attribute(self, instance):
         return instance

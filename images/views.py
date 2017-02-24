@@ -26,7 +26,7 @@ class ServeView(View):
             if initkwargs['action'] not in ['serve', 'redirect']:
                 raise ImproperlyConfigured("ServeView action must be either 'serve' or 'redirect'")
 
-        return super(ServeView, cls).as_view(**initkwargs)
+        return super().as_view(**initkwargs)
 
     def get(self, request, signature, image_id, filter_spec, slug):
         if not verify_signature(signature.encode(), image_id, filter_spec, key=self.key):

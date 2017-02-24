@@ -51,7 +51,7 @@ class SimpleMDETextArea(WidgetWithScript, widgets.Textarea):
         }
 
     def __init__(self, attrs=None, **kwargs):
-        super(SimpleMDETextArea, self).__init__(attrs)
+        super().__init__(attrs)
         self.options = dict(self.getDefaultArgs())
         self.options.update(kwargs.get('options', {}))
 

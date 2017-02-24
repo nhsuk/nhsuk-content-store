@@ -1,38 +1,18 @@
-from django.contrib.contenttypes.models import ContentType
 from django.test import TestCase
 from django.test.utils import override_settings
-from wagtail.wagtailcore.models import Page, Site
+from wagtail.wagtailcore.models import Site
 
-from pages.models import EditorialPage
+from pages.factories import ConditionPageFactory
 
 TEST_FRONTEND_BASE_URL = 'https://example.com'
 
 
 class LivePagesTestCase(TestCase):
     def setUp(self):
-        super(LivePagesTestCase, self).setUp()
+        super().setUp()
 
-        root = Page.objects.create(
-            title="Root",
-            slug='root',
-            content_type=ContentType.objects.get_for_model(Page),
-            path='0001',
-            depth=1,
-            numchild=1,
-            url_path='/',
-        )
-        self.site = Site.objects.create(hostname='localhost', root_page=root, is_default_site=True)
-
-        self.page = EditorialPage.objects.create(
-            title="Page",
-            slug='page',
-            content_type=ContentType.objects.get_for_model(EditorialPage),
-            path='00010001',
-            depth=2,
-            numchild=0,
-            url_path='/page/',
-        )
-        self.request = self.get_request(self.site)
+        self.page = ConditionPageFactory(title='Page')
+        self.request = self.get_request(Site.objects.first())
 
     def get_request(self, site):
         request = self.client.get('/test/', HTTP_HOST=site.hostname)

@@ -1,7 +1,7 @@
 from django.contrib.contenttypes.models import ContentType
 from django.test import TestCase
-from wagtail.wagtailcore.models import Page
 
+from home.factories import RootPageFactory
 from pages.models import EditorialPage, FolderPage
 
 
@@ -14,15 +14,7 @@ class BaseTestCase(TestCase):
                 <page2> (live)
                 <page3> (not live)
         """
-        Page.objects.create(
-            title="Root",
-            slug='root',
-            content_type=ContentType.objects.get_for_model(Page),
-            path='0001',
-            depth=1,
-            numchild=1,
-            url_path='/',
-        )
+        RootPageFactory()
 
         # create folder
         self.folder = FolderPage.objects.create(

@@ -1,9 +1,8 @@
 from datetime import timedelta
 
-from django.contrib.contenttypes.models import ContentType
 from django.utils.timezone import now
 
-from pages.models import EditorialPage
+from pages.factories import ConditionPageFactory
 
 from .base import ContentAPIBaseTestCase
 
@@ -13,17 +12,8 @@ class AuthTestCase(ContentAPIBaseTestCase):
     Tests related to authenticating against the Content API.
     """
     def setUp(self):
-        super(AuthTestCase, self).setUp()
-
-        self.page = EditorialPage.objects.create(
-            title="Page",
-            slug='page',
-            content_type=ContentType.objects.get_for_model(EditorialPage),
-            path='00010001',
-            depth=2,
-            numchild=0,
-            url_path='/page/',
-        )
+        super().setUp()
+        self.page = ConditionPageFactory(title='Page')
 
     def test_401_without_token(self):
         """

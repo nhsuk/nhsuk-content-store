@@ -51,3 +51,14 @@ class SymptomPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):
 
     class Meta:
         model = models.EditorialPage
+
+
+class ConditionFolderPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):
+    path = factory.Sequence(lambda n: '000100010002000%d' % (n + 1))
+    depth = 4
+
+    _ParentFactory = ConditionsPageFactory
+    _unique = False
+
+    class Meta:
+        model = models.FolderPage
