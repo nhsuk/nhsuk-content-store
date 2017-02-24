@@ -17,14 +17,15 @@ class BaseImageTestCase(TestCase):
 
 
 class ImageSlugTestCase(BaseImageTestCase):
+    def assertSlugEqual(self, slug, expected):
+        self.assertTrue(slug.startswith(expected))
+
     def test_create(self):
         image = get_image_model().objects.create(
             title="Test image",
             file=get_test_image_file()
         )
-        self.assertEqual(
-            image.slug, 'test-image.png'
-        )
+        self.assertSlugEqual(image.slug, 'test-image')
 
     def test_update(self):
         image = get_image_model().objects.create(
@@ -35,9 +36,7 @@ class ImageSlugTestCase(BaseImageTestCase):
         image.title = 'Something else'
         image.save()
 
-        self.assertEqual(
-            image.slug, 'something-else.png'
-        )
+        self.assertSlugEqual(image.slug, 'something-else')
 
     def test_very_long_title(self):
         image = get_image_model().objects.create(
@@ -45,9 +44,7 @@ class ImageSlugTestCase(BaseImageTestCase):
             file=get_test_image_file()
         )
 
-        self.assertEqual(
-            image.slug, '{}.png'.format('a' * 50)
-        )
+        self.assertSlugEqual(image.slug, ('a' * 50))
 
     def test_dots_in_title(self):
         image = get_image_model().objects.create(
@@ -55,9 +52,7 @@ class ImageSlugTestCase(BaseImageTestCase):
             file=get_test_image_file()
         )
 
-        self.assertEqual(
-            image.slug, 'ab.png'
-        )
+        self.assertSlugEqual(image.slug, 'ab')
 
 
 class ImageVersionTestCase(BaseImageTestCase):

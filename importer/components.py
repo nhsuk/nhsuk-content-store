@@ -86,6 +86,10 @@ class ImageComponent(Component):
     def assets_base_url(self):
         return self.context['assets_base_url']
 
+    @property
+    def page(self):
+        return self.context['page']
+
     def get_image_data_from_file(self, include_file):
         return get_data_from_remote('%s/%s' % (self.assets_base_url, include_file), is_file=True)
 
@@ -95,7 +99,7 @@ class ImageComponent(Component):
 
         image = Image(
             caption=data['props'].get('caption', ''),
-            title=data['props']['alt']
+            title=data['props']['alt'] or self.page.title
         )
 
         # save temp file

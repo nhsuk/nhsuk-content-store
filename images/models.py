@@ -1,6 +1,7 @@
 import imghdr
 
 from django.db import models
+from django.utils.crypto import get_random_string
 from django.utils.text import slugify
 from wagtail.wagtailimages.models import Image as WagtailImage
 
@@ -38,9 +39,11 @@ class Image(WagtailImage):
 
     def save(self, *args, **kwargs):
         # generate slug
+        self._random_slug_postfix = get_random_string(4)
         self.file.open()
-        self.slug = '{}.{}'.format(
+        self.slug = '{}-{}.{}'.format(
             slugify(self.title.rsplit('.', 1)[0])[:50],
+            self._random_slug_postfix,
             (imghdr.what(self.file) or 'jpg')
         )
 

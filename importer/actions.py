@@ -53,7 +53,8 @@ class Importer(object):
                 content = item_data['content']
                 context = {
                     'item_base_url': item_base_url,
-                    'assets_base_url': ''
+                    'assets_base_url': '',
+                    'page': page
                 }
                 component_importer = StructuralComponent(context)
 
