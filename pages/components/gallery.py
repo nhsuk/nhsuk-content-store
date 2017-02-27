@@ -1,4 +1,6 @@
-from ..blocks import StreamBlock, StructBlock
+from wagtail.wagtailcore.blocks import StructBlock
+
+from ..blocks import StreamBlock
 from .base import Component
 from .image import image
 

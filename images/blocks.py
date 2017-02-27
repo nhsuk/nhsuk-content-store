@@ -7,7 +7,7 @@ class ImageChooserBlock(WagtailImageChooserBlock):
     Same as the Wagtail ImageChooserBlock but denormalising
     the image data in the json response so that we don't have to make an extra call.
     """
-    def to_api_representation(self, value, context=None):
+    def get_api_representation(self, value, context=None):
         from wagtail.wagtailimages.api.v2.endpoints import ImagesAPIEndpoint
 
         if value is None or not context:
