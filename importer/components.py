@@ -22,7 +22,9 @@ class StructuralComponent(Component):
     COMPONENTS = {
         'text': 'TextComponent',
         'split_content': 'SplitContentComponent',
+        'splitContent': 'SplitContentComponent',
         'split_area': 'SplitAreaComponent',
+        'splitArea': 'SplitAreaComponent',
         'gallery': 'GalleryComponent',
         'image': 'ImageComponent',
         'callout': 'CalloutComponent',
