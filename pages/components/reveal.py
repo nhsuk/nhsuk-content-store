@@ -1,6 +1,6 @@
-from wagtail.wagtailcore.blocks import CharBlock, ChoiceBlock
+from wagtail.wagtailcore.blocks import CharBlock, ChoiceBlock, StructBlock
 
-from ..blocks import StreamBlock, StructBlock
+from ..blocks import StreamBlock
 from .base import Component
 from .gallery import gallery
 from .text import text

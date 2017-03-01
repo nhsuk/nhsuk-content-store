@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-24 09:53+0000\n"
+"POT-Creation-Date: 2017-02-28 09:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgid "Edited"
 msgstr ""
 
 #: templates/wagtailadmin/home/pages_for_moderation.html:32
-#: wagtail_override_messages.py:10
+#: wagtail_override_messages.py:8
 msgid "Approve"
 msgstr "Publish"
 
@@ -56,6 +56,14 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
+#: templates/wagtailadmin/home/pages_for_moderation.html:49
+#: templates/wagtailadmin/home/recent_edits.html:37
+#: templates/wagtailadmin/pages/listing/_list.html:26
+#: templates/wagtailadmin/pages/listing/_list.html:64
+#, python-format
+msgid "%(time_period)s ago"
+msgstr ""
+
 #: templates/wagtailadmin/home/recent_edits.html:5
 msgid "Your most recent edits"
 msgstr ""
@@ -69,16 +77,6 @@ msgstr ""
 #: templates/wagtailadmin/pages/listing/_table_headers_explore.html:66
 msgid "Status"
 msgstr ""
-
-#: templates/wagtailadmin/home/recent_edits.html:30
-#: wagtail_override_messages.py:9
-msgid "Draft"
-msgstr "View draft"
-
-#: templates/wagtailadmin/home/recent_edits.html:33
-#: wagtail_override_messages.py:8
-msgid "Live"
-msgstr "View live"
 
 #: templates/wagtailadmin/pages/listing/_list.html:49
 msgid "Drag"
@@ -180,6 +178,6 @@ msgstr ""
 msgid "Explorer"
 msgstr "Pages"
 
-#: wagtail_override_messages.py:11
+#: wagtail_override_messages.py:9
 msgid "search description"
 msgstr "description"

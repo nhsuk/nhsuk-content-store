@@ -1,14 +1,6 @@
 from wagtail.api.v2.serializers import PageParentField as WagtailPageParentField
 from wagtail.api.v2.serializers import PageSerializer as WagtailPageSerializer
-from wagtail.api.v2.serializers import StreamField as WagtailStreamField
-from wagtail.api.v2.serializers import Field, get_serializer_class
-
-from .utils import get_block_representation
-
-
-class StreamField(WagtailStreamField):
-    def to_representation(self, value):
-        return get_block_representation(value.stream_block, value, context=self.context)
+from wagtail.api.v2.serializers import Field, StreamField, get_serializer_class
 
 
 def get_page_serializer_class(value):

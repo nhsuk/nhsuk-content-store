@@ -4,9 +4,8 @@ from django.forms.utils import ErrorList
 from wagtail.wagtailcore import blocks
 from wagtail.wagtailcore.blocks.field_block import CharBlock
 from wagtail.wagtailcore.blocks.stream_block import StreamValue
-from wagtail.wagtailcore.blocks.struct_block import StructValue
 
-from pages.blocks import FixedListBlock, ListBlock, StreamBlock, StructBlock
+from pages.blocks import FixedListBlock, StreamBlock
 
 
 class TestCharBlock(CharBlock):
@@ -14,7 +13,7 @@ class TestCharBlock(CharBlock):
         self.expected = kwargs.pop('expected', None)
         super().__init__(*args, **kwargs)
 
-    def to_api_representation(self, value, context=None):
+    def get_api_representation(self, value, context=None):
         return self.expected
 
 
@@ -24,25 +23,11 @@ class StreamBlockTestCase(TestCase):
             ('test', TestCharBlock())
         ])
 
-        representation = block.to_api_representation(
+        representation = block.get_api_representation(
             StreamValue(block, [], is_lazy=True),
             context={}
         )
         self.assertEqual(representation, [])
-
-    def test_api_representation_None_value_gets_skipped(self):
-        block = StreamBlock([
-            ('test', TestCharBlock(expected=None))
-        ])
-
-        representation = block.to_api_representation(
-            StreamValue(block, [{'type': 'test', 'value': None}], is_lazy=True),
-            context={}
-        )
-        self.assertEqual(
-            representation,
-            []
-        )
 
     def test_api_representation_with_value(self):
         expected = 'representation value'
@@ -51,7 +36,7 @@ class StreamBlockTestCase(TestCase):
             ('test', TestCharBlock(expected=expected))
         ])
 
-        representation = block.to_api_representation(
+        representation = block.get_api_representation(
             StreamValue(block, [{'type': 'test', 'value': 'some value'}], is_lazy=True),
             context={}
         )
@@ -59,60 +44,6 @@ class StreamBlockTestCase(TestCase):
             representation,
             [{'type': 'test', 'props': expected}]
         )
-
-
-class ListBlockTestCase(TestCase):
-    def test_api_representation_with_empty_list(self):
-        block = ListBlock(
-            TestCharBlock()
-        )
-
-        representation = block.to_api_representation([], context={})
-        self.assertEqual(representation, [])
-
-    def test_api_representation_None_value_gets_skipped(self):
-        block = ListBlock(
-            TestCharBlock(expected=None)
-        )
-
-        representation = block.to_api_representation([None], context={})
-        self.assertEqual(representation, [])
-
-    def test_api_representation_with_value(self):
-        expected = 'representation value'
-
-        block = ListBlock(
-            TestCharBlock(expected=expected)
-        )
-
-        representation = block.to_api_representation(['test'], context={})
-        self.assertEqual(representation, [expected])
-
-
-class StructBlockTestCase(TestCase):
-    def test_api_representation_with_empty_list(self):
-        block = StructBlock([
-            ('test', TestCharBlock())
-        ])
-
-        representation = block.to_api_representation(
-            StructValue(block, []),
-            context={}
-        )
-        self.assertEqual(representation, {})
-
-    def test_api_representation_with_value(self):
-        expected = 'representation value'
-
-        block = StructBlock([
-            ('test', TestCharBlock(expected=expected))
-        ])
-
-        representation = block.to_api_representation(
-            StructValue(block, [('test', 'some value')]),
-            context={}
-        )
-        self.assertEqual(representation, {'test': expected})
 
 
 class FixedListBlockTestCase(TestCase):

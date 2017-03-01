@@ -1,6 +1,6 @@
-from wagtail.wagtailcore.blocks import BooleanBlock, ChoiceBlock
+from wagtail.wagtailcore.blocks import BooleanBlock, ChoiceBlock, StructBlock
 
-from ..blocks import StreamBlock, StructBlock
+from ..blocks import StreamBlock
 from .base import Component
 from .reveal import reveal
 from .text import text

@@ -1,7 +1,6 @@
 from django import forms
-from wagtail.wagtailcore.blocks import ChoiceBlock, RichTextBlock
+from wagtail.wagtailcore.blocks import ChoiceBlock, RichTextBlock, StructBlock
 
-from ..blocks import StructBlock
 from .base import Component
 
 VARIANT_MARKDOWN = 'markdown'
