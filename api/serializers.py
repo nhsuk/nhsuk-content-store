@@ -29,6 +29,16 @@ class PageListField(Field):
         ]
 
 
+class SiblingsField(PageListField):
+    def get_attribute(self, instance):
+        return instance.get_guide_siblings()
+
+
+class ChildrenField(PageListField):
+    def get_attribute(self, instance):
+        return instance.get_live_children()
+
+
 class PageParentField(WagtailPageParentField):
     """
     Like the Wagtail PageParentField but using a consistent page serializer.
@@ -84,8 +94,8 @@ class ContentField(Field):
 
 class PageSerializer(WagtailPageSerializer):
     parent = PageParentField(read_only=True)
-    children = PageListField(read_only=True)
-    siblings = PageListField(read_only=True)
+    children = ChildrenField(read_only=True)
+    siblings = SiblingsField(read_only=True)
     content = ContentField(
         fields=[
             ('header', StreamField),

@@ -5,8 +5,6 @@ from __future__ import unicode_literals
 import django.db.models.deletion
 from django.db import migrations, models
 
-import pages.models
-
 
 class Migration(migrations.Migration):
 
@@ -25,6 +23,6 @@ class Migration(migrations.Migration):
             options={
                 'abstract': False,
             },
-            bases=(pages.models.ChildrenSiblingsMixin, 'wagtailcore.page'),
+            bases=('wagtailcore.page',),
         ),
     ]

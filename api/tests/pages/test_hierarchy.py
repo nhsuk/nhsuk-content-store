@@ -119,9 +119,10 @@ class SiblingsTestCase(HierarchyBaseTestCase):
     Tests related to the `siblings` meta field of the Content JSON API Response.
     """
 
-    def test_with_siblings(self):
+    def test_siblings_if_parent_is_a_guide(self):
         """
-        Tests that the API response of a page with siblings is:
+        Tests that the API response of a page with parent.guide == True
+        includes siblings:
         {
             ...
             meta: {
@@ -136,6 +137,9 @@ class SiblingsTestCase(HierarchyBaseTestCase):
             }
         }
         """
+        self.folder.guide = True
+        self.folder.save()
+
         for page in self.live_pages:
             response = self.get_content_api_response(page.id)
             json_data = response.json()
@@ -145,25 +149,21 @@ class SiblingsTestCase(HierarchyBaseTestCase):
                 [sibling.id for sibling in self.live_pages]
             )
 
-    def test_without_siblings(self):
+    def test_no_siblings_if_parent_isnt_a_guide(self):
         """
-        Tests that the API response of a page without siblings only include the page itself:
+        Tests that the API response of a page with parent.guide == False
+        has empty siblings:
         {
             ...
             meta: {
-                siblings: [{
-                    ...
-                }]
+                siblings: []
             }
         }
         """
         response = self.get_content_api_response(page_id=self.folder.id)
         json_data = response.json()
 
-        self.assertEqual(
-            [data['id'] for data in json_data['meta']['siblings']],
-            [self.folder.id]
-        )
+        self.assertEqual(json_data['meta']['siblings'], [])
 
 
 class GuideTestCase(HierarchyBaseTestCase):

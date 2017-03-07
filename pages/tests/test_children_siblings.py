@@ -68,7 +68,7 @@ class ChildrenTestCase(BaseTestCase):
         Tests that <page>.children() returns the list of live sub pages.
         """
         self.assertEqual(
-            [child.id for child in self.folder.children()],
+            [child.id for child in self.folder.get_live_children()],
             [child.id for child in self.live_pages]
         )
 
@@ -77,28 +77,29 @@ class ChildrenTestCase(BaseTestCase):
         Tests that if there aren't any live sub pages, <page>.children() returns [].
         """
         for page in self.all_pages:
-            self.assertEqual(list(page.children()), [])
+            self.assertEqual(list(page.get_live_children()), [])
 
 
 class SiblingsTestCase(BaseTestCase):
-    def test_with_siblings(self):
+    def test_siblings_if_parent_is_a_guide(self):
         """
-        Tests that <page>.siblings() returns the list of live siblings.
+        Tests that <page>.get_guide_siblings() returns the list of live siblings if parent.guide == True.
         """
+        self.folder.guide = True
+        self.folder.save()
+
         for page in self.live_pages:
             self.assertEqual(
-                [sibling.id for sibling in page.siblings()],
+                [sibling.id for sibling in page.get_guide_siblings()],
                 [sibling.id for sibling in self.live_pages]
             )
 
-    def test_without_siblings(self):
+    def test_no_siblings_if_parent_isnt_a_guide(self):
         """
-        Tests that if there aren't any siblings, <page>.siblings() will only include the page itself.
+        Tests that <page>.get_guide_siblings() returns [] if parent.guide == False.
         """
-        self.assertEqual(
-            [page.id for page in self.folder.siblings()],
-            [self.folder.id]
-        )
+        for page in self.live_pages:
+            self.assertEqual(page.get_guide_siblings(), [])
 
 
 class GuideTestCase(BaseTestCase):

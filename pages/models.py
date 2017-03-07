@@ -34,19 +34,19 @@ class Page(WagtailPage):
     def serve_preview(self, request, mode_name):
         preview_via_POST_deprecated()
 
+    def get_live_children(self):
+        return self.get_children().live()
+
+    def get_guide_siblings(self):
+        if getattr(self.get_parent().specific, 'guide', False):
+            return self.get_siblings().live()
+        return []
+
     class Meta:
         proxy = True
 
 
-class ChildrenSiblingsMixin(object):
-    def children(self):
-        return self.get_children().live()
-
-    def siblings(self):
-        return self.get_siblings().live()
-
-
-class EditorialPage(ChildrenSiblingsMixin, Page):
+class EditorialPage(Page):
     # META
     non_emergency_callout = models.BooleanField(
         default=True,
@@ -108,7 +108,7 @@ class EditorialPage(ChildrenSiblingsMixin, Page):
     ]
 
 
-class FolderPage(ChildrenSiblingsMixin, Page):
+class FolderPage(Page):
     guide = models.BooleanField(
         default=False,
         help_text='If ticked, all its sub-pages will be part of this guide'
