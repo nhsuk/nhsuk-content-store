@@ -19,7 +19,7 @@ class ConditionsPageFactory(ParentBasedFactory, factory.django.DjangoModelFactor
 
 
 class ConditionPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):
-    path = factory.Sequence(lambda n: '000100010002000%d' % (n + 1))
+    path = factory.Sequence(lambda n: '000100010002%04d' % (n + 1))
     depth = 4
 
     _ParentFactory = ConditionsPageFactory
@@ -43,7 +43,7 @@ class SymptomsPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory)
 
 
 class SymptomPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):
-    path = factory.Sequence(lambda n: '000100010001000%d' % (n + 1))
+    path = factory.Sequence(lambda n: '000100010001%04d' % (n + 1))
     depth = 4
 
     _ParentFactory = SymptomsPageFactory
@@ -54,7 +54,7 @@ class SymptomPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):
 
 
 class ConditionFolderPageFactory(ParentBasedFactory, factory.django.DjangoModelFactory):
-    path = factory.Sequence(lambda n: '000100010002000%d' % (n + 1))
+    path = factory.Sequence(lambda n: '000100010002%04d' % (n + 1))
     depth = 4
 
     _ParentFactory = ConditionsPageFactory
