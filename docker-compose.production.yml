@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  content-store:
+    image: nhsuk/conditions-content-store
+    ports:
+      - "8000:8000"
+    restart: always
+    env_file:
+      - prod.env
