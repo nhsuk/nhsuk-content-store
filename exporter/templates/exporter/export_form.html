@@ -1,20 +1,33 @@
 {% extends "wagtailadmin/base.html" %}
 {% load i18n %}
 {% block titletag %}Export content{% endblock %}
+{% block extra_css %}{{ block.super }}
+    <style media="screen">
+    @media screen and (min-width: 50em) {
+        .export-form label {
+            display: block;
+            float: none;
+            width: inherit;
+        }
+    }
+    </style>
+{% endblock %}
 {% block content %}
     {% include "wagtailadmin/shared/header.html" with title="Export content" %}
 
     <div class="nice-padding">
         <div id="form-results" class="forms">
-            <form action="." method="post">
-              {% csrf_token %}
+            <form action="." class="export-form" method="post">
+                {% csrf_token %}
 
-              <p>You are about to export the entire content to a zip file.</p>
-              <p>Are you sure you want to continue?</p>
+                <p>Please note that the more pages you select, the longer the export will take.</p>
+                <p>If you are on heroku, remember that requests taking longer than 30 seconds time out.</p>
 
-              <div>
-                <button class="button">Yes, export</button>
-              </div>
+                {{ form }}
+
+                <div>
+                    <button class="button">Export</button>
+                </div>
             </form>
         </div>
     </div>

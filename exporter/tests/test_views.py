@@ -17,7 +17,7 @@ class ExportContentTestCase(TestCase, WagtailTestUtils):
         self.image = ImageFactory(title='Test image')
 
         # Set up pages
-        ConditionPageFactory(
+        self.page = ConditionPageFactory(
             title='condition-1', slug='condition-1',
             main=EditorialPage._meta.get_field('main').to_python(
                 json.dumps([
@@ -44,7 +44,9 @@ class ExportContentTestCase(TestCase, WagtailTestUtils):
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, 200)
 
-        response = self.client.post(self.url)
+        response = self.client.post(self.url, data={
+            'pages': [self.page.id]
+        })
 
         with tempfile.NamedTemporaryFile() as tf:
             tf.write(response.content)
@@ -93,8 +95,6 @@ class ExportContentTestCase(TestCase, WagtailTestUtils):
                     [
                         condition_manifest_path,
                         condition_md_path,
-                        'content/home/manifest.json',
-                        'content/home/conditions/manifest.json',
                         image_path(slug_postfix, 400),
                         image_path(slug_postfix, 640),
                         image_path(slug_postfix, 800),
