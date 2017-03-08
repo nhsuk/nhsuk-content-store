@@ -1,7 +1,15 @@
 language: python
 cache: pip
 
+services:
+  - docker
+
 sudo: false
+
+env:
+  global:
+  - DOCKER_REPO=nhsuk/conditions-content-store
+  - DOCKER_USERNAME=nhsukautomata
 
 python:
   - 3.5
@@ -13,3 +21,5 @@ script:
   - flake8 .
 after_success:
   - coveralls
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - ./scripts/ci-deployment/docker_ci.sh

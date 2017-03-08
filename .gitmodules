@@ -1,0 +1,3 @@
+[submodule "scripts/ci-deployment"]
+	path = scripts/ci-deployment
+	url = git@github.com:nhsuk/ci-deployment.git
