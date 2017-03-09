@@ -6,8 +6,6 @@ import wagtail.wagtailcore.blocks
 import wagtail.wagtailcore.fields
 from django.db import migrations
 
-import pages.blocks
-
 
 class Migration(migrations.Migration):
 
@@ -19,6 +17,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='editorialpage',
             name='main',
-            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(icon='radio-full', label='markdown')), ('panel', wagtail.wagtailcore.blocks.StructBlock((('main', wagtail.wagtailcore.blocks.RichTextBlock(label='Panel content')), ('footer', wagtail.wagtailcore.blocks.RichTextBlock(label='Footer content', required=False))), icon='radio-full', label='panel')), ('splitPanel', pages.blocks.ListBlock(wagtail.wagtailcore.blocks.RichTextBlock(label='Area'), icon='radio-full', label='split panel'))), blank=True, null=True, verbose_name='Main Content'),
+            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(icon='radio-full', label='markdown')), ('panel', wagtail.wagtailcore.blocks.StructBlock((('main', wagtail.wagtailcore.blocks.RichTextBlock(label='Panel content')), ('footer', wagtail.wagtailcore.blocks.RichTextBlock(label='Footer content', required=False))), icon='radio-full', label='panel')), ('splitPanel', wagtail.wagtailcore.blocks.ListBlock(wagtail.wagtailcore.blocks.RichTextBlock(label='Area'), icon='radio-full', label='split panel'))), blank=True, null=True, verbose_name='Main Content'),
         ),
     ]
