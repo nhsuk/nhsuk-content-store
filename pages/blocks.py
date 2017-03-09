@@ -2,8 +2,6 @@ import string
 
 from django.template.loader import render_to_string
 from wagtail.wagtailcore.blocks.list_block import ListBlock
-from wagtail.wagtailcore.blocks.static_block import \
-    StaticBlock as WagtailStaticBlock
 from wagtail.wagtailcore.blocks.stream_block import \
     StreamBlock as WagtailStreamBlock
 
@@ -17,11 +15,6 @@ class StreamBlock(WagtailStreamBlock):
         if output:
             output = [{'type': item['type'], 'props': item['value']} for item in output]
         return output
-
-
-class StaticBlock(WagtailStaticBlock):
-    def value_from_datadict(self, data, files, prefix):
-        return self.name
 
 
 class FixedListBlock(ListBlock):
