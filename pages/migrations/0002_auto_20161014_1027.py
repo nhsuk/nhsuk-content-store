@@ -7,7 +7,6 @@ import wagtail.wagtailcore.fields
 from django.db import migrations
 
 import images.blocks
-import pages.blocks
 
 
 class Migration(migrations.Migration):
@@ -20,7 +19,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='simplepage',
             name='before',
-            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('figureList', pages.blocks.ListBlock(images.blocks.ImageChooserBlock(), label='figure list'))), blank=True, null=True),
+            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('figureList', wagtail.wagtailcore.blocks.ListBlock(images.blocks.ImageChooserBlock(), label='figure list'))), blank=True, null=True),
         ),
         migrations.AlterField(
             model_name='simplepage',

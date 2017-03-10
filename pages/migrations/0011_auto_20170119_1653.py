@@ -7,7 +7,6 @@ import wagtail.wagtailcore.fields
 from django.db import migrations
 
 import images.blocks
-import pages.blocks
 
 
 class Migration(migrations.Migration):
@@ -20,6 +19,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='editorialpage',
             name='main',
-            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(icon='radio-full', label='markdown')), ('figureList', pages.blocks.ListBlock(images.blocks.ImageChooserBlock(), icon='radio-full', label='figure list')), ('panel', wagtail.wagtailcore.blocks.StructBlock((('main', wagtail.wagtailcore.blocks.RichTextBlock(label='Panel content')), ('footer', wagtail.wagtailcore.blocks.RichTextBlock(label='Footer content', required=False))), icon='radio-full', label='panel')), ('splitPanel', pages.blocks.FixedListBlock(wagtail.wagtailcore.blocks.RichTextBlock(), icon='radio-full', label='split panel'))), blank=True, null=True, verbose_name='Main Content'),
+            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(icon='radio-full', label='markdown')), ('figureList', wagtail.wagtailcore.blocks.ListBlock(images.blocks.ImageChooserBlock(), icon='radio-full', label='figure list')), ('panel', wagtail.wagtailcore.blocks.StructBlock((('main', wagtail.wagtailcore.blocks.RichTextBlock(label='Panel content')), ('footer', wagtail.wagtailcore.blocks.RichTextBlock(label='Footer content', required=False))), icon='radio-full', label='panel')), ('splitPanel', wagtail.wagtailcore.blocks.ListBlock(wagtail.wagtailcore.blocks.RichTextBlock(), icon='radio-full', label='split panel'))), blank=True, null=True, verbose_name='Main Content'),
         ),
     ]

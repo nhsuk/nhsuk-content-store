@@ -7,7 +7,6 @@ import wagtail.wagtailcore.fields
 from django.db import migrations
 
 import images.blocks
-import pages.blocks
 
 
 class Migration(migrations.Migration):
@@ -30,11 +29,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='editorialpage',
             name='local_header',
-            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('sectionNav', pages.blocks.StaticBlock(admin_text='Section Navigation', label='section nav'))), blank=True, null=True),
+            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('sectionNav', wagtail.wagtailcore.blocks.StaticBlock(admin_text='Section Navigation', label='section nav'))), blank=True, null=True),
         ),
         migrations.AlterField(
             model_name='editorialpage',
             name='main',
-            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('calloutInfo', wagtail.wagtailcore.blocks.RichTextBlock(label='callout info')), ('calloutWarning', wagtail.wagtailcore.blocks.RichTextBlock(label='callout warning')), ('sectionList', wagtail.wagtailcore.blocks.StructBlock((('title', wagtail.wagtailcore.blocks.CharBlock()), ('sections', pages.blocks.ListBlock(wagtail.wagtailcore.blocks.StructBlock((('title', wagtail.wagtailcore.blocks.CharBlock()), ('content', wagtail.wagtailcore.blocks.StreamBlock((('image', images.blocks.ImageChooserBlock(label='image')), ('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')))))))))), label='section list'))), blank=True, null=True),
+            field=wagtail.wagtailcore.fields.StreamField((('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')), ('calloutInfo', wagtail.wagtailcore.blocks.RichTextBlock(label='callout info')), ('calloutWarning', wagtail.wagtailcore.blocks.RichTextBlock(label='callout warning')), ('sectionList', wagtail.wagtailcore.blocks.StructBlock((('title', wagtail.wagtailcore.blocks.CharBlock()), ('sections', wagtail.wagtailcore.blocks.ListBlock(wagtail.wagtailcore.blocks.StructBlock((('title', wagtail.wagtailcore.blocks.CharBlock()), ('content', wagtail.wagtailcore.blocks.StreamBlock((('image', images.blocks.ImageChooserBlock(label='image')), ('markdown', wagtail.wagtailcore.blocks.RichTextBlock(label='markdown')))))))))), label='section list'))), blank=True, null=True),
         ),
     ]
