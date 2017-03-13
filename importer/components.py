@@ -144,6 +144,7 @@ class GalleryComponent(StructuralComponent):
         return {
             'type': 'gallery',
             'value': {
+                'variant': data['props'].get('variant', 'inline'),
                 'children': self.transform_components(data['props']['children'])
             }
         }
