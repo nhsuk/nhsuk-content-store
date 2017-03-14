@@ -4,7 +4,7 @@ from .base import *  # noqa
 
 import os
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*.nhs.uk').split(",")
 
 DATABASES = {
     'default': {
@@ -49,7 +49,7 @@ LOGGING = {
     },
 }
 
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', '0') == '1'
 
 try:
     from .local import *  # noqa
