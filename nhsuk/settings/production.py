@@ -25,7 +25,7 @@ IMAGE_SIGNATURE_KEY = os.environ.get('IMAGE_SIGNATURE_KEY')
 PREVIEW_SIGNATURE_KEY = os.environ.get('PREVIEW_SIGNATURE_KEY')
 
 # MEDIA AND FILEs / UPLOADED
-# DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 
 AZURE_ACCOUNT_NAME = os.environ.get('AZURE_ACCOUNT_NAME', '')
 AZURE_ACCOUNT_KEY = os.environ.get('AZURE_ACCOUNT_KEY', '')
